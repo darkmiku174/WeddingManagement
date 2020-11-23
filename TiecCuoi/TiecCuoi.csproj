@@ -114,6 +114,31 @@
       <DependentUpon>TiecCuoiModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataProvider.cs" />
+    <Compile Include="View\Constant\Cons.cs" />
+    <Compile Include="View\frmDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDichVu.Designer.cs">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmKhuyenMai.Designer.cs">
+      <DependentUpon>frmKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSanh.Designer.cs">
+      <DependentUpon>frmSanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmThanhToan.Designer.cs">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmChonDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmDatCoc.resx">
       <DependentUpon>frmDatCoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDichVu.resx">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmLapHopDongTiecCuoi.resx">
       <DependentUpon>frmLapHopDongTiecCuoi.cs</DependentUpon>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TIECCUOIModelStoreContainer" CdmEntityContainer="TIECCUOIEntities">
+    <EntitySetMapping Name="CTDATCOCs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.CTDATCOC">
+        <MappingFragment StoreEntitySet="CTDATCOC">
+          <ScalarProperty Name="MACTDC" ColumnName="MACTDC" />
+          <ScalarProperty Name="MASANH" ColumnName="MASANH" />
+          <ScalarProperty Name="CA" ColumnName="CA" />
+          <ScalarProperty Name="NGAYTC" ColumnName="NGAYTC" />
+          <ScalarProperty Name="SOTIENC0C" ColumnName="SOTIENC0C" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTHOPDONGs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.CTHOPDONG">
+        <MappingFragment StoreEntitySet="CTHOPDONG">
+          <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+          <ScalarProperty Name="TENCODAU" ColumnName="TENCODAU" />
+          <ScalarProperty Name="TENCHURE" ColumnName="TENCHURE" />
+          <ScalarProperty Name="MASANH" ColumnName="MASANH" />
+          <ScalarProperty Name="CA" ColumnName="CA" />
+          <ScalarProperty Name="SOBAN" ColumnName="SOBAN" />
+          <ScalarProperty Name="NGAYTC" ColumnName="NGAYTC" />
+          <ScalarProperty Name="SOTIENCOC" ColumnName="SOTIENCOC" />
+          <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATCOCs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.DATCOC">
+        <MappingFragment StoreEntitySet="DATCOC">
+          <ScalarProperty Name="MADC" ColumnName="MADC" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="NGAYDC" ColumnName="NGAYDC" />
+          <ScalarProperty Name="MACTDC" ColumnName="MACTDC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DICHVUs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.DICHVU">
+        <MappingFragment StoreEntitySet="DICHVU">
+          <ScalarProperty Name="MADV" ColumnName="MADV" />
+          <ScalarProperty Name="TENDV" ColumnName="TENDV" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+          <ScalarProperty Name="GIATIEN" ColumnName="GIATIEN" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOPDONGs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.HOPDONG">
+        <MappingFragment StoreEntitySet="HOPDONG">
+          <ScalarProperty Name="MAHD" ColumnName="MAHD" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+          <ScalarProperty Name="NGAYHD" ColumnName="NGAYHD" />
+          <ScalarProperty Name="MAKM" ColumnName="MAKM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHUYENMAIs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.KHUYENMAI">
+        <MappingFragment StoreEntitySet="KHUYENMAI">
+          <ScalarProperty Name="MAKM" ColumnName="MAKM" />
+          <ScalarProperty Name="TENKM" ColumnName="TENKM" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+          <ScalarProperty Name="UUDAI" ColumnName="UUDAI" />
+          <ScalarProperty Name="NGAYBD" ColumnName="NGAYBD" />
+          <ScalarProperty Name="NGAYKT" ColumnName="NGAYKT" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENUs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.MENU">
+        <MappingFragment StoreEntitySet="MENU">
+          <ScalarProperty Name="MAMA" ColumnName="MAMA" />
+          <ScalarProperty Name="TENMA" ColumnName="TENMA" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+          <ScalarProperty Name="GIATIEN" ColumnName="GIATIEN" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="GT" ColumnName="GT" />
+          <ScalarProperty Name="CHUCVU" ColumnName="CHUCVU" />
+          <ScalarProperty Name="MUCLUONG" ColumnName="MUCLUONG" />
+          <ScalarProperty Name="THUONG" ColumnName="THUONG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHIEUPHATs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.PHIEUPHAT">
+        <MappingFragment StoreEntitySet="PHIEUPHAT">
+          <ScalarProperty Name="MAPHAT" ColumnName="MAPHAT" />
+          <ScalarProperty Name="SONGAYTRE" ColumnName="SONGAYTRE" />
+          <ScalarProperty Name="DONGIAPHAT" ColumnName="DONGIAPHAT" />
+          <ScalarProperty Name="SOTIENPHAT" ColumnName="SOTIENPHAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SANHs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.SANH">
+        <MappingFragment StoreEntitySet="SANH">
+          <ScalarProperty Name="MASANH" ColumnName="MASANH" />
+          <ScalarProperty Name="TENSANH" ColumnName="TENSANH" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+          <ScalarProperty Name="DONGIATT" ColumnName="DONGIATT" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THANHTOANHDs">
+      <EntityTypeMapping TypeName="TIECCUOIModel.THANHTOANHD">
+        <MappingFragment StoreEntitySet="THANHTOANHD">
+          <ScalarProperty Name="MAHD" ColumnName="MAHD" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="NGAYTT" ColumnName="NGAYTT" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+          <ScalarProperty Name="SOTIENPS" ColumnName="SOTIENPS" />
+          <ScalarProperty Name="MAPHAT" ColumnName="MAPHAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="DSCTDV" TypeName="TIECCUOIModel.DSCTDV" StoreEntitySet="DSCTDV">
+      <EndProperty Name="CTHOPDONG">
+        <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+      </EndProperty>
+      <EndProperty Name="DICHVU">
+        <ScalarProperty Name="MADV" ColumnName="MADV" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DSCTMENU" TypeName="TIECCUOIModel.DSCTMENU" StoreEntitySet="DSCTMENU">
+      <EndProperty Name="CTHOPDONG">
+        <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+      </EndProperty>
+      <EndProperty Name="MENU">
+        <ScalarProperty Name="MAMA" ColumnName="MAMA" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
