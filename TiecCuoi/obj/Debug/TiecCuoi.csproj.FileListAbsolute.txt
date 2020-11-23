@@ -40,3 +40,4 @@ C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.csproj.CoreCompileI
 C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.csproj.CopyComplete
 C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.exe
 C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.pdb
+C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.View.frmDichVu.resources

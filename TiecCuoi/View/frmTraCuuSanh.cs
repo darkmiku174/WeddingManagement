@@ -32,6 +32,7 @@ namespace CNPM_TiecCuoi
                     btn.Location = new Point(oldBtn.Location.X + oldBtn.Width, oldBtn.Location.Y );
 
                     panelMatrix.Controls.Add(btn);
+                    oldBtn = btn;
                 }
                 oldBtn= new Button() { Width = 0, Height = 0, Location = new Point(0, oldBtn.Location.Y+ Cons.dateButtonHeight) };
             }

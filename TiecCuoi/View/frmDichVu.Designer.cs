@@ -29,42 +29,81 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDichVu));
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.scbMoTa = new System.Windows.Forms.VScrollBar();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelThoat = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnThoat = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.scbThucDon = new System.Windows.Forms.VScrollBar();
-            this.btnDichVu6 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnDichVu3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnDichVu5 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnDichVu2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnDichVu4 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnDichVu1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelMoTa = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.lbMoTa = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panelThongTinMonAn = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelGiaTien = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelMaDichVu = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.flwpanelHinhAnhMonAn = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuGradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu1)).BeginInit();
-            this.bunifuGradientPanel3.SuspendLayout();
+            this.btnDichvu1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.lbDichVu1 = new System.Windows.Forms.Label();
+            this.panel3.SuspendLayout();
+            this.panelThoat.SuspendLayout();
+            this.panelMoTa.SuspendLayout();
+            this.panelThongTinMonAn.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panelRightBar.SuspendLayout();
+            this.flwpanelHinhAnhMonAn.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDichvu1)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuGradientPanel2
+            // scbMoTa
             // 
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.btnThoat);
-            this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(591, 50);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(292, 553);
-            this.bunifuGradientPanel2.TabIndex = 7;
+            this.scbMoTa.Dock = System.Windows.Forms.DockStyle.Right;
+            this.scbMoTa.Location = new System.Drawing.Point(238, 38);
+            this.scbMoTa.Name = "scbMoTa";
+            this.scbMoTa.Size = new System.Drawing.Size(17, 325);
+            this.scbMoTa.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(255, 38);
+            this.panel3.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(115, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mô tả";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelThoat
+            // 
+            this.panelThoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThoat.BackgroundImage")));
+            this.panelThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThoat.Controls.Add(this.btnThoat);
+            this.panelThoat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelThoat.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelThoat.GradientBottomRight = System.Drawing.Color.White;
+            this.panelThoat.GradientTopLeft = System.Drawing.Color.White;
+            this.panelThoat.GradientTopRight = System.Drawing.Color.White;
+            this.panelThoat.Location = new System.Drawing.Point(0, 458);
+            this.panelThoat.Name = "panelThoat";
+            this.panelThoat.Quality = 10;
+            this.panelThoat.Size = new System.Drawing.Size(255, 95);
+            this.panelThoat.TabIndex = 4;
             // 
             // btnThoat
             // 
@@ -75,6 +114,7 @@
             this.btnThoat.ButtonText = "Thoát";
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.DisabledColor = System.Drawing.Color.Gray;
+            this.btnThoat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThoat.Iconcolor = System.Drawing.Color.Transparent;
             this.btnThoat.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnThoat.Iconimage")));
             this.btnThoat.Iconimage_right = null;
@@ -87,177 +127,261 @@
             this.btnThoat.IconVisible = true;
             this.btnThoat.IconZoom = 90D;
             this.btnThoat.IsTab = false;
-            this.btnThoat.Location = new System.Drawing.Point(86, 422);
+            this.btnThoat.Location = new System.Drawing.Point(0, 0);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnThoat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnThoat.OnHoverTextColor = System.Drawing.Color.White;
             this.btnThoat.selected = false;
-            this.btnThoat.Size = new System.Drawing.Size(118, 45);
+            this.btnThoat.Size = new System.Drawing.Size(255, 95);
             this.btnThoat.TabIndex = 0;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Textcolor = System.Drawing.Color.White;
             this.btnThoat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // scbThucDon
+            // panelMoTa
             // 
-            this.scbThucDon.Dock = System.Windows.Forms.DockStyle.Right;
-            this.scbThucDon.Location = new System.Drawing.Point(866, 0);
-            this.scbThucDon.Name = "scbThucDon";
-            this.scbThucDon.Size = new System.Drawing.Size(17, 553);
-            this.scbThucDon.TabIndex = 5;
+            this.panelMoTa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMoTa.BackgroundImage")));
+            this.panelMoTa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMoTa.Controls.Add(this.scbMoTa);
+            this.panelMoTa.Controls.Add(this.lbMoTa);
+            this.panelMoTa.Controls.Add(this.panel3);
+            this.panelMoTa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMoTa.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelMoTa.GradientBottomRight = System.Drawing.Color.White;
+            this.panelMoTa.GradientTopLeft = System.Drawing.Color.White;
+            this.panelMoTa.GradientTopRight = System.Drawing.Color.White;
+            this.panelMoTa.Location = new System.Drawing.Point(0, 95);
+            this.panelMoTa.Name = "panelMoTa";
+            this.panelMoTa.Quality = 10;
+            this.panelMoTa.Size = new System.Drawing.Size(255, 363);
+            this.panelMoTa.TabIndex = 3;
             // 
-            // btnDichVu6
+            // lbMoTa
             // 
-            this.btnDichVu6.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDichVu6.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu6.Image")));
-            this.btnDichVu6.ImageActive = null;
-            this.btnDichVu6.Location = new System.Drawing.Point(416, 254);
-            this.btnDichVu6.Name = "btnDichVu6";
-            this.btnDichVu6.Size = new System.Drawing.Size(155, 163);
-            this.btnDichVu6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDichVu6.TabIndex = 4;
-            this.btnDichVu6.TabStop = false;
-            this.btnDichVu6.Zoom = 10;
+            this.lbMoTa.AutoSize = true;
+            this.lbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMoTa.Location = new System.Drawing.Point(0, 38);
+            this.lbMoTa.Name = "lbMoTa";
+            this.lbMoTa.Size = new System.Drawing.Size(106, 16);
+            this.lbMoTa.TabIndex = 3;
+            this.lbMoTa.Text = "Insert mô tả here";
             // 
-            // btnDichVu3
+            // panelThongTinMonAn
             // 
-            this.btnDichVu3.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDichVu3.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu3.Image")));
-            this.btnDichVu3.ImageActive = null;
-            this.btnDichVu3.Location = new System.Drawing.Point(416, 23);
-            this.btnDichVu3.Name = "btnDichVu3";
-            this.btnDichVu3.Size = new System.Drawing.Size(155, 163);
-            this.btnDichVu3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDichVu3.TabIndex = 4;
-            this.btnDichVu3.TabStop = false;
-            this.btnDichVu3.Zoom = 10;
+            this.panelThongTinMonAn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThongTinMonAn.BackgroundImage")));
+            this.panelThongTinMonAn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThongTinMonAn.Controls.Add(this.panel2);
+            this.panelThongTinMonAn.Controls.Add(this.panel1);
+            this.panelThongTinMonAn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelThongTinMonAn.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelThongTinMonAn.GradientBottomRight = System.Drawing.Color.White;
+            this.panelThongTinMonAn.GradientTopLeft = System.Drawing.Color.White;
+            this.panelThongTinMonAn.GradientTopRight = System.Drawing.Color.White;
+            this.panelThongTinMonAn.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinMonAn.Name = "panelThongTinMonAn";
+            this.panelThongTinMonAn.Quality = 10;
+            this.panelThongTinMonAn.Size = new System.Drawing.Size(255, 95);
+            this.panelThongTinMonAn.TabIndex = 2;
             // 
-            // btnDichVu5
+            // panel2
             // 
-            this.btnDichVu5.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDichVu5.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu5.Image")));
-            this.btnDichVu5.ImageActive = null;
-            this.btnDichVu5.Location = new System.Drawing.Point(224, 254);
-            this.btnDichVu5.Name = "btnDichVu5";
-            this.btnDichVu5.Size = new System.Drawing.Size(155, 163);
-            this.btnDichVu5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDichVu5.TabIndex = 4;
-            this.btnDichVu5.TabStop = false;
-            this.btnDichVu5.Zoom = 10;
+            this.panel2.Controls.Add(this.labelGiaTien);
+            this.panel2.Controls.Add(this.bunifuCustomLabel2);
+            this.panel2.Location = new System.Drawing.Point(0, 47);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(292, 47);
+            this.panel2.TabIndex = 7;
             // 
-            // btnDichVu2
+            // labelGiaTien
             // 
-            this.btnDichVu2.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDichVu2.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu2.Image")));
-            this.btnDichVu2.ImageActive = null;
-            this.btnDichVu2.Location = new System.Drawing.Point(224, 23);
-            this.btnDichVu2.Name = "btnDichVu2";
-            this.btnDichVu2.Size = new System.Drawing.Size(155, 163);
-            this.btnDichVu2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDichVu2.TabIndex = 4;
-            this.btnDichVu2.TabStop = false;
-            this.btnDichVu2.Zoom = 10;
+            this.labelGiaTien.AutoSize = true;
+            this.labelGiaTien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGiaTien.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.labelGiaTien.Location = new System.Drawing.Point(140, 14);
+            this.labelGiaTien.Name = "labelGiaTien";
+            this.labelGiaTien.Size = new System.Drawing.Size(71, 21);
+            this.labelGiaTien.TabIndex = 6;
+            this.labelGiaTien.Text = "Giá tiền";
             // 
-            // btnDichVu4
+            // bunifuCustomLabel2
             // 
-            this.btnDichVu4.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDichVu4.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu4.Image")));
-            this.btnDichVu4.ImageActive = null;
-            this.btnDichVu4.Location = new System.Drawing.Point(22, 254);
-            this.btnDichVu4.Name = "btnDichVu4";
-            this.btnDichVu4.Size = new System.Drawing.Size(155, 163);
-            this.btnDichVu4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDichVu4.TabIndex = 4;
-            this.btnDichVu4.TabStop = false;
-            this.btnDichVu4.Zoom = 10;
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(3, 14);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(79, 21);
+            this.bunifuCustomLabel2.TabIndex = 6;
+            this.bunifuCustomLabel2.Text = "Giá tiền :";
             // 
-            // btnDichVu1
+            // panel1
             // 
-            this.btnDichVu1.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDichVu1.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu1.Image")));
-            this.btnDichVu1.ImageActive = null;
-            this.btnDichVu1.Location = new System.Drawing.Point(22, 23);
-            this.btnDichVu1.Name = "btnDichVu1";
-            this.btnDichVu1.Size = new System.Drawing.Size(155, 163);
-            this.btnDichVu1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDichVu1.TabIndex = 4;
-            this.btnDichVu1.TabStop = false;
-            this.btnDichVu1.Zoom = 10;
+            this.panel1.Controls.Add(this.labelMaDichVu);
+            this.panel1.Controls.Add(this.bunifuCustomLabel1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 47);
+            this.panel1.TabIndex = 7;
             // 
-            // bunifuGradientPanel3
+            // labelMaDichVu
             // 
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.scbThucDon);
-            this.bunifuGradientPanel3.Controls.Add(this.btnDichVu6);
-            this.bunifuGradientPanel3.Controls.Add(this.btnDichVu3);
-            this.bunifuGradientPanel3.Controls.Add(this.btnDichVu5);
-            this.bunifuGradientPanel3.Controls.Add(this.btnDichVu2);
-            this.bunifuGradientPanel3.Controls.Add(this.btnDichVu4);
-            this.bunifuGradientPanel3.Controls.Add(this.btnDichVu1);
-            this.bunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(0, 50);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(883, 553);
-            this.bunifuGradientPanel3.TabIndex = 8;
+            this.labelMaDichVu.AutoSize = true;
+            this.labelMaDichVu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaDichVu.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.labelMaDichVu.Location = new System.Drawing.Point(140, 13);
+            this.labelMaDichVu.Name = "labelMaDichVu";
+            this.labelMaDichVu.Size = new System.Drawing.Size(97, 21);
+            this.labelMaDichVu.TabIndex = 6;
+            this.labelMaDichVu.Text = "Mã dịch vụ";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 13);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(105, 21);
+            this.bunifuCustomLabel1.TabIndex = 6;
+            this.bunifuCustomLabel1.Text = "Mã dịch vụ :";
+            // 
+            // panelRightBar
+            // 
+            this.panelRightBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRightBar.BackgroundImage")));
+            this.panelRightBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelRightBar.Controls.Add(this.panelThoat);
+            this.panelRightBar.Controls.Add(this.panelMoTa);
+            this.panelRightBar.Controls.Add(this.panelThongTinMonAn);
+            this.panelRightBar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRightBar.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelRightBar.GradientBottomRight = System.Drawing.Color.White;
+            this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
+            this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
+            this.panelRightBar.Location = new System.Drawing.Point(628, 50);
+            this.panelRightBar.Name = "panelRightBar";
+            this.panelRightBar.Quality = 10;
+            this.panelRightBar.Size = new System.Drawing.Size(255, 553);
+            this.panelRightBar.TabIndex = 7;
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
+            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelTitle.GradientBottomRight = System.Drawing.Color.White;
+            this.panelTitle.GradientTopLeft = System.Drawing.Color.White;
+            this.panelTitle.GradientTopRight = System.Drawing.Color.White;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Quality = 10;
+            this.panelTitle.Size = new System.Drawing.Size(883, 50);
+            this.panelTitle.TabIndex = 6;
+            // 
+            // flwpanelHinhAnhMonAn
+            // 
+            this.flwpanelHinhAnhMonAn.AutoScroll = true;
+            this.flwpanelHinhAnhMonAn.BackColor = System.Drawing.Color.White;
+            this.flwpanelHinhAnhMonAn.Controls.Add(this.bunifuGradientPanel1);
+            this.flwpanelHinhAnhMonAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flwpanelHinhAnhMonAn.Location = new System.Drawing.Point(0, 50);
+            this.flwpanelHinhAnhMonAn.Name = "flwpanelHinhAnhMonAn";
+            this.flwpanelHinhAnhMonAn.Size = new System.Drawing.Size(628, 553);
+            this.flwpanelHinhAnhMonAn.TabIndex = 9;
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel1.Controls.Add(this.btnDichvu1);
+            this.bunifuGradientPanel1.Controls.Add(this.lbDichVu1);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(3, 3);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(883, 50);
-            this.bunifuGradientPanel1.TabIndex = 6;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(227, 209);
+            this.bunifuGradientPanel1.TabIndex = 15;
+            // 
+            // btnDichvu1
+            // 
+            this.btnDichvu1.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnDichvu1.Image = ((System.Drawing.Image)(resources.GetObject("btnDichvu1.Image")));
+            this.btnDichvu1.ImageActive = null;
+            this.btnDichvu1.Location = new System.Drawing.Point(31, 20);
+            this.btnDichvu1.Name = "btnDichvu1";
+            this.btnDichvu1.Size = new System.Drawing.Size(155, 163);
+            this.btnDichvu1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnDichvu1.TabIndex = 4;
+            this.btnDichvu1.TabStop = false;
+            this.btnDichvu1.Zoom = 10;
+            // 
+            // lbDichVu1
+            // 
+            this.lbDichVu1.AutoSize = true;
+            this.lbDichVu1.Location = new System.Drawing.Point(88, 186);
+            this.lbDichVu1.Name = "lbDichVu1";
+            this.lbDichVu1.Size = new System.Drawing.Size(38, 13);
+            this.lbDichVu1.TabIndex = 11;
+            this.lbDichVu1.Text = "label 1";
             // 
             // frmDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 603);
-            this.Controls.Add(this.bunifuGradientPanel2);
-            this.Controls.Add(this.bunifuGradientPanel3);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.flwpanelHinhAnhMonAn);
+            this.Controls.Add(this.panelRightBar);
+            this.Controls.Add(this.panelTitle);
             this.Name = "frmDichVu";
             this.Text = "frmDichVu";
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDichVu1)).EndInit();
-            this.bunifuGradientPanel3.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panelThoat.ResumeLayout(false);
+            this.panelMoTa.ResumeLayout(false);
+            this.panelMoTa.PerformLayout();
+            this.panelThongTinMonAn.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panelRightBar.ResumeLayout(false);
+            this.flwpanelHinhAnhMonAn.ResumeLayout(false);
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDichvu1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
+        private System.Windows.Forms.VScrollBar scbMoTa;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelThoat;
         private Bunifu.Framework.UI.BunifuFlatButton btnThoat;
-        private System.Windows.Forms.VScrollBar scbThucDon;
-        private Bunifu.Framework.UI.BunifuImageButton btnDichVu6;
-        private Bunifu.Framework.UI.BunifuImageButton btnDichVu3;
-        private Bunifu.Framework.UI.BunifuImageButton btnDichVu5;
-        private Bunifu.Framework.UI.BunifuImageButton btnDichVu2;
-        private Bunifu.Framework.UI.BunifuImageButton btnDichVu4;
-        private Bunifu.Framework.UI.BunifuImageButton btnDichVu1;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelMoTa;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbMoTa;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelThongTinMonAn;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelGiaTien;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelMaDichVu;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelRightBar;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelTitle;
+        private System.Windows.Forms.FlowLayoutPanel flwpanelHinhAnhMonAn;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuImageButton btnDichvu1;
+        private System.Windows.Forms.Label lbDichVu1;
     }
 }

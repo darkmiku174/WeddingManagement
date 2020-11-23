@@ -30,14 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTraCuuSanh));
             this.panelBackGround = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelTitleBar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelSearch = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panelComboBox = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelMatrix = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelDayOfWeek = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnChuNhat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnThu7 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -46,14 +39,21 @@
             this.btnThu4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnThu3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnThu2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelSearch = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelComboBox = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelMatrix = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.panelTitleBar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelBackGround.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
+            this.panelDayOfWeek.SuspendLayout();
             this.panelSearch.SuspendLayout();
             this.panelComboBox.SuspendLayout();
-            this.panelDayOfWeek.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBackGround
@@ -76,114 +76,20 @@
             this.panelBackGround.Size = new System.Drawing.Size(875, 592);
             this.panelBackGround.TabIndex = 0;
             // 
-            // panelTitleBar
+            // panelMatrix
             // 
-            this.panelTitleBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitleBar.BackgroundImage")));
-            this.panelTitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTitleBar.Controls.Add(this.bunifuCustomLabel2);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelTitleBar.GradientBottomRight = System.Drawing.Color.White;
-            this.panelTitleBar.GradientTopLeft = System.Drawing.Color.White;
-            this.panelTitleBar.GradientTopRight = System.Drawing.Color.White;
-            this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Quality = 10;
-            this.panelTitleBar.Size = new System.Drawing.Size(875, 39);
-            this.panelTitleBar.TabIndex = 0;
-            // 
-            // panelSearch
-            // 
-            this.panelSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelSearch.BackgroundImage")));
-            this.panelSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelSearch.Controls.Add(this.panelComboBox);
-            this.panelSearch.Controls.Add(this.bunifuImageButton1);
-            this.panelSearch.Controls.Add(this.bunifuDatepicker1);
-            this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSearch.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelSearch.GradientBottomRight = System.Drawing.Color.White;
-            this.panelSearch.GradientTopLeft = System.Drawing.Color.White;
-            this.panelSearch.GradientTopRight = System.Drawing.Color.White;
-            this.panelSearch.Location = new System.Drawing.Point(0, 39);
-            this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Quality = 10;
-            this.panelSearch.Size = new System.Drawing.Size(875, 44);
-            this.panelSearch.TabIndex = 1;
-            // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(183, 44);
-            this.bunifuDatepicker1.TabIndex = 0;
-            this.bunifuDatepicker1.Value = new System.DateTime(2020, 11, 23, 16, 6, 55, 170);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(47, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(47, 21);
-            this.bunifuCustomLabel1.TabIndex = 2;
-            this.bunifuCustomLabel1.Text = "Sảnh";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(377, 9);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(103, 13);
-            this.bunifuCustomLabel2.TabIndex = 0;
-            this.bunifuCustomLabel2.Text = "bunifuCustomLabel2";
-            // 
-            // panelComboBox
-            // 
-            this.panelComboBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelComboBox.BackgroundImage")));
-            this.panelComboBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelComboBox.Controls.Add(this.comboBox1);
-            this.panelComboBox.Controls.Add(this.bunifuCustomLabel1);
-            this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelComboBox.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelComboBox.GradientBottomRight = System.Drawing.Color.White;
-            this.panelComboBox.GradientTopLeft = System.Drawing.Color.White;
-            this.panelComboBox.GradientTopRight = System.Drawing.Color.White;
-            this.panelComboBox.Location = new System.Drawing.Point(373, 0);
-            this.panelComboBox.Name = "panelComboBox";
-            this.panelComboBox.Quality = 10;
-            this.panelComboBox.Size = new System.Drawing.Size(178, 44);
-            this.panelComboBox.TabIndex = 4;
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(207)))), ((int)(((byte)(209)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(245)))), ((int)(((byte)(180)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(242)))), ((int)(((byte)(85)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 83);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(875, 13);
-            this.bunifuGradientPanel1.TabIndex = 4;
+            this.panelMatrix.BackColor = System.Drawing.Color.Transparent;
+            this.panelMatrix.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMatrix.BackgroundImage")));
+            this.panelMatrix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMatrix.GradientBottomLeft = System.Drawing.Color.Transparent;
+            this.panelMatrix.GradientBottomRight = System.Drawing.Color.Transparent;
+            this.panelMatrix.GradientTopLeft = System.Drawing.Color.Transparent;
+            this.panelMatrix.GradientTopRight = System.Drawing.Color.Transparent;
+            this.panelMatrix.Location = new System.Drawing.Point(12, 171);
+            this.panelMatrix.Name = "panelMatrix";
+            this.panelMatrix.Quality = 10;
+            this.panelMatrix.Size = new System.Drawing.Size(851, 409);
+            this.panelMatrix.TabIndex = 6;
             // 
             // panelDayOfWeek
             // 
@@ -458,6 +364,76 @@
             this.btnThu2.Textcolor = System.Drawing.Color.White;
             this.btnThu2.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(207)))), ((int)(((byte)(209)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(245)))), ((int)(((byte)(180)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(242)))), ((int)(((byte)(85)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 83);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(875, 13);
+            this.bunifuGradientPanel1.TabIndex = 4;
+            // 
+            // panelSearch
+            // 
+            this.panelSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelSearch.BackgroundImage")));
+            this.panelSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelSearch.Controls.Add(this.panelComboBox);
+            this.panelSearch.Controls.Add(this.bunifuImageButton1);
+            this.panelSearch.Controls.Add(this.bunifuDatepicker1);
+            this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSearch.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelSearch.GradientBottomRight = System.Drawing.Color.White;
+            this.panelSearch.GradientTopLeft = System.Drawing.Color.White;
+            this.panelSearch.GradientTopRight = System.Drawing.Color.White;
+            this.panelSearch.Location = new System.Drawing.Point(0, 39);
+            this.panelSearch.Name = "panelSearch";
+            this.panelSearch.Quality = 10;
+            this.panelSearch.Size = new System.Drawing.Size(875, 44);
+            this.panelSearch.TabIndex = 1;
+            // 
+            // panelComboBox
+            // 
+            this.panelComboBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelComboBox.BackgroundImage")));
+            this.panelComboBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelComboBox.Controls.Add(this.comboBox1);
+            this.panelComboBox.Controls.Add(this.bunifuCustomLabel1);
+            this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelComboBox.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelComboBox.GradientBottomRight = System.Drawing.Color.White;
+            this.panelComboBox.GradientTopLeft = System.Drawing.Color.White;
+            this.panelComboBox.GradientTopRight = System.Drawing.Color.White;
+            this.panelComboBox.Location = new System.Drawing.Point(373, 0);
+            this.panelComboBox.Name = "panelComboBox";
+            this.panelComboBox.Quality = 10;
+            this.panelComboBox.Size = new System.Drawing.Size(178, 44);
+            this.panelComboBox.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(47, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(47, 21);
+            this.bunifuCustomLabel1.TabIndex = 2;
+            this.bunifuCustomLabel1.Text = "Sảnh";
+            // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
@@ -472,20 +448,44 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // panelMatrix
+            // bunifuDatepicker1
             // 
-            this.panelMatrix.BackColor = System.Drawing.Color.Transparent;
-            this.panelMatrix.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMatrix.BackgroundImage")));
-            this.panelMatrix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelMatrix.GradientBottomLeft = System.Drawing.Color.Transparent;
-            this.panelMatrix.GradientBottomRight = System.Drawing.Color.Transparent;
-            this.panelMatrix.GradientTopLeft = System.Drawing.Color.Transparent;
-            this.panelMatrix.GradientTopRight = System.Drawing.Color.Transparent;
-            this.panelMatrix.Location = new System.Drawing.Point(12, 171);
-            this.panelMatrix.Name = "panelMatrix";
-            this.panelMatrix.Quality = 10;
-            this.panelMatrix.Size = new System.Drawing.Size(851, 409);
-            this.panelMatrix.TabIndex = 6;
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = null;
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(183, 44);
+            this.bunifuDatepicker1.TabIndex = 0;
+            this.bunifuDatepicker1.Value = new System.DateTime(2020, 11, 23, 16, 6, 55, 170);
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitleBar.BackgroundImage")));
+            this.panelTitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTitleBar.Controls.Add(this.bunifuCustomLabel2);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelTitleBar.GradientBottomRight = System.Drawing.Color.White;
+            this.panelTitleBar.GradientTopLeft = System.Drawing.Color.White;
+            this.panelTitleBar.GradientTopRight = System.Drawing.Color.White;
+            this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Quality = 10;
+            this.panelTitleBar.Size = new System.Drawing.Size(875, 39);
+            this.panelTitleBar.TabIndex = 0;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(377, 9);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(103, 13);
+            this.bunifuCustomLabel2.TabIndex = 0;
+            this.bunifuCustomLabel2.Text = "bunifuCustomLabel2";
             // 
             // frmTraCuuSanh
             // 
@@ -493,17 +493,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 592);
             this.Controls.Add(this.panelBackGround);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTraCuuSanh";
             this.Text = "Tra cứu sảnh";
             this.panelBackGround.ResumeLayout(false);
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
+            this.panelDayOfWeek.ResumeLayout(false);
             this.panelSearch.ResumeLayout(false);
             this.panelComboBox.ResumeLayout(false);
             this.panelComboBox.PerformLayout();
-            this.panelDayOfWeek.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
