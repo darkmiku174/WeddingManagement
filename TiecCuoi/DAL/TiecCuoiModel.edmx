@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TIECCUOIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CTDATCOC">
+          <Key>
+            <PropertyRef Name="MACTDC" />
+          </Key>
+          <Property Name="MACTDC" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MASANH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CA" Type="int" />
+          <Property Name="NGAYTC" Type="datetime" />
+          <Property Name="SOTIENC0C" Type="int" />
+        </EntityType>
+        <EntityType Name="CTHOPDONG">
+          <Key>
+            <PropertyRef Name="MACTHD" />
+          </Key>
+          <Property Name="MACTHD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENCODAU" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TENCHURE" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MASANH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CA" Type="int" />
+          <Property Name="SOBAN" Type="decimal" Precision="4" Scale="0" />
+          <Property Name="NGAYTC" Type="datetime" />
+          <Property Name="SOTIENCOC" Type="int" />
+          <Property Name="TONGTIEN" Type="int" />
+        </EntityType>
+        <EntityType Name="DATCOC">
+          <Key>
+            <PropertyRef Name="MADC" />
+          </Key>
+          <Property Name="MADC" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MANV" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MAKH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="NGAYDC" Type="datetime" />
+          <Property Name="MACTDC" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DICHVU">
+          <Key>
+            <PropertyRef Name="MADV" />
+          </Key>
+          <Property Name="MADV" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENDV" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HINHANH" Type="image" />
+          <Property Name="GIATIEN" Type="int" Nullable="false" />
+          <Property Name="MOTA" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="DSCTDV">
+          <Key>
+            <PropertyRef Name="MACTHD" />
+            <PropertyRef Name="MADV" />
+          </Key>
+          <Property Name="MACTHD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MADV" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DSCTMENU">
+          <Key>
+            <PropertyRef Name="MACTHD" />
+            <PropertyRef Name="MAMA" />
+          </Key>
+          <Property Name="MACTHD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MAMA" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HOPDONG">
+          <Key>
+            <PropertyRef Name="MAHD" />
+          </Key>
+          <Property Name="MAHD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MANV" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MAKH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MACTHD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="NGAYHD" Type="datetime" />
+          <Property Name="MAKM" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="KHACHHANG">
+          <Key>
+            <PropertyRef Name="MAKH" />
+          </Key>
+          <Property Name="MAKH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENKH" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SDT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+          <Property Name="DIACHI" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="KHUYENMAI">
+          <Key>
+            <PropertyRef Name="MAKM" />
+          </Key>
+          <Property Name="MAKM" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENKM" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HINHANH" Type="image" />
+          <Property Name="UUDAI" Type="int" Nullable="false" />
+          <Property Name="NGAYBD" Type="datetime" />
+          <Property Name="NGAYKT" Type="datetime" />
+          <Property Name="MOTA" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="MENU">
+          <Key>
+            <PropertyRef Name="MAMA" />
+          </Key>
+          <Property Name="MAMA" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENMA" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HINHANH" Type="image" />
+          <Property Name="GIATIEN" Type="int" Nullable="false" />
+          <Property Name="MOTA" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="NHANVIEN">
+          <Key>
+            <PropertyRef Name="MANV" />
+          </Key>
+          <Property Name="MANV" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENNV" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GT" Type="int" />
+          <Property Name="CHUCVU" Type="varchar" MaxLength="1" />
+          <Property Name="MUCLUONG" Type="int" />
+          <Property Name="THUONG" Type="int" />
+        </EntityType>
+        <EntityType Name="PHIEUPHAT">
+          <Key>
+            <PropertyRef Name="MAPHAT" />
+          </Key>
+          <Property Name="MAPHAT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SONGAYTRE" Type="decimal" Precision="4" Scale="0" />
+          <Property Name="DONGIAPHAT" Type="int" />
+          <Property Name="SOTIENPHAT" Type="int" />
+        </EntityType>
+        <EntityType Name="SANH">
+          <Key>
+            <PropertyRef Name="MASANH" />
+          </Key>
+          <Property Name="MASANH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENSANH" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HINHANH" Type="image" />
+          <Property Name="DONGIATT" Type="int" />
+          <Property Name="MOTA" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="THANHTOANHD">
+          <Key>
+            <PropertyRef Name="MAHD" />
+          </Key>
+          <Property Name="MAHD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MANV" Type="varchar" MaxLength="10" />
+          <Property Name="NGAYTT" Type="datetime" />
+          <Property Name="TINHTRANG" Type="varchar" MaxLength="1" />
+          <Property Name="SOTIENPS" Type="int" />
+          <Property Name="MAPHAT" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="CTDATCOC_MASANH_FK">
+          <End Role="SANH" Type="Self.SANH" Multiplicity="1" />
+          <End Role="CTDATCOC" Type="Self.CTDATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANH">
+              <PropertyRef Name="MASANH" />
+            </Principal>
+            <Dependent Role="CTDATCOC">
+              <PropertyRef Name="MASANH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CTHOPDONG_MASANH_FK">
+          <End Role="SANH" Type="Self.SANH" Multiplicity="1" />
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANH">
+              <PropertyRef Name="MASANH" />
+            </Principal>
+            <Dependent Role="CTHOPDONG">
+              <PropertyRef Name="MASANH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DC_MACTDC_FK">
+          <End Role="CTDATCOC" Type="Self.CTDATCOC" Multiplicity="1" />
+          <End Role="DATCOC" Type="Self.DATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CTDATCOC">
+              <PropertyRef Name="MACTDC" />
+            </Principal>
+            <Dependent Role="DATCOC">
+              <PropertyRef Name="MACTDC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DC_MAKH_FK">
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+          <End Role="DATCOC" Type="Self.DATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACHHANG">
+              <PropertyRef Name="MAKH" />
+            </Principal>
+            <Dependent Role="DATCOC">
+              <PropertyRef Name="MAKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DC_MANV_FK">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+          <End Role="DATCOC" Type="Self.DATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="DATCOC">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DSCTDV_MACTHD_FK">
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="1" />
+          <End Role="DSCTDV" Type="Self.DSCTDV" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CTHOPDONG">
+              <PropertyRef Name="MACTHD" />
+            </Principal>
+            <Dependent Role="DSCTDV">
+              <PropertyRef Name="MACTHD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DSCTDV_MADV_FK">
+          <End Role="DICHVU" Type="Self.DICHVU" Multiplicity="1" />
+          <End Role="DSCTDV" Type="Self.DSCTDV" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DICHVU">
+              <PropertyRef Name="MADV" />
+            </Principal>
+            <Dependent Role="DSCTDV">
+              <PropertyRef Name="MADV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DSCTMENU_MACTHD_FK">
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="1" />
+          <End Role="DSCTMENU" Type="Self.DSCTMENU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CTHOPDONG">
+              <PropertyRef Name="MACTHD" />
+            </Principal>
+            <Dependent Role="DSCTMENU">
+              <PropertyRef Name="MACTHD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DSCTMENU_MAMA_FK">
+          <End Role="MENU" Type="Self.MENU" Multiplicity="1" />
+          <End Role="DSCTMENU" Type="Self.DSCTMENU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MENU">
+              <PropertyRef Name="MAMA" />
+            </Principal>
+            <Dependent Role="DSCTMENU">
+              <PropertyRef Name="MAMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MACTHD_FK">
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CTHOPDONG">
+              <PropertyRef Name="MACTHD" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MACTHD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MAKH_FK">
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACHHANG">
+              <PropertyRef Name="MAKH" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MAKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MAKM_FK">
+          <End Role="KHUYENMAI" Type="Self.KHUYENMAI" Multiplicity="0..1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHUYENMAI">
+              <PropertyRef Name="MAKM" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MAKM" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MANV_FK">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="THANHTOANHD_MAHD_FK">
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="1" />
+          <End Role="THANHTOANHD" Type="Self.THANHTOANHD" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HOPDONG">
+              <PropertyRef Name="MAHD" />
+            </Principal>
+            <Dependent Role="THANHTOANHD">
+              <PropertyRef Name="MAHD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="THANHTOANHD_MANV_FK">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+          <End Role="THANHTOANHD" Type="Self.THANHTOANHD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="THANHTOANHD">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="THANHTOANHD_MAPHAT_FK">
+          <End Role="PHIEUPHAT" Type="Self.PHIEUPHAT" Multiplicity="0..1" />
+          <End Role="THANHTOANHD" Type="Self.THANHTOANHD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PHIEUPHAT">
+              <PropertyRef Name="MAPHAT" />
+            </Principal>
+            <Dependent Role="THANHTOANHD">
+              <PropertyRef Name="MAPHAT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TIECCUOIModelStoreContainer">
+          <EntitySet Name="CTDATCOC" EntityType="Self.CTDATCOC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CTHOPDONG" EntityType="Self.CTHOPDONG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DATCOC" EntityType="Self.DATCOC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DICHVU" EntityType="Self.DICHVU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DSCTDV" EntityType="Self.DSCTDV" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DSCTMENU" EntityType="Self.DSCTMENU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HOPDONG" EntityType="Self.HOPDONG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KHUYENMAI" EntityType="Self.KHUYENMAI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MENU" EntityType="Self.MENU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PHIEUPHAT" EntityType="Self.PHIEUPHAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SANH" EntityType="Self.SANH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="THANHTOANHD" EntityType="Self.THANHTOANHD" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="CTDATCOC_MASANH_FK" Association="Self.CTDATCOC_MASANH_FK">
+            <End Role="SANH" EntitySet="SANH" />
+            <End Role="CTDATCOC" EntitySet="CTDATCOC" />
+          </AssociationSet>
+          <AssociationSet Name="CTHOPDONG_MASANH_FK" Association="Self.CTHOPDONG_MASANH_FK">
+            <End Role="SANH" EntitySet="SANH" />
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONG" />
+          </AssociationSet>
+          <AssociationSet Name="DC_MACTDC_FK" Association="Self.DC_MACTDC_FK">
+            <End Role="CTDATCOC" EntitySet="CTDATCOC" />
+            <End Role="DATCOC" EntitySet="DATCOC" />
+          </AssociationSet>
+          <AssociationSet Name="DC_MAKH_FK" Association="Self.DC_MAKH_FK">
+            <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+            <End Role="DATCOC" EntitySet="DATCOC" />
+          </AssociationSet>
+          <AssociationSet Name="DC_MANV_FK" Association="Self.DC_MANV_FK">
+            <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+            <End Role="DATCOC" EntitySet="DATCOC" />
+          </AssociationSet>
+          <AssociationSet Name="DSCTDV_MACTHD_FK" Association="Self.DSCTDV_MACTHD_FK">
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONG" />
+            <End Role="DSCTDV" EntitySet="DSCTDV" />
+          </AssociationSet>
+          <AssociationSet Name="DSCTDV_MADV_FK" Association="Self.DSCTDV_MADV_FK">
+            <End Role="DICHVU" EntitySet="DICHVU" />
+            <End Role="DSCTDV" EntitySet="DSCTDV" />
+          </AssociationSet>
+          <AssociationSet Name="DSCTMENU_MACTHD_FK" Association="Self.DSCTMENU_MACTHD_FK">
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONG" />
+            <End Role="DSCTMENU" EntitySet="DSCTMENU" />
+          </AssociationSet>
+          <AssociationSet Name="DSCTMENU_MAMA_FK" Association="Self.DSCTMENU_MAMA_FK">
+            <End Role="MENU" EntitySet="MENU" />
+            <End Role="DSCTMENU" EntitySet="DSCTMENU" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MACTHD_FK" Association="Self.HOPDONG_MACTHD_FK">
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONG" />
+            <End Role="HOPDONG" EntitySet="HOPDONG" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MAKH_FK" Association="Self.HOPDONG_MAKH_FK">
+            <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+            <End Role="HOPDONG" EntitySet="HOPDONG" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MAKM_FK" Association="Self.HOPDONG_MAKM_FK">
+            <End Role="KHUYENMAI" EntitySet="KHUYENMAI" />
+            <End Role="HOPDONG" EntitySet="HOPDONG" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MANV_FK" Association="Self.HOPDONG_MANV_FK">
+            <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+            <End Role="HOPDONG" EntitySet="HOPDONG" />
+          </AssociationSet>
+          <AssociationSet Name="THANHTOANHD_MAHD_FK" Association="Self.THANHTOANHD_MAHD_FK">
+            <End Role="HOPDONG" EntitySet="HOPDONG" />
+            <End Role="THANHTOANHD" EntitySet="THANHTOANHD" />
+          </AssociationSet>
+          <AssociationSet Name="THANHTOANHD_MANV_FK" Association="Self.THANHTOANHD_MANV_FK">
+            <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+            <End Role="THANHTOANHD" EntitySet="THANHTOANHD" />
+          </AssociationSet>
+          <AssociationSet Name="THANHTOANHD_MAPHAT_FK" Association="Self.THANHTOANHD_MAPHAT_FK">
+            <End Role="PHIEUPHAT" EntitySet="PHIEUPHAT" />
+            <End Role="THANHTOANHD" EntitySet="THANHTOANHD" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TIECCUOIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CTDATCOC">
+          <Key>
+            <PropertyRef Name="MACTDC" />
+          </Key>
+          <Property Name="MACTDC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MASANH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CA" Type="Int32" />
+          <Property Name="NGAYTC" Type="DateTime" Precision="3" />
+          <Property Name="SOTIENC0C" Type="Int32" />
+          <NavigationProperty Name="SANH" Relationship="Self.CTDATCOC_MASANH_FK" FromRole="CTDATCOC" ToRole="SANH" />
+          <NavigationProperty Name="DATCOCs" Relationship="Self.DC_MACTDC_FK" FromRole="CTDATCOC" ToRole="DATCOC" />
+        </EntityType>
+        <EntityType Name="CTHOPDONG">
+          <Key>
+            <PropertyRef Name="MACTHD" />
+          </Key>
+          <Property Name="MACTHD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENCODAU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TENCHURE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MASANH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CA" Type="Int32" />
+          <Property Name="SOBAN" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="NGAYTC" Type="DateTime" Precision="3" />
+          <Property Name="SOTIENCOC" Type="Int32" />
+          <Property Name="TONGTIEN" Type="Int32" />
+          <NavigationProperty Name="SANH" Relationship="Self.CTHOPDONG_MASANH_FK" FromRole="CTHOPDONG" ToRole="SANH" />
+          <NavigationProperty Name="HOPDONGs" Relationship="Self.HOPDONG_MACTHD_FK" FromRole="CTHOPDONG" ToRole="HOPDONG" />
+          <NavigationProperty Name="DICHVUs" Relationship="Self.DSCTDV" FromRole="CTHOPDONG" ToRole="DICHVU" />
+          <NavigationProperty Name="MENUs" Relationship="Self.DSCTMENU" FromRole="CTHOPDONG" ToRole="MENU" />
+        </EntityType>
+        <EntityType Name="DATCOC">
+          <Key>
+            <PropertyRef Name="MADC" />
+          </Key>
+          <Property Name="MADC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MANV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MAKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NGAYDC" Type="DateTime" Precision="3" />
+          <Property Name="MACTDC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CTDATCOC" Relationship="Self.DC_MACTDC_FK" FromRole="DATCOC" ToRole="CTDATCOC" />
+          <NavigationProperty Name="KHACHHANG" Relationship="Self.DC_MAKH_FK" FromRole="DATCOC" ToRole="KHACHHANG" />
+          <NavigationProperty Name="NHANVIEN" Relationship="Self.DC_MANV_FK" FromRole="DATCOC" ToRole="NHANVIEN" />
+        </EntityType>
+        <EntityType Name="DICHVU">
+          <Key>
+            <PropertyRef Name="MADV" />
+          </Key>
+          <Property Name="MADV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENDV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="GIATIEN" Type="Int32" Nullable="false" />
+          <Property Name="MOTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CTHOPDONGs" Relationship="Self.DSCTDV" FromRole="DICHVU" ToRole="CTHOPDONG" />
+        </EntityType>
+        <EntityType Name="HOPDONG">
+          <Key>
+            <PropertyRef Name="MAHD" />
+          </Key>
+          <Property Name="MAHD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MANV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MAKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MACTHD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NGAYHD" Type="DateTime" Precision="3" />
+          <Property Name="MAKM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CTHOPDONG" Relationship="Self.HOPDONG_MACTHD_FK" FromRole="HOPDONG" ToRole="CTHOPDONG" />
+          <NavigationProperty Name="KHACHHANG" Relationship="Self.HOPDONG_MAKH_FK" FromRole="HOPDONG" ToRole="KHACHHANG" />
+          <NavigationProperty Name="KHUYENMAI" Relationship="Self.HOPDONG_MAKM_FK" FromRole="HOPDONG" ToRole="KHUYENMAI" />
+          <NavigationProperty Name="NHANVIEN" Relationship="Self.HOPDONG_MANV_FK" FromRole="HOPDONG" ToRole="NHANVIEN" />
+          <NavigationProperty Name="THANHTOANHD" Relationship="Self.THANHTOANHD_MAHD_FK" FromRole="HOPDONG" ToRole="THANHTOANHD" />
+        </EntityType>
+        <EntityType Name="KHACHHANG">
+          <Key>
+            <PropertyRef Name="MAKH" />
+          </Key>
+          <Property Name="MAKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DIACHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DATCOCs" Relationship="Self.DC_MAKH_FK" FromRole="KHACHHANG" ToRole="DATCOC" />
+          <NavigationProperty Name="HOPDONGs" Relationship="Self.HOPDONG_MAKH_FK" FromRole="KHACHHANG" ToRole="HOPDONG" />
+        </EntityType>
+        <EntityType Name="KHUYENMAI">
+          <Key>
+            <PropertyRef Name="MAKM" />
+          </Key>
+          <Property Name="MAKM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="UUDAI" Type="Int32" Nullable="false" />
+          <Property Name="NGAYBD" Type="DateTime" Precision="3" />
+          <Property Name="NGAYKT" Type="DateTime" Precision="3" />
+          <Property Name="MOTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HOPDONGs" Relationship="Self.HOPDONG_MAKM_FK" FromRole="KHUYENMAI" ToRole="HOPDONG" />
+        </EntityType>
+        <EntityType Name="MENU">
+          <Key>
+            <PropertyRef Name="MAMA" />
+          </Key>
+          <Property Name="MAMA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENMA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="GIATIEN" Type="Int32" Nullable="false" />
+          <Property Name="MOTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CTHOPDONGs" Relationship="Self.DSCTMENU" FromRole="MENU" ToRole="CTHOPDONG" />
+        </EntityType>
+        <EntityType Name="NHANVIEN">
+          <Key>
+            <PropertyRef Name="MANV" />
+          </Key>
+          <Property Name="MANV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENNV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GT" Type="Int32" />
+          <Property Name="CHUCVU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="MUCLUONG" Type="Int32" />
+          <Property Name="THUONG" Type="Int32" />
+          <NavigationProperty Name="DATCOCs" Relationship="Self.DC_MANV_FK" FromRole="NHANVIEN" ToRole="DATCOC" />
+          <NavigationProperty Name="HOPDONGs" Relationship="Self.HOPDONG_MANV_FK" FromRole="NHANVIEN" ToRole="HOPDONG" />
+          <NavigationProperty Name="THANHTOANHDs" Relationship="Self.THANHTOANHD_MANV_FK" FromRole="NHANVIEN" ToRole="THANHTOANHD" />
+        </EntityType>
+        <EntityType Name="PHIEUPHAT">
+          <Key>
+            <PropertyRef Name="MAPHAT" />
+          </Key>
+          <Property Name="MAPHAT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SONGAYTRE" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="DONGIAPHAT" Type="Int32" />
+          <Property Name="SOTIENPHAT" Type="Int32" />
+          <NavigationProperty Name="THANHTOANHDs" Relationship="Self.THANHTOANHD_MAPHAT_FK" FromRole="PHIEUPHAT" ToRole="THANHTOANHD" />
+        </EntityType>
+        <EntityType Name="SANH">
+          <Key>
+            <PropertyRef Name="MASANH" />
+          </Key>
+          <Property Name="MASANH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENSANH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DONGIATT" Type="Int32" />
+          <Property Name="MOTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CTDATCOCs" Relationship="Self.CTDATCOC_MASANH_FK" FromRole="SANH" ToRole="CTDATCOC" />
+          <NavigationProperty Name="CTHOPDONGs" Relationship="Self.CTHOPDONG_MASANH_FK" FromRole="SANH" ToRole="CTHOPDONG" />
+        </EntityType>
+        <EntityType Name="THANHTOANHD">
+          <Key>
+            <PropertyRef Name="MAHD" />
+          </Key>
+          <Property Name="MAHD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MANV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NGAYTT" Type="DateTime" Precision="3" />
+          <Property Name="TINHTRANG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SOTIENPS" Type="Int32" />
+          <Property Name="MAPHAT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="HOPDONG" Relationship="Self.THANHTOANHD_MAHD_FK" FromRole="THANHTOANHD" ToRole="HOPDONG" />
+          <NavigationProperty Name="NHANVIEN" Relationship="Self.THANHTOANHD_MANV_FK" FromRole="THANHTOANHD" ToRole="NHANVIEN" />
+          <NavigationProperty Name="PHIEUPHAT" Relationship="Self.THANHTOANHD_MAPHAT_FK" FromRole="THANHTOANHD" ToRole="PHIEUPHAT" />
+        </EntityType>
+        <Association Name="CTDATCOC_MASANH_FK">
+          <End Role="SANH" Type="Self.SANH" Multiplicity="1" />
+          <End Role="CTDATCOC" Type="Self.CTDATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANH">
+              <PropertyRef Name="MASANH" />
+            </Principal>
+            <Dependent Role="CTDATCOC">
+              <PropertyRef Name="MASANH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DC_MACTDC_FK">
+          <End Role="CTDATCOC" Type="Self.CTDATCOC" Multiplicity="1" />
+          <End Role="DATCOC" Type="Self.DATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CTDATCOC">
+              <PropertyRef Name="MACTDC" />
+            </Principal>
+            <Dependent Role="DATCOC">
+              <PropertyRef Name="MACTDC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CTHOPDONG_MASANH_FK">
+          <End Role="SANH" Type="Self.SANH" Multiplicity="1" />
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANH">
+              <PropertyRef Name="MASANH" />
+            </Principal>
+            <Dependent Role="CTHOPDONG">
+              <PropertyRef Name="MASANH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MACTHD_FK">
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CTHOPDONG">
+              <PropertyRef Name="MACTHD" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MACTHD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DC_MAKH_FK">
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+          <End Role="DATCOC" Type="Self.DATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACHHANG">
+              <PropertyRef Name="MAKH" />
+            </Principal>
+            <Dependent Role="DATCOC">
+              <PropertyRef Name="MAKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DC_MANV_FK">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+          <End Role="DATCOC" Type="Self.DATCOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="DATCOC">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MAKH_FK">
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACHHANG">
+              <PropertyRef Name="MAKH" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MAKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MAKM_FK">
+          <End Role="KHUYENMAI" Type="Self.KHUYENMAI" Multiplicity="0..1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHUYENMAI">
+              <PropertyRef Name="MAKM" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MAKM" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HOPDONG_MANV_FK">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="HOPDONG">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="THANHTOANHD_MAHD_FK">
+          <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="1" />
+          <End Role="THANHTOANHD" Type="Self.THANHTOANHD" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HOPDONG">
+              <PropertyRef Name="MAHD" />
+            </Principal>
+            <Dependent Role="THANHTOANHD">
+              <PropertyRef Name="MAHD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="THANHTOANHD_MANV_FK">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+          <End Role="THANHTOANHD" Type="Self.THANHTOANHD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="THANHTOANHD">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="THANHTOANHD_MAPHAT_FK">
+          <End Role="PHIEUPHAT" Type="Self.PHIEUPHAT" Multiplicity="0..1" />
+          <End Role="THANHTOANHD" Type="Self.THANHTOANHD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PHIEUPHAT">
+              <PropertyRef Name="MAPHAT" />
+            </Principal>
+            <Dependent Role="THANHTOANHD">
+              <PropertyRef Name="MAPHAT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DSCTDV">
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="*" />
+          <End Role="DICHVU" Type="Self.DICHVU" Multiplicity="*" />
+        </Association>
+        <Association Name="DSCTMENU">
+          <End Role="CTHOPDONG" Type="Self.CTHOPDONG" Multiplicity="*" />
+          <End Role="MENU" Type="Self.MENU" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="TIECCUOIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CTDATCOCs" EntityType="Self.CTDATCOC" />
+          <EntitySet Name="CTHOPDONGs" EntityType="Self.CTHOPDONG" />
+          <EntitySet Name="DATCOCs" EntityType="Self.DATCOC" />
+          <EntitySet Name="DICHVUs" EntityType="Self.DICHVU" />
+          <EntitySet Name="HOPDONGs" EntityType="Self.HOPDONG" />
+          <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
+          <EntitySet Name="KHUYENMAIs" EntityType="Self.KHUYENMAI" />
+          <EntitySet Name="MENUs" EntityType="Self.MENU" />
+          <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+          <EntitySet Name="PHIEUPHATs" EntityType="Self.PHIEUPHAT" />
+          <EntitySet Name="SANHs" EntityType="Self.SANH" />
+          <EntitySet Name="THANHTOANHDs" EntityType="Self.THANHTOANHD" />
+          <AssociationSet Name="CTDATCOC_MASANH_FK" Association="Self.CTDATCOC_MASANH_FK">
+            <End Role="SANH" EntitySet="SANHs" />
+            <End Role="CTDATCOC" EntitySet="CTDATCOCs" />
+          </AssociationSet>
+          <AssociationSet Name="DC_MACTDC_FK" Association="Self.DC_MACTDC_FK">
+            <End Role="CTDATCOC" EntitySet="CTDATCOCs" />
+            <End Role="DATCOC" EntitySet="DATCOCs" />
+          </AssociationSet>
+          <AssociationSet Name="CTHOPDONG_MASANH_FK" Association="Self.CTHOPDONG_MASANH_FK">
+            <End Role="SANH" EntitySet="SANHs" />
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONGs" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MACTHD_FK" Association="Self.HOPDONG_MACTHD_FK">
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONGs" />
+            <End Role="HOPDONG" EntitySet="HOPDONGs" />
+          </AssociationSet>
+          <AssociationSet Name="DC_MAKH_FK" Association="Self.DC_MAKH_FK">
+            <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+            <End Role="DATCOC" EntitySet="DATCOCs" />
+          </AssociationSet>
+          <AssociationSet Name="DC_MANV_FK" Association="Self.DC_MANV_FK">
+            <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+            <End Role="DATCOC" EntitySet="DATCOCs" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MAKH_FK" Association="Self.HOPDONG_MAKH_FK">
+            <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+            <End Role="HOPDONG" EntitySet="HOPDONGs" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MAKM_FK" Association="Self.HOPDONG_MAKM_FK">
+            <End Role="KHUYENMAI" EntitySet="KHUYENMAIs" />
+            <End Role="HOPDONG" EntitySet="HOPDONGs" />
+          </AssociationSet>
+          <AssociationSet Name="HOPDONG_MANV_FK" Association="Self.HOPDONG_MANV_FK">
+            <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+            <End Role="HOPDONG" EntitySet="HOPDONGs" />
+          </AssociationSet>
+          <AssociationSet Name="THANHTOANHD_MAHD_FK" Association="Self.THANHTOANHD_MAHD_FK">
+            <End Role="HOPDONG" EntitySet="HOPDONGs" />
+            <End Role="THANHTOANHD" EntitySet="THANHTOANHDs" />
+          </AssociationSet>
+          <AssociationSet Name="THANHTOANHD_MANV_FK" Association="Self.THANHTOANHD_MANV_FK">
+            <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+            <End Role="THANHTOANHD" EntitySet="THANHTOANHDs" />
+          </AssociationSet>
+          <AssociationSet Name="THANHTOANHD_MAPHAT_FK" Association="Self.THANHTOANHD_MAPHAT_FK">
+            <End Role="PHIEUPHAT" EntitySet="PHIEUPHATs" />
+            <End Role="THANHTOANHD" EntitySet="THANHTOANHDs" />
+          </AssociationSet>
+          <AssociationSet Name="DSCTDV" Association="Self.DSCTDV">
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONGs" />
+            <End Role="DICHVU" EntitySet="DICHVUs" />
+          </AssociationSet>
+          <AssociationSet Name="DSCTMENU" Association="Self.DSCTMENU">
+            <End Role="CTHOPDONG" EntitySet="CTHOPDONGs" />
+            <End Role="MENU" EntitySet="MENUs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TIECCUOIModelStoreContainer" CdmEntityContainer="TIECCUOIEntities">
+          <EntitySetMapping Name="CTDATCOCs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.CTDATCOC">
+              <MappingFragment StoreEntitySet="CTDATCOC">
+                <ScalarProperty Name="MACTDC" ColumnName="MACTDC" />
+                <ScalarProperty Name="MASANH" ColumnName="MASANH" />
+                <ScalarProperty Name="CA" ColumnName="CA" />
+                <ScalarProperty Name="NGAYTC" ColumnName="NGAYTC" />
+                <ScalarProperty Name="SOTIENC0C" ColumnName="SOTIENC0C" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CTHOPDONGs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.CTHOPDONG">
+              <MappingFragment StoreEntitySet="CTHOPDONG">
+                <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+                <ScalarProperty Name="TENCODAU" ColumnName="TENCODAU" />
+                <ScalarProperty Name="TENCHURE" ColumnName="TENCHURE" />
+                <ScalarProperty Name="MASANH" ColumnName="MASANH" />
+                <ScalarProperty Name="CA" ColumnName="CA" />
+                <ScalarProperty Name="SOBAN" ColumnName="SOBAN" />
+                <ScalarProperty Name="NGAYTC" ColumnName="NGAYTC" />
+                <ScalarProperty Name="SOTIENCOC" ColumnName="SOTIENCOC" />
+                <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DATCOCs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.DATCOC">
+              <MappingFragment StoreEntitySet="DATCOC">
+                <ScalarProperty Name="MADC" ColumnName="MADC" />
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="NGAYDC" ColumnName="NGAYDC" />
+                <ScalarProperty Name="MACTDC" ColumnName="MACTDC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DICHVUs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.DICHVU">
+              <MappingFragment StoreEntitySet="DICHVU">
+                <ScalarProperty Name="MADV" ColumnName="MADV" />
+                <ScalarProperty Name="TENDV" ColumnName="TENDV" />
+                <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+                <ScalarProperty Name="GIATIEN" ColumnName="GIATIEN" />
+                <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HOPDONGs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.HOPDONG">
+              <MappingFragment StoreEntitySet="HOPDONG">
+                <ScalarProperty Name="MAHD" ColumnName="MAHD" />
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+                <ScalarProperty Name="NGAYHD" ColumnName="NGAYHD" />
+                <ScalarProperty Name="MAKM" ColumnName="MAKM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KHACHHANGs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.KHACHHANG">
+              <MappingFragment StoreEntitySet="KHACHHANG">
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KHUYENMAIs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.KHUYENMAI">
+              <MappingFragment StoreEntitySet="KHUYENMAI">
+                <ScalarProperty Name="MAKM" ColumnName="MAKM" />
+                <ScalarProperty Name="TENKM" ColumnName="TENKM" />
+                <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+                <ScalarProperty Name="UUDAI" ColumnName="UUDAI" />
+                <ScalarProperty Name="NGAYBD" ColumnName="NGAYBD" />
+                <ScalarProperty Name="NGAYKT" ColumnName="NGAYKT" />
+                <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MENUs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.MENU">
+              <MappingFragment StoreEntitySet="MENU">
+                <ScalarProperty Name="MAMA" ColumnName="MAMA" />
+                <ScalarProperty Name="TENMA" ColumnName="TENMA" />
+                <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+                <ScalarProperty Name="GIATIEN" ColumnName="GIATIEN" />
+                <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NHANVIENs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.NHANVIEN">
+              <MappingFragment StoreEntitySet="NHANVIEN">
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="GT" ColumnName="GT" />
+                <ScalarProperty Name="CHUCVU" ColumnName="CHUCVU" />
+                <ScalarProperty Name="MUCLUONG" ColumnName="MUCLUONG" />
+                <ScalarProperty Name="THUONG" ColumnName="THUONG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PHIEUPHATs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.PHIEUPHAT">
+              <MappingFragment StoreEntitySet="PHIEUPHAT">
+                <ScalarProperty Name="MAPHAT" ColumnName="MAPHAT" />
+                <ScalarProperty Name="SONGAYTRE" ColumnName="SONGAYTRE" />
+                <ScalarProperty Name="DONGIAPHAT" ColumnName="DONGIAPHAT" />
+                <ScalarProperty Name="SOTIENPHAT" ColumnName="SOTIENPHAT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SANHs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.SANH">
+              <MappingFragment StoreEntitySet="SANH">
+                <ScalarProperty Name="MASANH" ColumnName="MASANH" />
+                <ScalarProperty Name="TENSANH" ColumnName="TENSANH" />
+                <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+                <ScalarProperty Name="DONGIATT" ColumnName="DONGIATT" />
+                <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="THANHTOANHDs">
+            <EntityTypeMapping TypeName="TIECCUOIModel.THANHTOANHD">
+              <MappingFragment StoreEntitySet="THANHTOANHD">
+                <ScalarProperty Name="MAHD" ColumnName="MAHD" />
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="NGAYTT" ColumnName="NGAYTT" />
+                <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+                <ScalarProperty Name="SOTIENPS" ColumnName="SOTIENPS" />
+                <ScalarProperty Name="MAPHAT" ColumnName="MAPHAT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="DSCTDV" TypeName="TIECCUOIModel.DSCTDV" StoreEntitySet="DSCTDV">
+            <EndProperty Name="CTHOPDONG">
+              <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+            </EndProperty>
+            <EndProperty Name="DICHVU">
+              <ScalarProperty Name="MADV" ColumnName="MADV" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="DSCTMENU" TypeName="TIECCUOIModel.DSCTMENU" StoreEntitySet="DSCTMENU">
+            <EndProperty Name="CTHOPDONG">
+              <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+            </EndProperty>
+            <EndProperty Name="MENU">
+              <ScalarProperty Name="MAMA" ColumnName="MAMA" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

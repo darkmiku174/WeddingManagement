@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="57f1a222ef7e4b089438e4df6f442d3d" Name="Diagram1">
+        <EntityTypeShape EntityType="TIECCUOIModel.CTDATCOC" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.CTHOPDONG" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.DATCOC" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.DICHVU" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.HOPDONG" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.KHUYENMAI" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.MENU" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.PHIEUPHAT" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.SANH" Width="1.5" PointX="1.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIECCUOIModel.THANHTOANHD" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="TIECCUOIModel.CTDATCOC_MASANH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.DC_MACTDC_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.CTHOPDONG_MASANH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.HOPDONG_MACTHD_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.DC_MAKH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.DC_MANV_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.HOPDONG_MAKH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.HOPDONG_MAKM_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.HOPDONG_MANV_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.THANHTOANHD_MAHD_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.THANHTOANHD_MANV_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.THANHTOANHD_MAPHAT_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.DSCTDV" ManuallyRouted="false" />
+        <AssociationConnector Association="TIECCUOIModel.DSCTMENU" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,53 @@
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.exe.config
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.exe
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.pdb
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csprojAssemblyReference.cache
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.DangNhap.resources
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.Properties.Resources.resources
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.GenerateResource.cache
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.CoreCompileInputs.cache
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.exe
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.pdb
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.CopyComplete
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frm_DangNhap.resources
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frm_LapHopDongTiecCuoi.resources
+C:\Đức Minh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.TrangChu_NhanVien.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csprojAssemblyReference.cache
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.TrangChu_NhanVien.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.GenerateResource.cache
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.exe
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.pdb
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.Properties.Resources.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.CoreCompileInputs.cache
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.exe.config
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.exe
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.pdb
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\Bunifu_UI_v1.52.dll
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\bin\Debug\FontAwesome.Sharp.dll
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.CopyComplete
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frm_ThucDon.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frm.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmDatCoc.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmLapHopDongTiecCuoi.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmThucDon.resources
+C:\DoAnDucMinh\CNPM_TiecCuoi\CNPM_TiecCuoi\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmTraCuuHopDong.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.exe.config
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.exe
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\bin\Debug\CNPM_TiecCuoi.pdb
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\bin\Debug\FontAwesome.Sharp.dll
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csprojAssemblyReference.cache
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmChonDichVu.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmDatCoc.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmLapHopDongTiecCuoi.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmTraCuuSanh.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.Properties.Resources.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmTrangChuNhanVien.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.GenerateResource.cache
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.CoreCompileInputs.cache
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.csproj.CopyComplete
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.exe
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.pdb
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmChonMenu.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmMenu.resources
+D:\BaiTapTruong\WeddingManagement\CNPM_TiecCuoi\obj\Debug\CNPM_TiecCuoi.frmTraCuuTiec.resources
