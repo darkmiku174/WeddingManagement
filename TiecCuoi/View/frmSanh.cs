@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TiecCuoi.View
+namespace TiecCuoi
 {
     public partial class frmSanh : Form
     {

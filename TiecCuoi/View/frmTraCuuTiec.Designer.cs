@@ -1,4 +1,4 @@
-﻿namespace CNPM_TiecCuoi
+﻿namespace TiecCuoi
 {
     partial class frmTraCuuTiec
     {

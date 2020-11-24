@@ -1,4 +1,4 @@
-﻿namespace TiecCuoi.View
+﻿namespace TiecCuoi
 {
     partial class frmSanh
     {

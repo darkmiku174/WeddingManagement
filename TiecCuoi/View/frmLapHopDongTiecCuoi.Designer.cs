@@ -1,4 +1,4 @@
-﻿namespace CNPM_TiecCuoi
+﻿namespace TiecCuoi
 {
     partial class frmLapHopDongTiecCuoi
     {
@@ -46,10 +46,10 @@
             this.tbTenKhachHang = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnChonThucDon = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnChonDichVu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tbTenNhanVien = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnChonDichVu = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnChonThucDon = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -74,7 +74,7 @@
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1009, 49);
             this.panel1.TabIndex = 0;
@@ -83,7 +83,7 @@
             // 
             this.tbMaHopDong.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbMaHopDong.Location = new System.Drawing.Point(137, 23);
-            this.tbMaHopDong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMaHopDong.Margin = new System.Windows.Forms.Padding(4);
             this.tbMaHopDong.Multiline = true;
             this.tbMaHopDong.Name = "tbMaHopDong";
             this.tbMaHopDong.Size = new System.Drawing.Size(141, 24);
@@ -123,7 +123,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 49);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1009, 60);
@@ -137,7 +137,7 @@
             this.dtpNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayLap.FormatCustom = null;
             this.dtpNgayLap.Location = new System.Drawing.Point(569, 4);
-            this.dtpNgayLap.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtpNgayLap.Margin = new System.Windows.Forms.Padding(5);
             this.dtpNgayLap.Name = "dtpNgayLap";
             this.dtpNgayLap.Size = new System.Drawing.Size(359, 44);
             this.dtpNgayLap.TabIndex = 4;
@@ -157,7 +157,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 109);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(499, 547);
             this.panel2.TabIndex = 5;
@@ -173,7 +173,7 @@
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(497, 58);
@@ -197,7 +197,7 @@
             this.dtpNgayToChuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayToChuc.FormatCustom = null;
             this.dtpNgayToChuc.Location = new System.Drawing.Point(160, 191);
-            this.dtpNgayToChuc.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtpNgayToChuc.Margin = new System.Windows.Forms.Padding(5);
             this.dtpNgayToChuc.Name = "dtpNgayToChuc";
             this.dtpNgayToChuc.Size = new System.Drawing.Size(141, 27);
             this.dtpNgayToChuc.TabIndex = 2;
@@ -207,7 +207,7 @@
             // 
             this.tbTenCoDau.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTenCoDau.Location = new System.Drawing.Point(149, 148);
-            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(4);
             this.tbTenCoDau.Multiline = true;
             this.tbTenCoDau.Name = "tbTenCoDau";
             this.tbTenCoDau.Size = new System.Drawing.Size(141, 24);
@@ -217,7 +217,7 @@
             // 
             this.tbTenChuRe.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTenChuRe.Location = new System.Drawing.Point(149, 121);
-            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(4);
             this.tbTenChuRe.Multiline = true;
             this.tbTenChuRe.Name = "tbTenChuRe";
             this.tbTenChuRe.Size = new System.Drawing.Size(141, 24);
@@ -247,7 +247,7 @@
             // 
             this.tbTenKhachHang.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTenKhachHang.Location = new System.Drawing.Point(149, 89);
-            this.tbTenKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTenKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.tbTenKhachHang.Multiline = true;
             this.tbTenKhachHang.Name = "tbTenKhachHang";
             this.tbTenKhachHang.Size = new System.Drawing.Size(141, 24);
@@ -273,46 +273,47 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Tên khách hàng";
             // 
-            // btnChonThucDon
+            // btnChonDichVu
             // 
-            this.btnChonThucDon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnChonThucDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnChonThucDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnChonThucDon.BorderRadius = 0;
-            this.btnChonThucDon.ButtonText = "Chọn dịch vụ";
-            this.btnChonThucDon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChonThucDon.DisabledColor = System.Drawing.Color.Gray;
-            this.btnChonThucDon.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnChonThucDon.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnChonThucDon.Iconimage")));
-            this.btnChonThucDon.Iconimage_right = null;
-            this.btnChonThucDon.Iconimage_right_Selected = null;
-            this.btnChonThucDon.Iconimage_Selected = null;
-            this.btnChonThucDon.IconMarginLeft = 0;
-            this.btnChonThucDon.IconMarginRight = 0;
-            this.btnChonThucDon.IconRightVisible = true;
-            this.btnChonThucDon.IconRightZoom = 0D;
-            this.btnChonThucDon.IconVisible = true;
-            this.btnChonThucDon.IconZoom = 90D;
-            this.btnChonThucDon.IsTab = false;
-            this.btnChonThucDon.Location = new System.Drawing.Point(197, 396);
-            this.btnChonThucDon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnChonThucDon.Name = "btnChonThucDon";
-            this.btnChonThucDon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnChonThucDon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnChonThucDon.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnChonThucDon.selected = false;
-            this.btnChonThucDon.Size = new System.Drawing.Size(143, 50);
-            this.btnChonThucDon.TabIndex = 18;
-            this.btnChonThucDon.Text = "Chọn dịch vụ";
-            this.btnChonThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChonThucDon.Textcolor = System.Drawing.Color.White;
-            this.btnChonThucDon.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonDichVu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChonDichVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChonDichVu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChonDichVu.BorderRadius = 0;
+            this.btnChonDichVu.ButtonText = "Chọn dịch vụ";
+            this.btnChonDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChonDichVu.DisabledColor = System.Drawing.Color.Gray;
+            this.btnChonDichVu.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnChonDichVu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnChonDichVu.Iconimage")));
+            this.btnChonDichVu.Iconimage_right = null;
+            this.btnChonDichVu.Iconimage_right_Selected = null;
+            this.btnChonDichVu.Iconimage_Selected = null;
+            this.btnChonDichVu.IconMarginLeft = 0;
+            this.btnChonDichVu.IconMarginRight = 0;
+            this.btnChonDichVu.IconRightVisible = true;
+            this.btnChonDichVu.IconRightZoom = 0D;
+            this.btnChonDichVu.IconVisible = true;
+            this.btnChonDichVu.IconZoom = 90D;
+            this.btnChonDichVu.IsTab = false;
+            this.btnChonDichVu.Location = new System.Drawing.Point(197, 396);
+            this.btnChonDichVu.Margin = new System.Windows.Forms.Padding(5);
+            this.btnChonDichVu.Name = "btnChonDichVu";
+            this.btnChonDichVu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChonDichVu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnChonDichVu.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnChonDichVu.selected = false;
+            this.btnChonDichVu.Size = new System.Drawing.Size(143, 50);
+            this.btnChonDichVu.TabIndex = 18;
+            this.btnChonDichVu.Text = "Chọn dịch vụ";
+            this.btnChonDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChonDichVu.Textcolor = System.Drawing.Color.White;
+            this.btnChonDichVu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonDichVu.Click += new System.EventHandler(this.btnChonDichVu_Click);
             // 
             // tbTenNhanVien
             // 
             this.tbTenNhanVien.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTenNhanVien.Location = new System.Drawing.Point(180, 84);
-            this.tbTenNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTenNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.tbTenNhanVien.Multiline = true;
             this.tbTenNhanVien.Name = "tbTenNhanVien";
             this.tbTenNhanVien.Size = new System.Drawing.Size(141, 24);
@@ -340,7 +341,7 @@
             this.btnLuu.IconZoom = 90D;
             this.btnLuu.IsTab = false;
             this.btnLuu.Location = new System.Drawing.Point(353, 396);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(5);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnLuu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -352,41 +353,43 @@
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Textcolor = System.Drawing.Color.White;
             this.btnLuu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // btnChonDichVu
+            // btnChonThucDon
             // 
-            this.btnChonDichVu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnChonDichVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnChonDichVu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnChonDichVu.BorderRadius = 0;
-            this.btnChonDichVu.ButtonText = "Chọn thực đơn";
-            this.btnChonDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChonDichVu.DisabledColor = System.Drawing.Color.Gray;
-            this.btnChonDichVu.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnChonDichVu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnChonDichVu.Iconimage")));
-            this.btnChonDichVu.Iconimage_right = null;
-            this.btnChonDichVu.Iconimage_right_Selected = null;
-            this.btnChonDichVu.Iconimage_Selected = null;
-            this.btnChonDichVu.IconMarginLeft = 0;
-            this.btnChonDichVu.IconMarginRight = 0;
-            this.btnChonDichVu.IconRightVisible = true;
-            this.btnChonDichVu.IconRightZoom = 0D;
-            this.btnChonDichVu.IconVisible = true;
-            this.btnChonDichVu.IconZoom = 90D;
-            this.btnChonDichVu.IsTab = false;
-            this.btnChonDichVu.Location = new System.Drawing.Point(23, 396);
-            this.btnChonDichVu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnChonDichVu.Name = "btnChonDichVu";
-            this.btnChonDichVu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnChonDichVu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnChonDichVu.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnChonDichVu.selected = false;
-            this.btnChonDichVu.Size = new System.Drawing.Size(137, 50);
-            this.btnChonDichVu.TabIndex = 17;
-            this.btnChonDichVu.Text = "Chọn thực đơn";
-            this.btnChonDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChonDichVu.Textcolor = System.Drawing.Color.White;
-            this.btnChonDichVu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonThucDon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChonThucDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChonThucDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChonThucDon.BorderRadius = 0;
+            this.btnChonThucDon.ButtonText = "Chọn thực đơn";
+            this.btnChonThucDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChonThucDon.DisabledColor = System.Drawing.Color.Gray;
+            this.btnChonThucDon.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnChonThucDon.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnChonThucDon.Iconimage")));
+            this.btnChonThucDon.Iconimage_right = null;
+            this.btnChonThucDon.Iconimage_right_Selected = null;
+            this.btnChonThucDon.Iconimage_Selected = null;
+            this.btnChonThucDon.IconMarginLeft = 0;
+            this.btnChonThucDon.IconMarginRight = 0;
+            this.btnChonThucDon.IconRightVisible = true;
+            this.btnChonThucDon.IconRightZoom = 0D;
+            this.btnChonThucDon.IconVisible = true;
+            this.btnChonThucDon.IconZoom = 90D;
+            this.btnChonThucDon.IsTab = false;
+            this.btnChonThucDon.Location = new System.Drawing.Point(23, 396);
+            this.btnChonThucDon.Margin = new System.Windows.Forms.Padding(5);
+            this.btnChonThucDon.Name = "btnChonThucDon";
+            this.btnChonThucDon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChonThucDon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnChonThucDon.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnChonThucDon.selected = false;
+            this.btnChonThucDon.Size = new System.Drawing.Size(137, 50);
+            this.btnChonThucDon.TabIndex = 17;
+            this.btnChonThucDon.Text = "Chọn thực đơn";
+            this.btnChonThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChonThucDon.Textcolor = System.Drawing.Color.White;
+            this.btnChonThucDon.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonThucDon.Click += new System.EventHandler(this.btnChonThucDon_Click);
             // 
             // bunifuGradientPanel3
             // 
@@ -399,7 +402,7 @@
             this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(508, 58);
@@ -459,13 +462,13 @@
             this.panel4.Controls.Add(this.bunifuCustomLabel4);
             this.panel4.Controls.Add(this.bunifuCustomLabel3);
             this.panel4.Controls.Add(this.bunifuGradientPanel3);
-            this.panel4.Controls.Add(this.btnChonDichVu);
+            this.panel4.Controls.Add(this.btnChonThucDon);
             this.panel4.Controls.Add(this.btnLuu);
             this.panel4.Controls.Add(this.tbTenNhanVien);
-            this.panel4.Controls.Add(this.btnChonThucDon);
+            this.panel4.Controls.Add(this.btnChonDichVu);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(499, 109);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(510, 547);
             this.panel4.TabIndex = 32;
@@ -474,7 +477,7 @@
             // 
             this.cmbCa.FormattingEnabled = true;
             this.cmbCa.Location = new System.Drawing.Point(105, 175);
-            this.cmbCa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCa.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCa.Name = "cmbCa";
             this.cmbCa.Size = new System.Drawing.Size(160, 24);
             this.cmbCa.TabIndex = 37;
@@ -483,7 +486,7 @@
             // 
             this.cmbSanh.FormattingEnabled = true;
             this.cmbSanh.Location = new System.Drawing.Point(107, 142);
-            this.cmbSanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSanh.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSanh.Name = "cmbSanh";
             this.cmbSanh.Size = new System.Drawing.Size(160, 24);
             this.cmbSanh.TabIndex = 38;
@@ -492,7 +495,7 @@
             // 
             this.tbSoLuongBan.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbSoLuongBan.Location = new System.Drawing.Point(153, 226);
-            this.tbSoLuongBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSoLuongBan.Margin = new System.Windows.Forms.Padding(4);
             this.tbSoLuongBan.Multiline = true;
             this.tbSoLuongBan.Name = "tbSoLuongBan";
             this.tbSoLuongBan.Size = new System.Drawing.Size(141, 24);
@@ -547,7 +550,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLapHopDongTiecCuoi";
             this.Text = "Lập hợp đồng tiệc cưới";
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -583,10 +586,10 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnChonThucDon;
+        private Bunifu.Framework.UI.BunifuFlatButton btnChonDichVu;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox tbTenNhanVien;
         private Bunifu.Framework.UI.BunifuFlatButton btnLuu;
-        private Bunifu.Framework.UI.BunifuFlatButton btnChonDichVu;
+        private Bunifu.Framework.UI.BunifuFlatButton btnChonThucDon;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;

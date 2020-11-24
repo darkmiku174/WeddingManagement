@@ -62,57 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\CTDATCOC.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\CTHOPDONG.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\DATCOC.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\DICHVU.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\HOPDONG.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\KHACHHANG.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\KHUYENMAI.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\MENU.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\NHANVIEN.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\PHIEUPHAT.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\SANH.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\THANHTOANHD.cs">
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\TiecCuoiModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TiecCuoiModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\TiecCuoiModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TiecCuoiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\TiecCuoiModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TiecCuoiModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="DataProvider.cs" />
     <Compile Include="View\Constant\Cons.cs" />
     <Compile Include="View\frmDichVu.cs">
@@ -226,28 +175,11 @@
     <EmbeddedResource Include="View\frmTrangChuNhanVien.resx">
       <DependentUpon>frmTrangChuNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="DAL\TiecCuoiModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TiecCuoiModel.edmx</DependentUpon>
-      <LastGenOutput>TiecCuoiModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DAL\TiecCuoiModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TiecCuoiModel.edmx</DependentUpon>
-      <LastGenOutput>TiecCuoiModel.cs</LastGenOutput>
-    </Content>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
-    <EntityDeploy Include="DAL\TiecCuoiModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TiecCuoiModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DAL\TiecCuoiModel.edmx.diagram">
-      <DependentUpon>TiecCuoiModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

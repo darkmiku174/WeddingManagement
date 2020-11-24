@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CNPM_TiecCuoi
+namespace TiecCuoi
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace CNPM_TiecCuoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTraCuuSanh());
+            Application.Run(new frmTrangChuNhanVien());
         }
     }
 }

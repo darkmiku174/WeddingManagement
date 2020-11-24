@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CNPM_TiecCuoi
+namespace TiecCuoi
 {
     public partial class frmChonDichVu : Form
     {

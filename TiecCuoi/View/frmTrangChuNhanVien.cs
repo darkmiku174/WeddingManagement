@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CNPM_TiecCuoi
+namespace TiecCuoi
 {
     public partial class frmTrangChuNhanVien : Form
     {
@@ -146,7 +146,7 @@ namespace CNPM_TiecCuoi
 
         private void btnTraCuuSanhTrong_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmTraCuuSanh(), sender);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -156,7 +156,7 @@ namespace CNPM_TiecCuoi
 
         private void btnDichVu_Click(object sender, EventArgs e)
         {
-            
+            OpenChildForm(new frmDichVu(), sender);
         }
 
         private void btnDatCoc_Click(object sender, EventArgs e)
@@ -171,7 +171,7 @@ namespace CNPM_TiecCuoi
 
         private void btnSanh_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmSanh(), sender);
         }
 
         private void btnTraCuuTiec_Click(object sender, EventArgs e)
@@ -181,7 +181,7 @@ namespace CNPM_TiecCuoi
 
         private void btnThanhToanHopDong_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmThanhToan(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
