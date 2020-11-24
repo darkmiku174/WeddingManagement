@@ -498,5 +498,77 @@ namespace TiecCuoi
             }
             return dsDV;
         }
+
+        //Các phương thức truy xuất database của frmSanh
+        public List<Sanh> SanhSelectAll()
+        {
+            List<Sanh> dsSanh = new List<Sanh>();
+            string queryString =
+                    @"Select * From SANH";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Sanh s = new Sanh();
+                        s.MaSanh = reader[0].ToString();
+                        s.TenSanh = reader[1].ToString();
+                        s.HinhAnh = (byte[])reader[2];
+                        s.SoTienCoc = Int32.Parse(reader[3].ToString());
+                        s.MoTa = reader[4].ToString();
+                        dsSanh.Add(s);
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+            return dsSanh;
+        }
+
+        //Các phương thức truy xuất database của frmKhuyenMai
+        public List<KhuyenMai> KhuyenMaiSelectAll()
+        {
+            List<KhuyenMai> dsKM = new List<KhuyenMai>();
+            string queryString =
+                    @"Select * From KHUYENMAI";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        KhuyenMai km = new KhuyenMai();
+                        km.MaKhuyenMai = reader[0].ToString();
+                        km.TenKhuyenMai = reader[1].ToString();
+                        km.HinhAnh = (byte[])reader[2];
+                        km.UuDai = Int32.Parse(reader[3].ToString());
+                        km.NgayBatDau = DateTime.Parse(reader[4].ToString());
+                        km.NgayKetThuc = DateTime.Parse(reader[5].ToString());
+                        km.MoTa = reader[6].ToString();
+                        dsKM.Add(km);
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+            return dsKM;
+        }
     }
 }

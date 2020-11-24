@@ -27,7 +27,7 @@ namespace TiecCuoi
             List<ThucAn> menu = dp.MenuSelectAll();
             foreach(ThucAn ta in menu)
             {
-                PictureBox pb = new PictureBox { Width = 303, Height = 257 };
+                PictureBox pb = new PictureBox { Width = 250, Height = 188 };
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
                 if (ta.HinhAnh != null)
                 {

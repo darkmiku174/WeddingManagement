@@ -65,6 +65,8 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="Model\CTDatCoc.cs" />
     <Compile Include="Model\DichVu.cs" />
+    <Compile Include="Model\KhuyenMai.cs" />
+    <Compile Include="Model\Sanh.cs" />
     <Compile Include="Model\ThucAn.cs" />
     <Compile Include="View\Constant\Cons.cs" />
     <Compile Include="View\frmDichVu.cs">
@@ -150,6 +152,9 @@
     <EmbeddedResource Include="View\frmDichVu.resx">
       <DependentUpon>frmDichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmKhuyenMai.resx">
+      <DependentUpon>frmKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmLapHopDongTiecCuoi.resx">
       <DependentUpon>frmLapHopDongTiecCuoi.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSanh.resx">
+      <DependentUpon>frmSanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmThanhToan.resx">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmTraCuuTiec.resx">
       <DependentUpon>frmTraCuuTiec.cs</DependentUpon>

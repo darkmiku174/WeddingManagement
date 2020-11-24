@@ -31,8 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelThoat = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnThoat = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panelLoGo = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelMoTa = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.scbMoTa = new System.Windows.Forms.VScrollBar();
             this.lbMoTa = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -50,7 +49,6 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.flpanelHinhAnhMonAn = new System.Windows.Forms.FlowLayoutPanel();
             this.panelRightBar.SuspendLayout();
-            this.panelThoat.SuspendLayout();
             this.panelMoTa.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelThongTinMonAn.SuspendLayout();
@@ -72,14 +70,14 @@
             this.panelTitle.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Quality = 10;
-            this.panelTitle.Size = new System.Drawing.Size(1277, 62);
+            this.panelTitle.Size = new System.Drawing.Size(1220, 62);
             this.panelTitle.TabIndex = 0;
             // 
             // panelRightBar
             // 
             this.panelRightBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRightBar.BackgroundImage")));
             this.panelRightBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelRightBar.Controls.Add(this.panelThoat);
+            this.panelRightBar.Controls.Add(this.panelLoGo);
             this.panelRightBar.Controls.Add(this.panelMoTa);
             this.panelRightBar.Controls.Add(this.panelThongTinMonAn);
             this.panelRightBar.Dock = System.Windows.Forms.DockStyle.Right;
@@ -87,65 +85,28 @@
             this.panelRightBar.GradientBottomRight = System.Drawing.Color.White;
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
-            this.panelRightBar.Location = new System.Drawing.Point(937, 62);
+            this.panelRightBar.Location = new System.Drawing.Point(880, 62);
             this.panelRightBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
-            this.panelRightBar.Size = new System.Drawing.Size(340, 614);
+            this.panelRightBar.Size = new System.Drawing.Size(340, 782);
             this.panelRightBar.TabIndex = 4;
             // 
-            // panelThoat
+            // panelLoGo
             // 
-            this.panelThoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThoat.BackgroundImage")));
-            this.panelThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelThoat.Controls.Add(this.btnThoat);
-            this.panelThoat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelThoat.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelThoat.GradientBottomRight = System.Drawing.Color.White;
-            this.panelThoat.GradientTopLeft = System.Drawing.Color.White;
-            this.panelThoat.GradientTopRight = System.Drawing.Color.White;
-            this.panelThoat.Location = new System.Drawing.Point(0, 622);
-            this.panelThoat.Margin = new System.Windows.Forms.Padding(4);
-            this.panelThoat.Name = "panelThoat";
-            this.panelThoat.Quality = 10;
-            this.panelThoat.Size = new System.Drawing.Size(340, 0);
-            this.panelThoat.TabIndex = 4;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThoat.BorderRadius = 0;
-            this.btnThoat.ButtonText = "Thoát";
-            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThoat.DisabledColor = System.Drawing.Color.Gray;
-            this.btnThoat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThoat.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnThoat.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnThoat.Iconimage")));
-            this.btnThoat.Iconimage_right = null;
-            this.btnThoat.Iconimage_right_Selected = null;
-            this.btnThoat.Iconimage_Selected = null;
-            this.btnThoat.IconMarginLeft = 0;
-            this.btnThoat.IconMarginRight = 0;
-            this.btnThoat.IconRightVisible = true;
-            this.btnThoat.IconRightZoom = 0D;
-            this.btnThoat.IconVisible = true;
-            this.btnThoat.IconZoom = 90D;
-            this.btnThoat.IsTab = false;
-            this.btnThoat.Location = new System.Drawing.Point(0, 0);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(5);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThoat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnThoat.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnThoat.selected = false;
-            this.btnThoat.Size = new System.Drawing.Size(340, 0);
-            this.btnThoat.TabIndex = 0;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Textcolor = System.Drawing.Color.White;
-            this.btnThoat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelLoGo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLoGo.BackgroundImage")));
+            this.panelLoGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLoGo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLoGo.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelLoGo.GradientBottomRight = System.Drawing.Color.White;
+            this.panelLoGo.GradientTopLeft = System.Drawing.Color.White;
+            this.panelLoGo.GradientTopRight = System.Drawing.Color.White;
+            this.panelLoGo.Location = new System.Drawing.Point(0, 622);
+            this.panelLoGo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLoGo.Name = "panelLoGo";
+            this.panelLoGo.Quality = 10;
+            this.panelLoGo.Size = new System.Drawing.Size(340, 160);
+            this.panelLoGo.TabIndex = 4;
             // 
             // panelMoTa
             // 
@@ -340,14 +301,14 @@
             this.flpanelHinhAnhMonAn.Location = new System.Drawing.Point(0, 62);
             this.flpanelHinhAnhMonAn.Margin = new System.Windows.Forms.Padding(4);
             this.flpanelHinhAnhMonAn.Name = "flpanelHinhAnhMonAn";
-            this.flpanelHinhAnhMonAn.Size = new System.Drawing.Size(937, 614);
+            this.flpanelHinhAnhMonAn.Size = new System.Drawing.Size(880, 782);
             this.flpanelHinhAnhMonAn.TabIndex = 5;
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1277, 676);
+            this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.flpanelHinhAnhMonAn);
             this.Controls.Add(this.panelRightBar);
             this.Controls.Add(this.panelTitle);
@@ -355,7 +316,6 @@
             this.Name = "frmMenu";
             this.Text = "Menu";
             this.panelRightBar.ResumeLayout(false);
-            this.panelThoat.ResumeLayout(false);
             this.panelMoTa.ResumeLayout(false);
             this.panelMoTa.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -375,8 +335,6 @@
 
         private Bunifu.Framework.UI.BunifuGradientPanel panelTitle;
         private Bunifu.Framework.UI.BunifuGradientPanel panelRightBar;
-        private Bunifu.Framework.UI.BunifuGradientPanel panelThoat;
-        private Bunifu.Framework.UI.BunifuFlatButton btnThoat;
         private Bunifu.Framework.UI.BunifuGradientPanel panelMoTa;
         private Bunifu.Framework.UI.BunifuCustomLabel lbMoTa;
         private Bunifu.Framework.UI.BunifuGradientPanel panelThongTinMonAn;
@@ -393,5 +351,6 @@
         private System.Windows.Forms.Panel panel4;
         private Bunifu.Framework.UI.BunifuCustomLabel lbTenMonAn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelLoGo;
     }
 }

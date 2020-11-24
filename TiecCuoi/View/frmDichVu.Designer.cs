@@ -191,11 +191,11 @@
             this.panelRightBar.GradientBottomRight = System.Drawing.Color.White;
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
-            this.panelRightBar.Location = new System.Drawing.Point(837, 62);
+            this.panelRightBar.Location = new System.Drawing.Point(880, 62);
             this.panelRightBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
-            this.panelRightBar.Size = new System.Drawing.Size(340, 680);
+            this.panelRightBar.Size = new System.Drawing.Size(340, 782);
             this.panelRightBar.TabIndex = 7;
             // 
             // panelMoTa
@@ -214,7 +214,7 @@
             this.panelMoTa.Margin = new System.Windows.Forms.Padding(4);
             this.panelMoTa.Name = "panelMoTa";
             this.panelMoTa.Quality = 10;
-            this.panelMoTa.Size = new System.Drawing.Size(340, 507);
+            this.panelMoTa.Size = new System.Drawing.Size(340, 609);
             this.panelMoTa.TabIndex = 3;
             // 
             // scbMoTa
@@ -222,7 +222,7 @@
             this.scbMoTa.Dock = System.Windows.Forms.DockStyle.Right;
             this.scbMoTa.Location = new System.Drawing.Point(323, 47);
             this.scbMoTa.Name = "scbMoTa";
-            this.scbMoTa.Size = new System.Drawing.Size(17, 460);
+            this.scbMoTa.Size = new System.Drawing.Size(17, 562);
             this.scbMoTa.TabIndex = 4;
             // 
             // lbMoTa
@@ -272,7 +272,7 @@
             this.panelTitle.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Quality = 10;
-            this.panelTitle.Size = new System.Drawing.Size(1177, 62);
+            this.panelTitle.Size = new System.Drawing.Size(1220, 62);
             this.panelTitle.TabIndex = 6;
             // 
             // flpanelHinhAnhDichVu
@@ -283,20 +283,20 @@
             this.flpanelHinhAnhDichVu.Location = new System.Drawing.Point(0, 62);
             this.flpanelHinhAnhDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.flpanelHinhAnhDichVu.Name = "flpanelHinhAnhDichVu";
-            this.flpanelHinhAnhDichVu.Size = new System.Drawing.Size(837, 680);
+            this.flpanelHinhAnhDichVu.Size = new System.Drawing.Size(880, 782);
             this.flpanelHinhAnhDichVu.TabIndex = 9;
             // 
             // frmDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 742);
+            this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.flpanelHinhAnhDichVu);
             this.Controls.Add(this.panelRightBar);
             this.Controls.Add(this.panelTitle);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDichVu";
-            this.Text = "frmDichVu";
+            this.Text = "Dịch vụ";
             this.panelThongTinDichVu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

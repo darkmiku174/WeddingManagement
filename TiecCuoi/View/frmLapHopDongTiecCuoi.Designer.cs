@@ -31,15 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLapHopDongTiecCuoi));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbMaKhachHang = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.dtpNgayToChuc = new Bunifu.Framework.UI.BunifuDatepicker();
             this.tbTenCoDau = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.tbTenChuRe = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dtpNgayToChuc = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label12 = new System.Windows.Forms.Label();
             this.btnChonDichVu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChonThucDon = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -49,6 +50,8 @@
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tbTongTienDuKien = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.tbSoTienCoc = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rdbSang = new System.Windows.Forms.RadioButton();
             this.rdbToi = new System.Windows.Forms.RadioButton();
@@ -57,16 +60,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.tbSoTienCoc = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.tbTongTienDuKien = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.cmbMaKhachHang = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbMaHopDong = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.cmbMaDatCoc = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
@@ -81,7 +81,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1009, 49);
+            this.panel1.Size = new System.Drawing.Size(1220, 49);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -98,8 +98,19 @@
             this.panel2.Location = new System.Drawing.Point(0, 109);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(499, 547);
+            this.panel2.Size = new System.Drawing.Size(499, 735);
             this.panel2.TabIndex = 5;
+            // 
+            // cmbMaKhachHang
+            // 
+            this.cmbMaKhachHang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMaKhachHang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMaKhachHang.FormattingEnabled = true;
+            this.cmbMaKhachHang.Location = new System.Drawing.Point(149, 89);
+            this.cmbMaKhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbMaKhachHang.Name = "cmbMaKhachHang";
+            this.cmbMaKhachHang.Size = new System.Drawing.Size(160, 24);
+            this.cmbMaKhachHang.TabIndex = 49;
             // 
             // bunifuGradientPanel2
             // 
@@ -128,20 +139,6 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Thông tin khách hàng";
             // 
-            // dtpNgayToChuc
-            // 
-            this.dtpNgayToChuc.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpNgayToChuc.BorderRadius = 0;
-            this.dtpNgayToChuc.ForeColor = System.Drawing.Color.White;
-            this.dtpNgayToChuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayToChuc.FormatCustom = null;
-            this.dtpNgayToChuc.Location = new System.Drawing.Point(223, 82);
-            this.dtpNgayToChuc.Margin = new System.Windows.Forms.Padding(5);
-            this.dtpNgayToChuc.Name = "dtpNgayToChuc";
-            this.dtpNgayToChuc.Size = new System.Drawing.Size(141, 27);
-            this.dtpNgayToChuc.TabIndex = 2;
-            this.dtpNgayToChuc.Value = new System.DateTime(2020, 11, 22, 15, 34, 13, 183);
-            // 
             // tbTenCoDau
             // 
             this.tbTenCoDau.BorderColor = System.Drawing.Color.SeaGreen;
@@ -161,16 +158,6 @@
             this.tbTenChuRe.Name = "tbTenChuRe";
             this.tbTenChuRe.Size = new System.Drawing.Size(141, 24);
             this.tbTenChuRe.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(90, 82);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 17);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Ngày tổ chức";
             // 
             // label6
             // 
@@ -201,6 +188,30 @@
             this.label4.Size = new System.Drawing.Size(105, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "Mã khách hàng";
+            // 
+            // dtpNgayToChuc
+            // 
+            this.dtpNgayToChuc.BackColor = System.Drawing.Color.SeaGreen;
+            this.dtpNgayToChuc.BorderRadius = 0;
+            this.dtpNgayToChuc.ForeColor = System.Drawing.Color.White;
+            this.dtpNgayToChuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayToChuc.FormatCustom = null;
+            this.dtpNgayToChuc.Location = new System.Drawing.Point(223, 82);
+            this.dtpNgayToChuc.Margin = new System.Windows.Forms.Padding(5);
+            this.dtpNgayToChuc.Name = "dtpNgayToChuc";
+            this.dtpNgayToChuc.Size = new System.Drawing.Size(141, 27);
+            this.dtpNgayToChuc.TabIndex = 2;
+            this.dtpNgayToChuc.Value = new System.DateTime(2020, 11, 22, 15, 34, 13, 183);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(90, 82);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 17);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Ngày tổ chức";
             // 
             // btnChonDichVu
             // 
@@ -324,7 +335,7 @@
             this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(508, 58);
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(719, 58);
             this.bunifuGradientPanel3.TabIndex = 19;
             // 
             // bunifuCustomLabel2
@@ -391,8 +402,28 @@
             this.panel4.Location = new System.Drawing.Point(499, 109);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(510, 547);
+            this.panel4.Size = new System.Drawing.Size(721, 735);
             this.panel4.TabIndex = 32;
+            // 
+            // tbTongTienDuKien
+            // 
+            this.tbTongTienDuKien.BorderColor = System.Drawing.Color.SeaGreen;
+            this.tbTongTienDuKien.Location = new System.Drawing.Point(186, 316);
+            this.tbTongTienDuKien.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTongTienDuKien.Multiline = true;
+            this.tbTongTienDuKien.Name = "tbTongTienDuKien";
+            this.tbTongTienDuKien.Size = new System.Drawing.Size(141, 24);
+            this.tbTongTienDuKien.TabIndex = 47;
+            // 
+            // tbSoTienCoc
+            // 
+            this.tbSoTienCoc.BorderColor = System.Drawing.Color.SeaGreen;
+            this.tbSoTienCoc.Location = new System.Drawing.Point(186, 353);
+            this.tbSoTienCoc.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSoTienCoc.Multiline = true;
+            this.tbSoTienCoc.Name = "tbSoTienCoc";
+            this.tbSoTienCoc.Size = new System.Drawing.Size(141, 24);
+            this.tbSoTienCoc.TabIndex = 44;
             // 
             // panel3
             // 
@@ -474,37 +505,6 @@
             this.label9.TabIndex = 36;
             this.label9.Text = "Sảnh";
             // 
-            // tbSoTienCoc
-            // 
-            this.tbSoTienCoc.BorderColor = System.Drawing.Color.SeaGreen;
-            this.tbSoTienCoc.Location = new System.Drawing.Point(186, 353);
-            this.tbSoTienCoc.Margin = new System.Windows.Forms.Padding(4);
-            this.tbSoTienCoc.Multiline = true;
-            this.tbSoTienCoc.Name = "tbSoTienCoc";
-            this.tbSoTienCoc.Size = new System.Drawing.Size(141, 24);
-            this.tbSoTienCoc.TabIndex = 44;
-            // 
-            // tbTongTienDuKien
-            // 
-            this.tbTongTienDuKien.BorderColor = System.Drawing.Color.SeaGreen;
-            this.tbTongTienDuKien.Location = new System.Drawing.Point(186, 316);
-            this.tbTongTienDuKien.Margin = new System.Windows.Forms.Padding(4);
-            this.tbTongTienDuKien.Multiline = true;
-            this.tbTongTienDuKien.Name = "tbTongTienDuKien";
-            this.tbTongTienDuKien.Size = new System.Drawing.Size(141, 24);
-            this.tbTongTienDuKien.TabIndex = 47;
-            // 
-            // cmbMaKhachHang
-            // 
-            this.cmbMaKhachHang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbMaKhachHang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbMaKhachHang.FormattingEnabled = true;
-            this.cmbMaKhachHang.Location = new System.Drawing.Point(149, 89);
-            this.cmbMaKhachHang.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbMaKhachHang.Name = "cmbMaKhachHang";
-            this.cmbMaKhachHang.Size = new System.Drawing.Size(160, 24);
-            this.cmbMaKhachHang.TabIndex = 49;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -565,18 +565,8 @@
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1009, 60);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1220, 60);
             this.bunifuGradientPanel1.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(360, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 17);
-            this.label2.TabIndex = 47;
-            this.label2.Text = "Mã đặt cọc";
             // 
             // cmbMaDatCoc
             // 
@@ -589,11 +579,21 @@
             this.cmbMaDatCoc.Size = new System.Drawing.Size(160, 24);
             this.cmbMaDatCoc.TabIndex = 48;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(360, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 17);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Mã đặt cọc";
+            // 
             // frmLapHopDongTiecCuoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 656);
+            this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bunifuGradientPanel1);

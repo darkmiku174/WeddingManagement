@@ -65,3 +65,6 @@ D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.csproj.CoreCompile
 D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.csproj.CopyComplete
 D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.exe
 D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.pdb
+D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmSanh.resources
+D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmKhuyenMai.resources
+D:\BaiTapTruong\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmThanhToan.resources

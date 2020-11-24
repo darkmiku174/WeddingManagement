@@ -94,7 +94,7 @@ namespace TiecCuoi
             this.panelDesktopPane.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            //lblTitle.Text = childForm.Text;
+            lbTitle.Text = childForm.Text;
 
         }
 
@@ -144,19 +144,34 @@ namespace TiecCuoi
             
         }
 
-        private void btnTraCuuSanhTrong_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmTraCuuSanh(), sender);
-        }
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmMenu(), sender);
         }
 
+        private void btnSanh_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmSanh(), sender);
+        }
+
         private void btnDichVu_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmDichVu(), sender);
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmKhuyenMai(), sender);
+        }
+
+        private void btnTraCuuSanhTrong_Click(object sender, EventArgs e)
+        {
+            //OpenChildForm(new frmTraCuuSanh(), sender);
+        }
+
+        private void btnTraCuuTiec_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmTraCuuTiec(), sender);
         }
 
         private void btnDatCoc_Click(object sender, EventArgs e)
@@ -169,16 +184,6 @@ namespace TiecCuoi
             OpenChildForm(new frmLapHopDongTiecCuoi(), sender);
         }
 
-        private void btnSanh_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmSanh(), sender);
-        }
-
-        private void btnTraCuuTiec_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmTraCuuTiec(), sender);
-        }
-
         private void btnThanhToanHopDong_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmThanhToan(), sender);
@@ -188,5 +193,7 @@ namespace TiecCuoi
         {
 
         }
+
+        
     }
 }

@@ -32,37 +32,37 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelThongTinMonAn = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.dgvTraCuTiec = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panelThongTinMonAn = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.tbTenCoDau = new Bunifu.Framework.UI.BunifuTextbox();
+            this.tbTenChuRe = new Bunifu.Framework.UI.BunifuTextbox();
             this.dtpTraCuuTiec = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.cbCa = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cbMaHopDong = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cbMaKhachHang = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cbTenSanh = new Bunifu.Framework.UI.BunifuDropdown();
-            this.panelComboBox = new System.Windows.Forms.Panel();
             this.panelTitle2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbTenChuRe = new Bunifu.Framework.UI.BunifuTextbox();
-            this.tbTenCoDau = new Bunifu.Framework.UI.BunifuTextbox();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelComboBox = new System.Windows.Forms.Panel();
+            this.cbCa = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbTenSanh = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbMaHopDong = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbMaKhachHang = new Bunifu.Framework.UI.BunifuDropdown();
+            this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelRightBar.SuspendLayout();
-            this.panelThongTinMonAn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuTiec)).BeginInit();
-            this.panelComboBox.SuspendLayout();
-            this.panelTitle2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.panelThongTinMonAn.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panelTitle2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panelComboBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelRightBar
@@ -76,44 +76,12 @@
             this.panelRightBar.GradientBottomRight = System.Drawing.Color.White;
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
-            this.panelRightBar.Location = new System.Drawing.Point(0, 50);
+            this.panelRightBar.Location = new System.Drawing.Point(0, 62);
+            this.panelRightBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
-            this.panelRightBar.Size = new System.Drawing.Size(802, 318);
+            this.panelRightBar.Size = new System.Drawing.Size(1220, 782);
             this.panelRightBar.TabIndex = 11;
-            // 
-            // panelThongTinMonAn
-            // 
-            this.panelThongTinMonAn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThongTinMonAn.BackgroundImage")));
-            this.panelThongTinMonAn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelThongTinMonAn.Controls.Add(this.panel7);
-            this.panelThongTinMonAn.Controls.Add(this.panelTitle2);
-            this.panelThongTinMonAn.Controls.Add(this.panelComboBox);
-            this.panelThongTinMonAn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelThongTinMonAn.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelThongTinMonAn.GradientBottomRight = System.Drawing.Color.White;
-            this.panelThongTinMonAn.GradientTopLeft = System.Drawing.Color.White;
-            this.panelThongTinMonAn.GradientTopRight = System.Drawing.Color.White;
-            this.panelThongTinMonAn.Location = new System.Drawing.Point(0, 0);
-            this.panelThongTinMonAn.Name = "panelThongTinMonAn";
-            this.panelThongTinMonAn.Quality = 10;
-            this.panelThongTinMonAn.Size = new System.Drawing.Size(802, 143);
-            this.panelThongTinMonAn.TabIndex = 2;
-            // 
-            // panelTitle
-            // 
-            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
-            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelTitle.GradientBottomRight = System.Drawing.Color.White;
-            this.panelTitle.GradientTopLeft = System.Drawing.Color.White;
-            this.panelTitle.GradientTopRight = System.Drawing.Color.White;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Quality = 10;
-            this.panelTitle.Size = new System.Drawing.Size(802, 50);
-            this.panelTitle.TabIndex = 10;
             // 
             // dgvTraCuTiec
             // 
@@ -136,11 +104,74 @@
             this.dgvTraCuTiec.EnableHeadersVisualStyles = false;
             this.dgvTraCuTiec.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dgvTraCuTiec.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvTraCuTiec.Location = new System.Drawing.Point(0, 143);
+            this.dgvTraCuTiec.Location = new System.Drawing.Point(0, 176);
+            this.dgvTraCuTiec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvTraCuTiec.Name = "dgvTraCuTiec";
             this.dgvTraCuTiec.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvTraCuTiec.Size = new System.Drawing.Size(802, 175);
+            this.dgvTraCuTiec.RowHeadersWidth = 51;
+            this.dgvTraCuTiec.Size = new System.Drawing.Size(1220, 606);
             this.dgvTraCuTiec.TabIndex = 3;
+            // 
+            // panelThongTinMonAn
+            // 
+            this.panelThongTinMonAn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThongTinMonAn.BackgroundImage")));
+            this.panelThongTinMonAn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThongTinMonAn.Controls.Add(this.panel7);
+            this.panelThongTinMonAn.Controls.Add(this.panelTitle2);
+            this.panelThongTinMonAn.Controls.Add(this.panelComboBox);
+            this.panelThongTinMonAn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelThongTinMonAn.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelThongTinMonAn.GradientBottomRight = System.Drawing.Color.White;
+            this.panelThongTinMonAn.GradientTopLeft = System.Drawing.Color.White;
+            this.panelThongTinMonAn.GradientTopRight = System.Drawing.Color.White;
+            this.panelThongTinMonAn.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelThongTinMonAn.Name = "panelThongTinMonAn";
+            this.panelThongTinMonAn.Quality = 10;
+            this.panelThongTinMonAn.Size = new System.Drawing.Size(1220, 176);
+            this.panelThongTinMonAn.TabIndex = 2;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.tbTenCoDau);
+            this.panel7.Controls.Add(this.tbTenChuRe);
+            this.panel7.Controls.Add(this.dtpTraCuuTiec);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1220, 86);
+            this.panel7.TabIndex = 3;
+            // 
+            // tbTenCoDau
+            // 
+            this.tbTenCoDau.BackColor = System.Drawing.Color.Silver;
+            this.tbTenCoDau.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.BackgroundImage")));
+            this.tbTenCoDau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tbTenCoDau.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTenCoDau.ForeColor = System.Drawing.Color.SeaGreen;
+            this.tbTenCoDau.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.Icon")));
+            this.tbTenCoDau.Location = new System.Drawing.Point(627, 36);
+            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbTenCoDau.Name = "tbTenCoDau";
+            this.tbTenCoDau.Size = new System.Drawing.Size(593, 50);
+            this.tbTenCoDau.TabIndex = 2;
+            this.tbTenCoDau.text = "Tên cô dâu";
+            // 
+            // tbTenChuRe
+            // 
+            this.tbTenChuRe.BackColor = System.Drawing.Color.Silver;
+            this.tbTenChuRe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.BackgroundImage")));
+            this.tbTenChuRe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tbTenChuRe.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbTenChuRe.ForeColor = System.Drawing.Color.SeaGreen;
+            this.tbTenChuRe.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.Icon")));
+            this.tbTenChuRe.Location = new System.Drawing.Point(0, 36);
+            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbTenChuRe.Name = "tbTenChuRe";
+            this.tbTenChuRe.Size = new System.Drawing.Size(627, 50);
+            this.tbTenChuRe.TabIndex = 2;
+            this.tbTenChuRe.text = "Tên chú rể";
             // 
             // dtpTraCuuTiec
             // 
@@ -151,10 +182,121 @@
             this.dtpTraCuuTiec.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTraCuuTiec.FormatCustom = null;
             this.dtpTraCuuTiec.Location = new System.Drawing.Point(0, 0);
+            this.dtpTraCuuTiec.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dtpTraCuuTiec.Name = "dtpTraCuuTiec";
-            this.dtpTraCuuTiec.Size = new System.Drawing.Size(802, 29);
+            this.dtpTraCuuTiec.Size = new System.Drawing.Size(1220, 36);
             this.dtpTraCuuTiec.TabIndex = 5;
             this.dtpTraCuuTiec.Value = new System.DateTime(2020, 11, 24, 18, 54, 25, 555);
+            // 
+            // panelTitle2
+            // 
+            this.panelTitle2.Controls.Add(this.panel6);
+            this.panelTitle2.Controls.Add(this.panel5);
+            this.panelTitle2.Controls.Add(this.panel4);
+            this.panelTitle2.Controls.Add(this.panel3);
+            this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelTitle2.Location = new System.Drawing.Point(0, 86);
+            this.panelTitle2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitle2.Name = "panelTitle2";
+            this.panelTitle2.Size = new System.Drawing.Size(1220, 36);
+            this.panelTitle2.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(912, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(304, 36);
+            this.panel6.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(129, 6);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Ca";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(608, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(304, 36);
+            this.panel5.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(89, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên sảnh";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(304, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(304, 36);
+            this.panel4.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(71, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã hợp đồng";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(304, 36);
+            this.panel3.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(49, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã khách hàng";
+            // 
+            // panelComboBox
+            // 
+            this.panelComboBox.Controls.Add(this.cbCa);
+            this.panelComboBox.Controls.Add(this.cbTenSanh);
+            this.panelComboBox.Controls.Add(this.cbMaHopDong);
+            this.panelComboBox.Controls.Add(this.cbMaKhachHang);
+            this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelComboBox.Location = new System.Drawing.Point(0, 122);
+            this.panelComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelComboBox.Name = "panelComboBox";
+            this.panelComboBox.Size = new System.Drawing.Size(1220, 54);
+            this.panelComboBox.TabIndex = 0;
             // 
             // cbCa
             // 
@@ -163,13 +305,30 @@
             this.cbCa.Dock = System.Windows.Forms.DockStyle.Left;
             this.cbCa.ForeColor = System.Drawing.Color.White;
             this.cbCa.Items = new string[0];
-            this.cbCa.Location = new System.Drawing.Point(600, 0);
+            this.cbCa.Location = new System.Drawing.Point(912, 0);
+            this.cbCa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cbCa.Name = "cbCa";
             this.cbCa.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.cbCa.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.cbCa.selectedIndex = -1;
-            this.cbCa.Size = new System.Drawing.Size(201, 44);
+            this.cbCa.Size = new System.Drawing.Size(305, 54);
             this.cbCa.TabIndex = 5;
+            // 
+            // cbTenSanh
+            // 
+            this.cbTenSanh.BackColor = System.Drawing.Color.Transparent;
+            this.cbTenSanh.BorderRadius = 3;
+            this.cbTenSanh.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cbTenSanh.ForeColor = System.Drawing.Color.White;
+            this.cbTenSanh.Items = new string[0];
+            this.cbTenSanh.Location = new System.Drawing.Point(608, 0);
+            this.cbTenSanh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cbTenSanh.Name = "cbTenSanh";
+            this.cbTenSanh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbTenSanh.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbTenSanh.selectedIndex = -1;
+            this.cbTenSanh.Size = new System.Drawing.Size(304, 54);
+            this.cbTenSanh.TabIndex = 5;
             // 
             // cbMaHopDong
             // 
@@ -178,12 +337,13 @@
             this.cbMaHopDong.Dock = System.Windows.Forms.DockStyle.Left;
             this.cbMaHopDong.ForeColor = System.Drawing.Color.White;
             this.cbMaHopDong.Items = new string[0];
-            this.cbMaHopDong.Location = new System.Drawing.Point(200, 0);
+            this.cbMaHopDong.Location = new System.Drawing.Point(304, 0);
+            this.cbMaHopDong.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cbMaHopDong.Name = "cbMaHopDong";
             this.cbMaHopDong.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.cbMaHopDong.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.cbMaHopDong.selectedIndex = -1;
-            this.cbMaHopDong.Size = new System.Drawing.Size(200, 44);
+            this.cbMaHopDong.Size = new System.Drawing.Size(304, 54);
             this.cbMaHopDong.TabIndex = 5;
             // 
             // cbMaKhachHang
@@ -194,191 +354,54 @@
             this.cbMaKhachHang.ForeColor = System.Drawing.Color.White;
             this.cbMaKhachHang.Items = new string[0];
             this.cbMaKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.cbMaKhachHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbMaKhachHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbMaKhachHang.Name = "cbMaKhachHang";
             this.cbMaKhachHang.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.cbMaKhachHang.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.cbMaKhachHang.selectedIndex = -1;
-            this.cbMaKhachHang.Size = new System.Drawing.Size(200, 44);
+            this.cbMaKhachHang.Size = new System.Drawing.Size(304, 54);
             this.cbMaKhachHang.TabIndex = 5;
             // 
-            // cbTenSanh
+            // panelTitle
             // 
-            this.cbTenSanh.BackColor = System.Drawing.Color.Transparent;
-            this.cbTenSanh.BorderRadius = 3;
-            this.cbTenSanh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cbTenSanh.ForeColor = System.Drawing.Color.White;
-            this.cbTenSanh.Items = new string[0];
-            this.cbTenSanh.Location = new System.Drawing.Point(400, 0);
-            this.cbTenSanh.Name = "cbTenSanh";
-            this.cbTenSanh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cbTenSanh.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cbTenSanh.selectedIndex = -1;
-            this.cbTenSanh.Size = new System.Drawing.Size(200, 44);
-            this.cbTenSanh.TabIndex = 5;
-            // 
-            // panelComboBox
-            // 
-            this.panelComboBox.Controls.Add(this.cbCa);
-            this.panelComboBox.Controls.Add(this.cbTenSanh);
-            this.panelComboBox.Controls.Add(this.cbMaHopDong);
-            this.panelComboBox.Controls.Add(this.cbMaKhachHang);
-            this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelComboBox.Location = new System.Drawing.Point(0, 99);
-            this.panelComboBox.Name = "panelComboBox";
-            this.panelComboBox.Size = new System.Drawing.Size(802, 44);
-            this.panelComboBox.TabIndex = 0;
-            // 
-            // panelTitle2
-            // 
-            this.panelTitle2.Controls.Add(this.panel6);
-            this.panelTitle2.Controls.Add(this.panel5);
-            this.panelTitle2.Controls.Add(this.panel4);
-            this.panelTitle2.Controls.Add(this.panel3);
-            this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelTitle2.Location = new System.Drawing.Point(0, 70);
-            this.panelTitle2.Name = "panelTitle2";
-            this.panelTitle2.Size = new System.Drawing.Size(802, 29);
-            this.panelTitle2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã khách hàng";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 29);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 29);
-            this.panel4.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Mã hợp đồng";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(400, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 29);
-            this.panel5.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(67, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tên sảnh";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(600, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 29);
-            this.panel6.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(97, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Ca";
-            // 
-            // tbTenChuRe
-            // 
-            this.tbTenChuRe.BackColor = System.Drawing.Color.Silver;
-            this.tbTenChuRe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.BackgroundImage")));
-            this.tbTenChuRe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tbTenChuRe.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbTenChuRe.ForeColor = System.Drawing.Color.SeaGreen;
-            this.tbTenChuRe.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.Icon")));
-            this.tbTenChuRe.Location = new System.Drawing.Point(0, 29);
-            this.tbTenChuRe.Name = "tbTenChuRe";
-            this.tbTenChuRe.Size = new System.Drawing.Size(400, 41);
-            this.tbTenChuRe.TabIndex = 2;
-            this.tbTenChuRe.text = "Tên chú rể";
-            // 
-            // tbTenCoDau
-            // 
-            this.tbTenCoDau.BackColor = System.Drawing.Color.Silver;
-            this.tbTenCoDau.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.BackgroundImage")));
-            this.tbTenCoDau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tbTenCoDau.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbTenCoDau.ForeColor = System.Drawing.Color.SeaGreen;
-            this.tbTenCoDau.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.Icon")));
-            this.tbTenCoDau.Location = new System.Drawing.Point(400, 29);
-            this.tbTenCoDau.Name = "tbTenCoDau";
-            this.tbTenCoDau.Size = new System.Drawing.Size(400, 41);
-            this.tbTenCoDau.TabIndex = 2;
-            this.tbTenCoDau.text = "Tên cô dâu";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.tbTenCoDau);
-            this.panel7.Controls.Add(this.tbTenChuRe);
-            this.panel7.Controls.Add(this.dtpTraCuuTiec);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(802, 70);
-            this.panel7.TabIndex = 3;
+            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
+            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelTitle.GradientBottomRight = System.Drawing.Color.White;
+            this.panelTitle.GradientTopLeft = System.Drawing.Color.White;
+            this.panelTitle.GradientTopRight = System.Drawing.Color.White;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Quality = 10;
+            this.panelTitle.Size = new System.Drawing.Size(1220, 62);
+            this.panelTitle.TabIndex = 10;
             // 
             // frmTraCuuTiec
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 368);
+            this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.panelRightBar);
             this.Controls.Add(this.panelTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmTraCuuTiec";
             this.Text = "Tra cứu tiệc";
             this.panelRightBar.ResumeLayout(false);
-            this.panelThongTinMonAn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuTiec)).EndInit();
-            this.panelComboBox.ResumeLayout(false);
+            this.panelThongTinMonAn.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panelTitle2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panelComboBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

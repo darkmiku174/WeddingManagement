@@ -67,8 +67,9 @@
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(218, 574);
+            this.panelMenu.Size = new System.Drawing.Size(290, 891);
             this.panelMenu.TabIndex = 0;
             // 
             // btnDangXuat
@@ -83,9 +84,10 @@
             this.btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDangXuat.IconSize = 30;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 524);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 819);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(216, 46);
+            this.btnDangXuat.Size = new System.Drawing.Size(288, 74);
             this.btnDangXuat.TabIndex = 11;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -104,9 +106,10 @@
             this.btnThanhToanHopDong.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThanhToanHopDong.IconSize = 30;
             this.btnThanhToanHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToanHopDong.Location = new System.Drawing.Point(0, 478);
+            this.btnThanhToanHopDong.Location = new System.Drawing.Point(0, 745);
+            this.btnThanhToanHopDong.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToanHopDong.Name = "btnThanhToanHopDong";
-            this.btnThanhToanHopDong.Size = new System.Drawing.Size(216, 46);
+            this.btnThanhToanHopDong.Size = new System.Drawing.Size(288, 74);
             this.btnThanhToanHopDong.TabIndex = 10;
             this.btnThanhToanHopDong.Text = "Thanh toán hợp đồng";
             this.btnThanhToanHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -125,9 +128,10 @@
             this.btnLapHopDong.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLapHopDong.IconSize = 30;
             this.btnLapHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLapHopDong.Location = new System.Drawing.Point(0, 432);
+            this.btnLapHopDong.Location = new System.Drawing.Point(0, 671);
+            this.btnLapHopDong.Margin = new System.Windows.Forms.Padding(4);
             this.btnLapHopDong.Name = "btnLapHopDong";
-            this.btnLapHopDong.Size = new System.Drawing.Size(216, 46);
+            this.btnLapHopDong.Size = new System.Drawing.Size(288, 74);
             this.btnLapHopDong.TabIndex = 7;
             this.btnLapHopDong.Text = "Lập hợp đồng";
             this.btnLapHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -146,9 +150,10 @@
             this.btnDatCoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDatCoc.IconSize = 30;
             this.btnDatCoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDatCoc.Location = new System.Drawing.Point(0, 386);
+            this.btnDatCoc.Location = new System.Drawing.Point(0, 597);
+            this.btnDatCoc.Margin = new System.Windows.Forms.Padding(4);
             this.btnDatCoc.Name = "btnDatCoc";
-            this.btnDatCoc.Size = new System.Drawing.Size(216, 46);
+            this.btnDatCoc.Size = new System.Drawing.Size(288, 74);
             this.btnDatCoc.TabIndex = 6;
             this.btnDatCoc.Text = "Đặt cọc";
             this.btnDatCoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -167,9 +172,10 @@
             this.btnTraCuuTiec.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTraCuuTiec.IconSize = 30;
             this.btnTraCuuTiec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraCuuTiec.Location = new System.Drawing.Point(0, 340);
+            this.btnTraCuuTiec.Location = new System.Drawing.Point(0, 523);
+            this.btnTraCuuTiec.Margin = new System.Windows.Forms.Padding(4);
             this.btnTraCuuTiec.Name = "btnTraCuuTiec";
-            this.btnTraCuuTiec.Size = new System.Drawing.Size(216, 46);
+            this.btnTraCuuTiec.Size = new System.Drawing.Size(288, 74);
             this.btnTraCuuTiec.TabIndex = 9;
             this.btnTraCuuTiec.Text = "Tra cứu tiệc";
             this.btnTraCuuTiec.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -188,9 +194,10 @@
             this.btnTraCuuSanhTrong.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTraCuuSanhTrong.IconSize = 30;
             this.btnTraCuuSanhTrong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraCuuSanhTrong.Location = new System.Drawing.Point(0, 294);
+            this.btnTraCuuSanhTrong.Location = new System.Drawing.Point(0, 449);
+            this.btnTraCuuSanhTrong.Margin = new System.Windows.Forms.Padding(4);
             this.btnTraCuuSanhTrong.Name = "btnTraCuuSanhTrong";
-            this.btnTraCuuSanhTrong.Size = new System.Drawing.Size(216, 46);
+            this.btnTraCuuSanhTrong.Size = new System.Drawing.Size(288, 74);
             this.btnTraCuuSanhTrong.TabIndex = 2;
             this.btnTraCuuSanhTrong.Text = "Tra cứu sảnh trống";
             this.btnTraCuuSanhTrong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -209,13 +216,15 @@
             this.btnKhuyenMai.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnKhuyenMai.IconSize = 30;
             this.btnKhuyenMai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhuyenMai.Location = new System.Drawing.Point(0, 248);
+            this.btnKhuyenMai.Location = new System.Drawing.Point(0, 375);
+            this.btnKhuyenMai.Margin = new System.Windows.Forms.Padding(4);
             this.btnKhuyenMai.Name = "btnKhuyenMai";
-            this.btnKhuyenMai.Size = new System.Drawing.Size(216, 46);
+            this.btnKhuyenMai.Size = new System.Drawing.Size(288, 74);
             this.btnKhuyenMai.TabIndex = 5;
             this.btnKhuyenMai.Text = "Khuyến mãi";
             this.btnKhuyenMai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKhuyenMai.UseVisualStyleBackColor = false;
+            this.btnKhuyenMai.Click += new System.EventHandler(this.btnKhuyenMai_Click);
             // 
             // btnDichVu
             // 
@@ -229,9 +238,10 @@
             this.btnDichVu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDichVu.IconSize = 30;
             this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(0, 202);
+            this.btnDichVu.Location = new System.Drawing.Point(0, 301);
+            this.btnDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.Size = new System.Drawing.Size(216, 46);
+            this.btnDichVu.Size = new System.Drawing.Size(288, 74);
             this.btnDichVu.TabIndex = 4;
             this.btnDichVu.Text = "Dịch vụ";
             this.btnDichVu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -250,9 +260,10 @@
             this.btnSanh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSanh.IconSize = 30;
             this.btnSanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanh.Location = new System.Drawing.Point(0, 156);
+            this.btnSanh.Location = new System.Drawing.Point(0, 227);
+            this.btnSanh.Margin = new System.Windows.Forms.Padding(4);
             this.btnSanh.Name = "btnSanh";
-            this.btnSanh.Size = new System.Drawing.Size(216, 46);
+            this.btnSanh.Size = new System.Drawing.Size(288, 74);
             this.btnSanh.TabIndex = 8;
             this.btnSanh.Text = "Sảnh";
             this.btnSanh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -271,9 +282,10 @@
             this.btnMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMenu.IconSize = 30;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(0, 110);
+            this.btnMenu.Location = new System.Drawing.Point(0, 153);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(216, 46);
+            this.btnMenu.Size = new System.Drawing.Size(288, 74);
             this.btnMenu.TabIndex = 3;
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -292,9 +304,10 @@
             this.btnTrangChu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTrangChu.IconSize = 30;
             this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 64);
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 79);
+            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(216, 46);
+            this.btnTrangChu.Size = new System.Drawing.Size(288, 74);
             this.btnTrangChu.TabIndex = 1;
             this.btnTrangChu.Text = "Trang chủ";
             this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -306,8 +319,9 @@
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(173)))), ((int)(((byte)(150)))));
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(216, 64);
+            this.panelLogo.Size = new System.Drawing.Size(288, 79);
             this.panelLogo.TabIndex = 0;
             // 
             // panelDesktopPane
@@ -315,9 +329,10 @@
             this.panelDesktopPane.BackColor = System.Drawing.Color.White;
             this.panelDesktopPane.Controls.Add(this.panelTitleBar);
             this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(218, 0);
+            this.panelDesktopPane.Location = new System.Drawing.Point(290, 0);
+            this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(4);
             this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(794, 574);
+            this.panelDesktopPane.Size = new System.Drawing.Size(1238, 891);
             this.panelDesktopPane.TabIndex = 1;
             // 
             // panelTitleBar
@@ -326,8 +341,9 @@
             this.panelTitleBar.Controls.Add(this.lbTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(794, 65);
+            this.panelTitleBar.Size = new System.Drawing.Size(1238, 80);
             this.panelTitleBar.TabIndex = 0;
             // 
             // lbTitle
@@ -335,21 +351,21 @@
             this.lbTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTitle.AutoSize = true;
-            this.lbTitle.Location = new System.Drawing.Point(410, 25);
-            this.lbTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTitle.Location = new System.Drawing.Point(547, 31);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(35, 13);
+            this.lbTitle.Size = new System.Drawing.Size(46, 17);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "label1";
             // 
             // frmTrangChuNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1012, 574);
+            this.ClientSize = new System.Drawing.Size(1528, 891);
             this.Controls.Add(this.panelDesktopPane);
             this.Controls.Add(this.panelMenu);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTrangChuNhanVien";
             this.Text = "Trang chủ";
             this.panelMenu.ResumeLayout(false);

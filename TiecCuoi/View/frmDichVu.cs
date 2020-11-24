@@ -26,7 +26,7 @@ namespace TiecCuoi
             List<DichVu> dsDV = dp.DichVuSelectAll();
             foreach (DichVu dv in dsDV)
             {
-                PictureBox pb = new PictureBox { Width = 303, Height = 257 };
+                PictureBox pb = new PictureBox { Width = 400, Height = 300 };
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
                 if (dv.HinhAnh != null)
                 {

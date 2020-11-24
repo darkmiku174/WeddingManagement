@@ -93,6 +93,15 @@ namespace TiecCuoi
             this.rdbSangSanh4 = new System.Windows.Forms.RadioButton();
             this.bunifuGradientPanel8 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.lbTrangThaiSanh3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.rdbToiSanh3 = new System.Windows.Forms.RadioButton();
+            this.rdbSangSanh3 = new System.Windows.Forms.RadioButton();
+            this.bunifuGradientPanel7 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelThongTinSanh2 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -110,15 +119,6 @@ namespace TiecCuoi
             this.rdbSangSanh1 = new System.Windows.Forms.RadioButton();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuGradientPanel7 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.rdbSangSanh3 = new System.Windows.Forms.RadioButton();
-            this.rdbToiSanh3 = new System.Windows.Forms.RadioButton();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.lbTrangThaiSanh3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.panelTitleBar.SuspendLayout();
             this.panelSearch.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -146,6 +146,11 @@ namespace TiecCuoi
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.bunifuGradientPanel8.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.bunifuGradientPanel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelThongTinSanh2.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -155,11 +160,6 @@ namespace TiecCuoi
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.bunifuGradientPanel7.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitleBar
@@ -173,17 +173,19 @@ namespace TiecCuoi
             this.panelTitleBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelTitleBar.GradientTopRight = System.Drawing.Color.White;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Quality = 10;
-            this.panelTitleBar.Size = new System.Drawing.Size(920, 39);
+            this.panelTitleBar.Size = new System.Drawing.Size(1220, 48);
             this.panelTitleBar.TabIndex = 0;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(377, 9);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(503, 11);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(103, 13);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(137, 17);
             this.bunifuCustomLabel2.TabIndex = 0;
             this.bunifuCustomLabel2.Text = "bunifuCustomLabel2";
             // 
@@ -199,19 +201,20 @@ namespace TiecCuoi
             this.panelSearch.GradientBottomRight = System.Drawing.Color.White;
             this.panelSearch.GradientTopLeft = System.Drawing.Color.White;
             this.panelSearch.GradientTopRight = System.Drawing.Color.White;
-            this.panelSearch.Location = new System.Drawing.Point(0, 39);
+            this.panelSearch.Location = new System.Drawing.Point(0, 48);
+            this.panelSearch.Margin = new System.Windows.Forms.Padding(4);
             this.panelSearch.Name = "panelSearch";
             this.panelSearch.Quality = 10;
-            this.panelSearch.Size = new System.Drawing.Size(920, 93);
+            this.panelSearch.Size = new System.Drawing.Size(1220, 114);
             this.panelSearch.TabIndex = 1;
             // 
             // dtpDate
             // 
-            this.dtpDate.Location = new System.Drawing.Point(248, 46);
+            this.dtpDate.Location = new System.Drawing.Point(331, 57);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpDate.Size = new System.Drawing.Size(265, 22);
             this.dtpDate.TabIndex = 4;
-            this.dtpDate.ValueChanged += new System.EventHandler(this.dtpDate_ValueChanged);
             // 
             // panel10
             // 
@@ -222,18 +225,20 @@ namespace TiecCuoi
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.label1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(738, 0);
+            this.panel10.Location = new System.Drawing.Point(977, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(182, 93);
+            this.panel10.Size = new System.Drawing.Size(243, 114);
             this.panel10.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 67);
+            this.label5.Location = new System.Drawing.Point(4, 82);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 17);
+            this.label5.Size = new System.Drawing.Size(124, 21);
             this.label5.TabIndex = 0;
             this.label5.Text = "4: Trống ca tối";
             // 
@@ -241,9 +246,10 @@ namespace TiecCuoi
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(2, 31);
+            this.label3.Location = new System.Drawing.Point(3, 38);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
+            this.label3.Size = new System.Drawing.Size(114, 21);
             this.label3.TabIndex = 0;
             this.label3.Text = "2: Trống 2 ca";
             // 
@@ -251,9 +257,10 @@ namespace TiecCuoi
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 48);
+            this.label4.Location = new System.Drawing.Point(4, 59);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 17);
+            this.label4.Size = new System.Drawing.Size(145, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "3: Trống ca sáng";
             // 
@@ -261,9 +268,10 @@ namespace TiecCuoi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 14);
+            this.label2.Location = new System.Drawing.Point(4, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(59, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "1: Đầy";
             // 
@@ -271,9 +279,10 @@ namespace TiecCuoi
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 4);
+            this.label1.Location = new System.Drawing.Point(91, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.Size = new System.Drawing.Size(86, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chú thích";
             // 
@@ -281,25 +290,28 @@ namespace TiecCuoi
             // 
             this.panel1.Controls.Add(this.cbMonth);
             this.panel1.Controls.Add(this.lbThang);
-            this.panel1.Location = new System.Drawing.Point(3, 0);
+            this.panel1.Location = new System.Drawing.Point(4, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 25);
+            this.panel1.Size = new System.Drawing.Size(225, 31);
             this.panel1.TabIndex = 2;
             // 
             // cbMonth
             // 
             this.cbMonth.FormattingEnabled = true;
-            this.cbMonth.Location = new System.Drawing.Point(47, 1);
+            this.cbMonth.Location = new System.Drawing.Point(63, 1);
+            this.cbMonth.Margin = new System.Windows.Forms.Padding(4);
             this.cbMonth.Name = "cbMonth";
-            this.cbMonth.Size = new System.Drawing.Size(121, 21);
+            this.cbMonth.Size = new System.Drawing.Size(160, 24);
             this.cbMonth.TabIndex = 0;
             // 
             // lbThang
             // 
             this.lbThang.AutoSize = true;
-            this.lbThang.Location = new System.Drawing.Point(3, 6);
+            this.lbThang.Location = new System.Drawing.Point(4, 7);
+            this.lbThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbThang.Name = "lbThang";
-            this.lbThang.Size = new System.Drawing.Size(38, 13);
+            this.lbThang.Size = new System.Drawing.Size(49, 17);
             this.lbThang.TabIndex = 1;
             this.lbThang.Text = "Tháng";
             // 
@@ -313,10 +325,11 @@ namespace TiecCuoi
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(252)))), ((int)(((byte)(3)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Green;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(252)))), ((int)(((byte)(3)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 132);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 162);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(920, 13);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1220, 16);
             this.bunifuGradientPanel1.TabIndex = 4;
             // 
             // panelDayOfWeek
@@ -336,10 +349,11 @@ namespace TiecCuoi
             this.panelDayOfWeek.GradientBottomRight = System.Drawing.Color.White;
             this.panelDayOfWeek.GradientTopLeft = System.Drawing.Color.White;
             this.panelDayOfWeek.GradientTopRight = System.Drawing.Color.White;
-            this.panelDayOfWeek.Location = new System.Drawing.Point(0, 145);
+            this.panelDayOfWeek.Location = new System.Drawing.Point(0, 178);
+            this.panelDayOfWeek.Margin = new System.Windows.Forms.Padding(4);
             this.panelDayOfWeek.Name = "panelDayOfWeek";
             this.panelDayOfWeek.Quality = 10;
-            this.panelDayOfWeek.Size = new System.Drawing.Size(920, 62);
+            this.panelDayOfWeek.Size = new System.Drawing.Size(1220, 76);
             this.panelDayOfWeek.TabIndex = 5;
             // 
             // btnSanh7
@@ -365,13 +379,14 @@ namespace TiecCuoi
             this.btnSanh7.IconVisible = false;
             this.btnSanh7.IconZoom = 90D;
             this.btnSanh7.IsTab = false;
-            this.btnSanh7.Location = new System.Drawing.Point(774, 0);
+            this.btnSanh7.Location = new System.Drawing.Point(1026, 0);
+            this.btnSanh7.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh7.Name = "btnSanh7";
             this.btnSanh7.Normalcolor = System.Drawing.Color.White;
             this.btnSanh7.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh7.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh7.selected = false;
-            this.btnSanh7.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh7.Size = new System.Drawing.Size(171, 76);
             this.btnSanh7.TabIndex = 45;
             this.btnSanh7.Text = "Sảnh 7";
             this.btnSanh7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -382,19 +397,19 @@ namespace TiecCuoi
             // 
             this.panel8.Controls.Add(this.radioButton1);
             this.panel8.Controls.Add(this.radioButton2);
-            this.panel8.Location = new System.Drawing.Point(11, 62);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Location = new System.Drawing.Point(15, 76);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(107, 24);
+            this.panel8.Size = new System.Drawing.Size(143, 30);
             this.panel8.TabIndex = 44;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(8, 5);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton1.Location = new System.Drawing.Point(11, 6);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(50, 17);
+            this.radioButton1.Size = new System.Drawing.Size(62, 21);
             this.radioButton1.TabIndex = 39;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Sáng";
@@ -403,10 +418,10 @@ namespace TiecCuoi
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(62, 5);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton2.Location = new System.Drawing.Point(83, 6);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(40, 17);
+            this.radioButton2.Size = new System.Drawing.Size(49, 21);
             this.radioButton2.TabIndex = 40;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Tối";
@@ -435,13 +450,14 @@ namespace TiecCuoi
             this.btnSanh6.IconVisible = false;
             this.btnSanh6.IconZoom = 90D;
             this.btnSanh6.IsTab = false;
-            this.btnSanh6.Location = new System.Drawing.Point(645, 0);
+            this.btnSanh6.Location = new System.Drawing.Point(855, 0);
+            this.btnSanh6.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh6.Name = "btnSanh6";
             this.btnSanh6.Normalcolor = System.Drawing.Color.White;
             this.btnSanh6.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh6.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh6.selected = false;
-            this.btnSanh6.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh6.Size = new System.Drawing.Size(171, 76);
             this.btnSanh6.TabIndex = 5;
             this.btnSanh6.Text = "Sảnh 6";
             this.btnSanh6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -471,13 +487,14 @@ namespace TiecCuoi
             this.btnSanh5.IconVisible = false;
             this.btnSanh5.IconZoom = 90D;
             this.btnSanh5.IsTab = false;
-            this.btnSanh5.Location = new System.Drawing.Point(516, 0);
+            this.btnSanh5.Location = new System.Drawing.Point(684, 0);
+            this.btnSanh5.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh5.Name = "btnSanh5";
             this.btnSanh5.Normalcolor = System.Drawing.Color.White;
             this.btnSanh5.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh5.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh5.selected = false;
-            this.btnSanh5.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh5.Size = new System.Drawing.Size(171, 76);
             this.btnSanh5.TabIndex = 4;
             this.btnSanh5.Text = "Sảnh 5";
             this.btnSanh5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -507,13 +524,14 @@ namespace TiecCuoi
             this.btnSanh4.IconVisible = false;
             this.btnSanh4.IconZoom = 90D;
             this.btnSanh4.IsTab = false;
-            this.btnSanh4.Location = new System.Drawing.Point(387, 0);
+            this.btnSanh4.Location = new System.Drawing.Point(513, 0);
+            this.btnSanh4.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh4.Name = "btnSanh4";
             this.btnSanh4.Normalcolor = System.Drawing.Color.White;
             this.btnSanh4.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh4.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh4.selected = false;
-            this.btnSanh4.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh4.Size = new System.Drawing.Size(171, 76);
             this.btnSanh4.TabIndex = 3;
             this.btnSanh4.Text = "Sảnh 4";
             this.btnSanh4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -543,13 +561,14 @@ namespace TiecCuoi
             this.btnSanh3.IconVisible = false;
             this.btnSanh3.IconZoom = 90D;
             this.btnSanh3.IsTab = false;
-            this.btnSanh3.Location = new System.Drawing.Point(258, 0);
+            this.btnSanh3.Location = new System.Drawing.Point(342, 0);
+            this.btnSanh3.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh3.Name = "btnSanh3";
             this.btnSanh3.Normalcolor = System.Drawing.Color.White;
             this.btnSanh3.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh3.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh3.selected = false;
-            this.btnSanh3.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh3.Size = new System.Drawing.Size(171, 76);
             this.btnSanh3.TabIndex = 2;
             this.btnSanh3.Text = "Sảnh 3";
             this.btnSanh3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -579,13 +598,14 @@ namespace TiecCuoi
             this.btnSanh2.IconVisible = false;
             this.btnSanh2.IconZoom = 90D;
             this.btnSanh2.IsTab = false;
-            this.btnSanh2.Location = new System.Drawing.Point(129, 0);
+            this.btnSanh2.Location = new System.Drawing.Point(171, 0);
+            this.btnSanh2.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh2.Name = "btnSanh2";
             this.btnSanh2.Normalcolor = System.Drawing.Color.White;
             this.btnSanh2.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh2.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh2.selected = false;
-            this.btnSanh2.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh2.Size = new System.Drawing.Size(171, 76);
             this.btnSanh2.TabIndex = 1;
             this.btnSanh2.Text = "Sảnh 2";
             this.btnSanh2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -616,12 +636,13 @@ namespace TiecCuoi
             this.btnSanh1.IconZoom = 90D;
             this.btnSanh1.IsTab = false;
             this.btnSanh1.Location = new System.Drawing.Point(0, 0);
+            this.btnSanh1.Margin = new System.Windows.Forms.Padding(5);
             this.btnSanh1.Name = "btnSanh1";
             this.btnSanh1.Normalcolor = System.Drawing.Color.White;
             this.btnSanh1.OnHovercolor = System.Drawing.Color.Empty;
             this.btnSanh1.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSanh1.selected = false;
-            this.btnSanh1.Size = new System.Drawing.Size(129, 62);
+            this.btnSanh1.Size = new System.Drawing.Size(171, 76);
             this.btnSanh1.TabIndex = 0;
             this.btnSanh1.Text = "Sảnh 1";
             this.btnSanh1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -644,9 +665,10 @@ namespace TiecCuoi
             this.panelBackGround.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(196)))), ((int)(((byte)(113)))));
             this.panelBackGround.GradientTopRight = System.Drawing.Color.White;
             this.panelBackGround.Location = new System.Drawing.Point(0, 0);
+            this.panelBackGround.Margin = new System.Windows.Forms.Padding(4);
             this.panelBackGround.Name = "panelBackGround";
             this.panelBackGround.Quality = 10;
-            this.panelBackGround.Size = new System.Drawing.Size(920, 700);
+            this.panelBackGround.Size = new System.Drawing.Size(1220, 844);
             this.panelBackGround.TabIndex = 0;
             // 
             // panelMatrix
@@ -659,10 +681,11 @@ namespace TiecCuoi
             this.panelMatrix.GradientBottomRight = System.Drawing.Color.White;
             this.panelMatrix.GradientTopLeft = System.Drawing.Color.White;
             this.panelMatrix.GradientTopRight = System.Drawing.Color.Transparent;
-            this.panelMatrix.Location = new System.Drawing.Point(0, 320);
+            this.panelMatrix.Location = new System.Drawing.Point(0, 393);
+            this.panelMatrix.Margin = new System.Windows.Forms.Padding(4);
             this.panelMatrix.Name = "panelMatrix";
             this.panelMatrix.Quality = 10;
-            this.panelMatrix.Size = new System.Drawing.Size(920, 380);
+            this.panelMatrix.Size = new System.Drawing.Size(1220, 451);
             this.panelMatrix.TabIndex = 9;
             // 
             // panelThongTinSanhTrong
@@ -681,10 +704,11 @@ namespace TiecCuoi
             this.panelThongTinSanhTrong.GradientBottomRight = System.Drawing.Color.White;
             this.panelThongTinSanhTrong.GradientTopLeft = System.Drawing.Color.White;
             this.panelThongTinSanhTrong.GradientTopRight = System.Drawing.Color.White;
-            this.panelThongTinSanhTrong.Location = new System.Drawing.Point(0, 207);
+            this.panelThongTinSanhTrong.Location = new System.Drawing.Point(0, 254);
+            this.panelThongTinSanhTrong.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanhTrong.Name = "panelThongTinSanhTrong";
             this.panelThongTinSanhTrong.Quality = 10;
-            this.panelThongTinSanhTrong.Size = new System.Drawing.Size(920, 113);
+            this.panelThongTinSanhTrong.Size = new System.Drawing.Size(1220, 139);
             this.panelThongTinSanhTrong.TabIndex = 7;
             // 
             // panelThongTinSanh7
@@ -694,17 +718,19 @@ namespace TiecCuoi
             this.panelThongTinSanh7.Controls.Add(this.panel22);
             this.panelThongTinSanh7.Controls.Add(this.bunifuGradientPanel2);
             this.panelThongTinSanh7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelThongTinSanh7.Location = new System.Drawing.Point(774, 0);
+            this.panelThongTinSanh7.Location = new System.Drawing.Point(1031, 0);
+            this.panelThongTinSanh7.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanh7.Name = "panelThongTinSanh7";
-            this.panelThongTinSanh7.Size = new System.Drawing.Size(146, 113);
+            this.panelThongTinSanh7.Size = new System.Drawing.Size(189, 139);
             this.panelThongTinSanh7.TabIndex = 6;
             // 
             // panel19
             // 
             this.panel19.Controls.Add(this.bunifuCustomLabel1);
-            this.panel19.Location = new System.Drawing.Point(0, 68);
+            this.panel19.Location = new System.Drawing.Point(0, 84);
+            this.panel19.Margin = new System.Windows.Forms.Padding(4);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(131, 45);
+            this.panel19.Size = new System.Drawing.Size(175, 55);
             this.panel19.TabIndex = 1;
             // 
             // bunifuCustomLabel1
@@ -712,9 +738,10 @@ namespace TiecCuoi
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(19, 17);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(25, 21);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(88, 21);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(100, 23);
             this.bunifuCustomLabel1.TabIndex = 48;
             this.bunifuCustomLabel1.Text = "Trạng thái";
             // 
@@ -723,20 +750,20 @@ namespace TiecCuoi
             this.panel22.Controls.Add(this.rdbToiSanh7);
             this.panel22.Controls.Add(this.rdbToiSang7);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 35);
-            this.panel22.Margin = new System.Windows.Forms.Padding(2);
+            this.panel22.Location = new System.Drawing.Point(0, 43);
+            this.panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(144, 28);
+            this.panel22.Size = new System.Drawing.Size(187, 34);
             this.panel22.TabIndex = 47;
             // 
             // rdbToiSanh7
             // 
             this.rdbToiSanh7.AutoSize = true;
             this.rdbToiSanh7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh7.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh7.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSanh7.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSanh7.Name = "rdbToiSanh7";
-            this.rdbToiSanh7.Size = new System.Drawing.Size(48, 25);
+            this.rdbToiSanh7.Size = new System.Drawing.Size(51, 27);
             this.rdbToiSanh7.TabIndex = 41;
             this.rdbToiSanh7.TabStop = true;
             this.rdbToiSanh7.Text = "Tối";
@@ -747,9 +774,9 @@ namespace TiecCuoi
             this.rdbToiSang7.AutoSize = true;
             this.rdbToiSang7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbToiSang7.Location = new System.Drawing.Point(0, 0);
-            this.rdbToiSang7.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSang7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSang7.Name = "rdbToiSang7";
-            this.rdbToiSang7.Size = new System.Drawing.Size(68, 25);
+            this.rdbToiSang7.Size = new System.Drawing.Size(80, 27);
             this.rdbToiSang7.TabIndex = 39;
             this.rdbToiSang7.TabStop = true;
             this.rdbToiSang7.Text = "Sáng";
@@ -766,9 +793,10 @@ namespace TiecCuoi
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(144, 35);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(187, 43);
             this.bunifuGradientPanel2.TabIndex = 46;
             // 
             // bunifuCustomLabel3
@@ -776,9 +804,10 @@ namespace TiecCuoi
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(45, 5);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(34, 21);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(40, 23);
             this.bunifuCustomLabel3.TabIndex = 0;
             this.bunifuCustomLabel3.Text = "Ca";
             // 
@@ -786,9 +815,10 @@ namespace TiecCuoi
             // 
             this.panel6.Controls.Add(this.panelThongTinSanh5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(645, 0);
+            this.panel6.Location = new System.Drawing.Point(859, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(129, 113);
+            this.panel6.Size = new System.Drawing.Size(172, 139);
             this.panel6.TabIndex = 5;
             // 
             // panelThongTinSanh5
@@ -799,16 +829,18 @@ namespace TiecCuoi
             this.panelThongTinSanh5.Controls.Add(this.bunifuGradientPanel10);
             this.panelThongTinSanh5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongTinSanh5.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinSanh5.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanh5.Name = "panelThongTinSanh5";
-            this.panelThongTinSanh5.Size = new System.Drawing.Size(129, 113);
+            this.panelThongTinSanh5.Size = new System.Drawing.Size(172, 139);
             this.panelThongTinSanh5.TabIndex = 1;
             // 
             // panel23
             // 
             this.panel23.Controls.Add(this.lbTrangThaiSanh6);
-            this.panel23.Location = new System.Drawing.Point(0, 68);
+            this.panel23.Location = new System.Drawing.Point(0, 84);
+            this.panel23.Margin = new System.Windows.Forms.Padding(4);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(129, 45);
+            this.panel23.Size = new System.Drawing.Size(172, 55);
             this.panel23.TabIndex = 1;
             // 
             // lbTrangThaiSanh6
@@ -816,9 +848,10 @@ namespace TiecCuoi
             this.lbTrangThaiSanh6.AutoSize = true;
             this.lbTrangThaiSanh6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrangThaiSanh6.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbTrangThaiSanh6.Location = new System.Drawing.Point(19, 17);
+            this.lbTrangThaiSanh6.Location = new System.Drawing.Point(25, 21);
+            this.lbTrangThaiSanh6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTrangThaiSanh6.Name = "lbTrangThaiSanh6";
-            this.lbTrangThaiSanh6.Size = new System.Drawing.Size(88, 21);
+            this.lbTrangThaiSanh6.Size = new System.Drawing.Size(100, 23);
             this.lbTrangThaiSanh6.TabIndex = 48;
             this.lbTrangThaiSanh6.Text = "Trạng thái";
             // 
@@ -827,20 +860,20 @@ namespace TiecCuoi
             this.panel24.Controls.Add(this.rdbToiSanh6);
             this.panel24.Controls.Add(this.rdbSangSanh6);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 35);
-            this.panel24.Margin = new System.Windows.Forms.Padding(2);
+            this.panel24.Location = new System.Drawing.Point(0, 43);
+            this.panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(127, 28);
+            this.panel24.Size = new System.Drawing.Size(170, 34);
             this.panel24.TabIndex = 47;
             // 
             // rdbToiSanh6
             // 
             this.rdbToiSanh6.AutoSize = true;
             this.rdbToiSanh6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh6.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh6.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSanh6.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSanh6.Name = "rdbToiSanh6";
-            this.rdbToiSanh6.Size = new System.Drawing.Size(48, 25);
+            this.rdbToiSanh6.Size = new System.Drawing.Size(51, 27);
             this.rdbToiSanh6.TabIndex = 41;
             this.rdbToiSanh6.TabStop = true;
             this.rdbToiSanh6.Text = "Tối";
@@ -851,9 +884,9 @@ namespace TiecCuoi
             this.rdbSangSanh6.AutoSize = true;
             this.rdbSangSanh6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbSangSanh6.Location = new System.Drawing.Point(0, 0);
-            this.rdbSangSanh6.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbSangSanh6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSangSanh6.Name = "rdbSangSanh6";
-            this.rdbSangSanh6.Size = new System.Drawing.Size(68, 25);
+            this.rdbSangSanh6.Size = new System.Drawing.Size(80, 27);
             this.rdbSangSanh6.TabIndex = 39;
             this.rdbSangSanh6.TabStop = true;
             this.rdbSangSanh6.Text = "Sáng";
@@ -870,9 +903,10 @@ namespace TiecCuoi
             this.bunifuGradientPanel10.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel10.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel10.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel10.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel10.Name = "bunifuGradientPanel10";
             this.bunifuGradientPanel10.Quality = 10;
-            this.bunifuGradientPanel10.Size = new System.Drawing.Size(127, 35);
+            this.bunifuGradientPanel10.Size = new System.Drawing.Size(170, 43);
             this.bunifuGradientPanel10.TabIndex = 46;
             // 
             // bunifuCustomLabel15
@@ -880,9 +914,10 @@ namespace TiecCuoi
             this.bunifuCustomLabel15.AutoSize = true;
             this.bunifuCustomLabel15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(45, 5);
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(34, 21);
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(40, 23);
             this.bunifuCustomLabel15.TabIndex = 0;
             this.bunifuCustomLabel15.Text = "Ca";
             // 
@@ -890,9 +925,10 @@ namespace TiecCuoi
             // 
             this.panel5.Controls.Add(this.panelThongTinSanh4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(516, 0);
+            this.panel5.Location = new System.Drawing.Point(687, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(129, 113);
+            this.panel5.Size = new System.Drawing.Size(172, 139);
             this.panel5.TabIndex = 4;
             // 
             // panelThongTinSanh4
@@ -903,16 +939,18 @@ namespace TiecCuoi
             this.panelThongTinSanh4.Controls.Add(this.bunifuGradientPanel9);
             this.panelThongTinSanh4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelThongTinSanh4.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinSanh4.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanh4.Name = "panelThongTinSanh4";
-            this.panelThongTinSanh4.Size = new System.Drawing.Size(129, 113);
+            this.panelThongTinSanh4.Size = new System.Drawing.Size(171, 139);
             this.panelThongTinSanh4.TabIndex = 1;
             // 
             // panel20
             // 
             this.panel20.Controls.Add(this.lbTrangThaiSanh5);
-            this.panel20.Location = new System.Drawing.Point(0, 68);
+            this.panel20.Location = new System.Drawing.Point(0, 84);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(129, 45);
+            this.panel20.Size = new System.Drawing.Size(172, 55);
             this.panel20.TabIndex = 1;
             // 
             // lbTrangThaiSanh5
@@ -920,9 +958,10 @@ namespace TiecCuoi
             this.lbTrangThaiSanh5.AutoSize = true;
             this.lbTrangThaiSanh5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrangThaiSanh5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbTrangThaiSanh5.Location = new System.Drawing.Point(19, 17);
+            this.lbTrangThaiSanh5.Location = new System.Drawing.Point(25, 21);
+            this.lbTrangThaiSanh5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTrangThaiSanh5.Name = "lbTrangThaiSanh5";
-            this.lbTrangThaiSanh5.Size = new System.Drawing.Size(88, 21);
+            this.lbTrangThaiSanh5.Size = new System.Drawing.Size(100, 23);
             this.lbTrangThaiSanh5.TabIndex = 48;
             this.lbTrangThaiSanh5.Text = "Trạng thái";
             // 
@@ -931,20 +970,20 @@ namespace TiecCuoi
             this.panel21.Controls.Add(this.rdbToiSanh5);
             this.panel21.Controls.Add(this.rdbSangSanh5);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 35);
-            this.panel21.Margin = new System.Windows.Forms.Padding(2);
+            this.panel21.Location = new System.Drawing.Point(0, 43);
+            this.panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(127, 28);
+            this.panel21.Size = new System.Drawing.Size(169, 34);
             this.panel21.TabIndex = 47;
             // 
             // rdbToiSanh5
             // 
             this.rdbToiSanh5.AutoSize = true;
             this.rdbToiSanh5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh5.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh5.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSanh5.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSanh5.Name = "rdbToiSanh5";
-            this.rdbToiSanh5.Size = new System.Drawing.Size(48, 25);
+            this.rdbToiSanh5.Size = new System.Drawing.Size(51, 27);
             this.rdbToiSanh5.TabIndex = 41;
             this.rdbToiSanh5.TabStop = true;
             this.rdbToiSanh5.Text = "Tối";
@@ -955,9 +994,9 @@ namespace TiecCuoi
             this.rdbSangSanh5.AutoSize = true;
             this.rdbSangSanh5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbSangSanh5.Location = new System.Drawing.Point(0, 0);
-            this.rdbSangSanh5.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbSangSanh5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSangSanh5.Name = "rdbSangSanh5";
-            this.rdbSangSanh5.Size = new System.Drawing.Size(68, 25);
+            this.rdbSangSanh5.Size = new System.Drawing.Size(80, 27);
             this.rdbSangSanh5.TabIndex = 39;
             this.rdbSangSanh5.TabStop = true;
             this.rdbSangSanh5.Text = "Sáng";
@@ -974,9 +1013,10 @@ namespace TiecCuoi
             this.bunifuGradientPanel9.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel9.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel9.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel9.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel9.Name = "bunifuGradientPanel9";
             this.bunifuGradientPanel9.Quality = 10;
-            this.bunifuGradientPanel9.Size = new System.Drawing.Size(127, 35);
+            this.bunifuGradientPanel9.Size = new System.Drawing.Size(169, 43);
             this.bunifuGradientPanel9.TabIndex = 46;
             // 
             // bunifuCustomLabel13
@@ -984,9 +1024,10 @@ namespace TiecCuoi
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(45, 5);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(34, 21);
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(40, 23);
             this.bunifuCustomLabel13.TabIndex = 0;
             this.bunifuCustomLabel13.Text = "Ca";
             // 
@@ -994,9 +1035,10 @@ namespace TiecCuoi
             // 
             this.panel4.Controls.Add(this.panelThongTinSanh3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(387, 0);
+            this.panel4.Location = new System.Drawing.Point(515, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(129, 113);
+            this.panel4.Size = new System.Drawing.Size(172, 139);
             this.panel4.TabIndex = 3;
             // 
             // panelThongTinSanh3
@@ -1007,16 +1049,18 @@ namespace TiecCuoi
             this.panelThongTinSanh3.Controls.Add(this.bunifuGradientPanel8);
             this.panelThongTinSanh3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelThongTinSanh3.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinSanh3.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanh3.Name = "panelThongTinSanh3";
-            this.panelThongTinSanh3.Size = new System.Drawing.Size(129, 113);
+            this.panelThongTinSanh3.Size = new System.Drawing.Size(171, 139);
             this.panelThongTinSanh3.TabIndex = 1;
             // 
             // panel17
             // 
             this.panel17.Controls.Add(this.lbTrangThaiSanh4);
-            this.panel17.Location = new System.Drawing.Point(0, 68);
+            this.panel17.Location = new System.Drawing.Point(0, 84);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(129, 45);
+            this.panel17.Size = new System.Drawing.Size(172, 55);
             this.panel17.TabIndex = 1;
             // 
             // lbTrangThaiSanh4
@@ -1024,9 +1068,10 @@ namespace TiecCuoi
             this.lbTrangThaiSanh4.AutoSize = true;
             this.lbTrangThaiSanh4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrangThaiSanh4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbTrangThaiSanh4.Location = new System.Drawing.Point(19, 17);
+            this.lbTrangThaiSanh4.Location = new System.Drawing.Point(25, 21);
+            this.lbTrangThaiSanh4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTrangThaiSanh4.Name = "lbTrangThaiSanh4";
-            this.lbTrangThaiSanh4.Size = new System.Drawing.Size(88, 21);
+            this.lbTrangThaiSanh4.Size = new System.Drawing.Size(100, 23);
             this.lbTrangThaiSanh4.TabIndex = 48;
             this.lbTrangThaiSanh4.Text = "Trạng thái";
             // 
@@ -1035,20 +1080,20 @@ namespace TiecCuoi
             this.panel18.Controls.Add(this.rdbToiSanh4);
             this.panel18.Controls.Add(this.rdbSangSanh4);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 35);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2);
+            this.panel18.Location = new System.Drawing.Point(0, 43);
+            this.panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(127, 28);
+            this.panel18.Size = new System.Drawing.Size(169, 34);
             this.panel18.TabIndex = 47;
             // 
             // rdbToiSanh4
             // 
             this.rdbToiSanh4.AutoSize = true;
             this.rdbToiSanh4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh4.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh4.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSanh4.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSanh4.Name = "rdbToiSanh4";
-            this.rdbToiSanh4.Size = new System.Drawing.Size(48, 25);
+            this.rdbToiSanh4.Size = new System.Drawing.Size(51, 27);
             this.rdbToiSanh4.TabIndex = 41;
             this.rdbToiSanh4.TabStop = true;
             this.rdbToiSanh4.Text = "Tối";
@@ -1059,9 +1104,9 @@ namespace TiecCuoi
             this.rdbSangSanh4.AutoSize = true;
             this.rdbSangSanh4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbSangSanh4.Location = new System.Drawing.Point(0, 0);
-            this.rdbSangSanh4.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbSangSanh4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSangSanh4.Name = "rdbSangSanh4";
-            this.rdbSangSanh4.Size = new System.Drawing.Size(68, 25);
+            this.rdbSangSanh4.Size = new System.Drawing.Size(80, 27);
             this.rdbSangSanh4.TabIndex = 39;
             this.rdbSangSanh4.TabStop = true;
             this.rdbSangSanh4.Text = "Sáng";
@@ -1078,9 +1123,10 @@ namespace TiecCuoi
             this.bunifuGradientPanel8.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel8.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel8.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel8.Name = "bunifuGradientPanel8";
             this.bunifuGradientPanel8.Quality = 10;
-            this.bunifuGradientPanel8.Size = new System.Drawing.Size(127, 35);
+            this.bunifuGradientPanel8.Size = new System.Drawing.Size(169, 43);
             this.bunifuGradientPanel8.TabIndex = 46;
             // 
             // bunifuCustomLabel11
@@ -1088,19 +1134,131 @@ namespace TiecCuoi
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(45, 5);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(34, 21);
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(40, 23);
             this.bunifuCustomLabel11.TabIndex = 0;
             this.bunifuCustomLabel11.Text = "Ca";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel13);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(343, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(172, 139);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.panel14);
+            this.panel13.Controls.Add(this.panel15);
+            this.panel13.Controls.Add(this.bunifuGradientPanel7);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(171, 139);
+            this.panel13.TabIndex = 1;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.lbTrangThaiSanh3);
+            this.panel14.Location = new System.Drawing.Point(0, 84);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(172, 55);
+            this.panel14.TabIndex = 1;
+            // 
+            // lbTrangThaiSanh3
+            // 
+            this.lbTrangThaiSanh3.AutoSize = true;
+            this.lbTrangThaiSanh3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrangThaiSanh3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbTrangThaiSanh3.Location = new System.Drawing.Point(25, 21);
+            this.lbTrangThaiSanh3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTrangThaiSanh3.Name = "lbTrangThaiSanh3";
+            this.lbTrangThaiSanh3.Size = new System.Drawing.Size(100, 23);
+            this.lbTrangThaiSanh3.TabIndex = 48;
+            this.lbTrangThaiSanh3.Text = "Trạng thái";
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.rdbToiSanh3);
+            this.panel15.Controls.Add(this.rdbSangSanh3);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 43);
+            this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(169, 34);
+            this.panel15.TabIndex = 47;
+            // 
+            // rdbToiSanh3
+            // 
+            this.rdbToiSanh3.AutoSize = true;
+            this.rdbToiSanh3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbToiSanh3.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbToiSanh3.Name = "rdbToiSanh3";
+            this.rdbToiSanh3.Size = new System.Drawing.Size(51, 27);
+            this.rdbToiSanh3.TabIndex = 41;
+            this.rdbToiSanh3.TabStop = true;
+            this.rdbToiSanh3.Text = "Tối";
+            this.rdbToiSanh3.UseVisualStyleBackColor = true;
+            // 
+            // rdbSangSanh3
+            // 
+            this.rdbSangSanh3.AutoSize = true;
+            this.rdbSangSanh3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSangSanh3.Location = new System.Drawing.Point(0, 0);
+            this.rdbSangSanh3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbSangSanh3.Name = "rdbSangSanh3";
+            this.rdbSangSanh3.Size = new System.Drawing.Size(80, 27);
+            this.rdbSangSanh3.TabIndex = 39;
+            this.rdbSangSanh3.TabStop = true;
+            this.rdbSangSanh3.Text = "Sáng";
+            this.rdbSangSanh3.UseVisualStyleBackColor = true;
+            // 
+            // bunifuGradientPanel7
+            // 
+            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
+            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel7.Controls.Add(this.bunifuCustomLabel9);
+            this.bunifuGradientPanel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel7.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel7.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
+            this.bunifuGradientPanel7.Quality = 10;
+            this.bunifuGradientPanel7.Size = new System.Drawing.Size(169, 43);
+            this.bunifuGradientPanel7.TabIndex = 46;
+            // 
+            // bunifuCustomLabel9
+            // 
+            this.bunifuCustomLabel9.AutoSize = true;
+            this.bunifuCustomLabel9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(40, 23);
+            this.bunifuCustomLabel9.TabIndex = 0;
+            this.bunifuCustomLabel9.Text = "Ca";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panelThongTinSanh2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(129, 0);
+            this.panel2.Location = new System.Drawing.Point(171, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(129, 113);
+            this.panel2.Size = new System.Drawing.Size(172, 139);
             this.panel2.TabIndex = 1;
             // 
             // panelThongTinSanh2
@@ -1111,16 +1269,18 @@ namespace TiecCuoi
             this.panelThongTinSanh2.Controls.Add(this.bunifuGradientPanel6);
             this.panelThongTinSanh2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelThongTinSanh2.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinSanh2.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanh2.Name = "panelThongTinSanh2";
-            this.panelThongTinSanh2.Size = new System.Drawing.Size(129, 113);
+            this.panelThongTinSanh2.Size = new System.Drawing.Size(171, 139);
             this.panelThongTinSanh2.TabIndex = 1;
             // 
             // panel11
             // 
             this.panel11.Controls.Add(this.lbTrangThaiSanh2);
-            this.panel11.Location = new System.Drawing.Point(0, 68);
+            this.panel11.Location = new System.Drawing.Point(0, 84);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(129, 45);
+            this.panel11.Size = new System.Drawing.Size(172, 55);
             this.panel11.TabIndex = 1;
             // 
             // lbTrangThaiSanh2
@@ -1128,9 +1288,10 @@ namespace TiecCuoi
             this.lbTrangThaiSanh2.AutoSize = true;
             this.lbTrangThaiSanh2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrangThaiSanh2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbTrangThaiSanh2.Location = new System.Drawing.Point(19, 17);
+            this.lbTrangThaiSanh2.Location = new System.Drawing.Point(25, 21);
+            this.lbTrangThaiSanh2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTrangThaiSanh2.Name = "lbTrangThaiSanh2";
-            this.lbTrangThaiSanh2.Size = new System.Drawing.Size(88, 21);
+            this.lbTrangThaiSanh2.Size = new System.Drawing.Size(100, 23);
             this.lbTrangThaiSanh2.TabIndex = 48;
             this.lbTrangThaiSanh2.Text = "Trạng thái";
             // 
@@ -1139,20 +1300,20 @@ namespace TiecCuoi
             this.panel12.Controls.Add(this.rdbToiSanh2);
             this.panel12.Controls.Add(this.rdbSangSanh2);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 35);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2);
+            this.panel12.Location = new System.Drawing.Point(0, 43);
+            this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(127, 28);
+            this.panel12.Size = new System.Drawing.Size(169, 34);
             this.panel12.TabIndex = 47;
             // 
             // rdbToiSanh2
             // 
             this.rdbToiSanh2.AutoSize = true;
             this.rdbToiSanh2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh2.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh2.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSanh2.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSanh2.Name = "rdbToiSanh2";
-            this.rdbToiSanh2.Size = new System.Drawing.Size(48, 25);
+            this.rdbToiSanh2.Size = new System.Drawing.Size(51, 27);
             this.rdbToiSanh2.TabIndex = 41;
             this.rdbToiSanh2.TabStop = true;
             this.rdbToiSanh2.Text = "Tối";
@@ -1163,9 +1324,9 @@ namespace TiecCuoi
             this.rdbSangSanh2.AutoSize = true;
             this.rdbSangSanh2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbSangSanh2.Location = new System.Drawing.Point(0, 0);
-            this.rdbSangSanh2.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbSangSanh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSangSanh2.Name = "rdbSangSanh2";
-            this.rdbSangSanh2.Size = new System.Drawing.Size(68, 25);
+            this.rdbSangSanh2.Size = new System.Drawing.Size(80, 27);
             this.rdbSangSanh2.TabIndex = 39;
             this.rdbSangSanh2.TabStop = true;
             this.rdbSangSanh2.Text = "Sáng";
@@ -1182,9 +1343,10 @@ namespace TiecCuoi
             this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel6.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
             this.bunifuGradientPanel6.Quality = 10;
-            this.bunifuGradientPanel6.Size = new System.Drawing.Size(127, 35);
+            this.bunifuGradientPanel6.Size = new System.Drawing.Size(169, 43);
             this.bunifuGradientPanel6.TabIndex = 46;
             // 
             // bunifuCustomLabel7
@@ -1192,9 +1354,10 @@ namespace TiecCuoi
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(45, 5);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(34, 21);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(40, 23);
             this.bunifuCustomLabel7.TabIndex = 0;
             this.bunifuCustomLabel7.Text = "Ca";
             // 
@@ -1206,16 +1369,18 @@ namespace TiecCuoi
             this.panelThongTinSanh1.Controls.Add(this.bunifuGradientPanel5);
             this.panelThongTinSanh1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelThongTinSanh1.Location = new System.Drawing.Point(0, 0);
+            this.panelThongTinSanh1.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinSanh1.Name = "panelThongTinSanh1";
-            this.panelThongTinSanh1.Size = new System.Drawing.Size(129, 113);
+            this.panelThongTinSanh1.Size = new System.Drawing.Size(171, 139);
             this.panelThongTinSanh1.TabIndex = 0;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.lbTrangThaiSanh1);
-            this.panel9.Location = new System.Drawing.Point(0, 68);
+            this.panel9.Location = new System.Drawing.Point(0, 84);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(129, 45);
+            this.panel9.Size = new System.Drawing.Size(172, 55);
             this.panel9.TabIndex = 1;
             // 
             // lbTrangThaiSanh1
@@ -1223,9 +1388,10 @@ namespace TiecCuoi
             this.lbTrangThaiSanh1.AutoSize = true;
             this.lbTrangThaiSanh1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrangThaiSanh1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbTrangThaiSanh1.Location = new System.Drawing.Point(19, 17);
+            this.lbTrangThaiSanh1.Location = new System.Drawing.Point(25, 21);
+            this.lbTrangThaiSanh1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTrangThaiSanh1.Name = "lbTrangThaiSanh1";
-            this.lbTrangThaiSanh1.Size = new System.Drawing.Size(88, 21);
+            this.lbTrangThaiSanh1.Size = new System.Drawing.Size(100, 23);
             this.lbTrangThaiSanh1.TabIndex = 48;
             this.lbTrangThaiSanh1.Text = "Trạng thái";
             // 
@@ -1234,20 +1400,20 @@ namespace TiecCuoi
             this.panel7.Controls.Add(this.rdbToiSanh1);
             this.panel7.Controls.Add(this.rdbSangSanh1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 35);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(0, 43);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(127, 28);
+            this.panel7.Size = new System.Drawing.Size(169, 35);
             this.panel7.TabIndex = 47;
             // 
             // rdbToiSanh1
             // 
             this.rdbToiSanh1.AutoSize = true;
             this.rdbToiSanh1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh1.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh1.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbToiSanh1.Location = new System.Drawing.Point(101, 0);
+            this.rdbToiSanh1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbToiSanh1.Name = "rdbToiSanh1";
-            this.rdbToiSanh1.Size = new System.Drawing.Size(48, 25);
+            this.rdbToiSanh1.Size = new System.Drawing.Size(51, 27);
             this.rdbToiSanh1.TabIndex = 41;
             this.rdbToiSanh1.TabStop = true;
             this.rdbToiSanh1.Text = "Tối";
@@ -1258,9 +1424,9 @@ namespace TiecCuoi
             this.rdbSangSanh1.AutoSize = true;
             this.rdbSangSanh1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbSangSanh1.Location = new System.Drawing.Point(0, 0);
-            this.rdbSangSanh1.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbSangSanh1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSangSanh1.Name = "rdbSangSanh1";
-            this.rdbSangSanh1.Size = new System.Drawing.Size(68, 25);
+            this.rdbSangSanh1.Size = new System.Drawing.Size(80, 27);
             this.rdbSangSanh1.TabIndex = 39;
             this.rdbSangSanh1.TabStop = true;
             this.rdbSangSanh1.Text = "Sáng";
@@ -1277,9 +1443,10 @@ namespace TiecCuoi
             this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel5.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
             this.bunifuGradientPanel5.Quality = 10;
-            this.bunifuGradientPanel5.Size = new System.Drawing.Size(127, 35);
+            this.bunifuGradientPanel5.Size = new System.Drawing.Size(169, 43);
             this.bunifuGradientPanel5.TabIndex = 46;
             // 
             // bunifuCustomLabel4
@@ -1287,123 +1454,20 @@ namespace TiecCuoi
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(45, 5);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(60, 6);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(34, 21);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(40, 23);
             this.bunifuCustomLabel4.TabIndex = 0;
             this.bunifuCustomLabel4.Text = "Ca";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel13);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(258, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(129, 113);
-            this.panel3.TabIndex = 2;
-            // 
-            // bunifuGradientPanel7
-            // 
-            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
-            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel7.Controls.Add(this.bunifuCustomLabel9);
-            this.bunifuGradientPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel7.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
-            this.bunifuGradientPanel7.Quality = 10;
-            this.bunifuGradientPanel7.Size = new System.Drawing.Size(127, 35);
-            this.bunifuGradientPanel7.TabIndex = 46;
-            // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(45, 5);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(34, 21);
-            this.bunifuCustomLabel9.TabIndex = 0;
-            this.bunifuCustomLabel9.Text = "Ca";
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.rdbToiSanh3);
-            this.panel15.Controls.Add(this.rdbSangSanh3);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 35);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(127, 28);
-            this.panel15.TabIndex = 47;
-            // 
-            // rdbSangSanh3
-            // 
-            this.rdbSangSanh3.AutoSize = true;
-            this.rdbSangSanh3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbSangSanh3.Location = new System.Drawing.Point(0, 0);
-            this.rdbSangSanh3.Margin = new System.Windows.Forms.Padding(2);
-            this.rdbSangSanh3.Name = "rdbSangSanh3";
-            this.rdbSangSanh3.Size = new System.Drawing.Size(68, 25);
-            this.rdbSangSanh3.TabIndex = 39;
-            this.rdbSangSanh3.TabStop = true;
-            this.rdbSangSanh3.Text = "Sáng";
-            this.rdbSangSanh3.UseVisualStyleBackColor = true;
-            // 
-            // rdbToiSanh3
-            // 
-            this.rdbToiSanh3.AutoSize = true;
-            this.rdbToiSanh3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbToiSanh3.Location = new System.Drawing.Point(76, 0);
-            this.rdbToiSanh3.Margin = new System.Windows.Forms.Padding(2);
-            this.rdbToiSanh3.Name = "rdbToiSanh3";
-            this.rdbToiSanh3.Size = new System.Drawing.Size(48, 25);
-            this.rdbToiSanh3.TabIndex = 41;
-            this.rdbToiSanh3.TabStop = true;
-            this.rdbToiSanh3.Text = "Tối";
-            this.rdbToiSanh3.UseVisualStyleBackColor = true;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.lbTrangThaiSanh3);
-            this.panel14.Location = new System.Drawing.Point(0, 68);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(129, 45);
-            this.panel14.TabIndex = 1;
-            // 
-            // lbTrangThaiSanh3
-            // 
-            this.lbTrangThaiSanh3.AutoSize = true;
-            this.lbTrangThaiSanh3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTrangThaiSanh3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbTrangThaiSanh3.Location = new System.Drawing.Point(19, 17);
-            this.lbTrangThaiSanh3.Name = "lbTrangThaiSanh3";
-            this.lbTrangThaiSanh3.Size = new System.Drawing.Size(88, 21);
-            this.lbTrangThaiSanh3.TabIndex = 48;
-            this.lbTrangThaiSanh3.Text = "Trạng thái";
-            // 
-            // panel13
-            // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.panel14);
-            this.panel13.Controls.Add(this.panel15);
-            this.panel13.Controls.Add(this.bunifuGradientPanel7);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(129, 113);
-            this.panel13.TabIndex = 1;
-            // 
             // frmTraCuuSanh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 700);
+            this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.panelBackGround);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmTraCuuSanh";
             this.Text = "Tra cứu sảnh";
             this.panelTitleBar.ResumeLayout(false);
@@ -1449,6 +1513,14 @@ namespace TiecCuoi
             this.panel18.PerformLayout();
             this.bunifuGradientPanel8.ResumeLayout(false);
             this.bunifuGradientPanel8.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.bunifuGradientPanel7.ResumeLayout(false);
+            this.bunifuGradientPanel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panelThongTinSanh2.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -1464,14 +1536,6 @@ namespace TiecCuoi
             this.panel7.PerformLayout();
             this.bunifuGradientPanel5.ResumeLayout(false);
             this.bunifuGradientPanel5.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.bunifuGradientPanel7.ResumeLayout(false);
-            this.bunifuGradientPanel7.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
