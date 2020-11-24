@@ -23,7 +23,7 @@ namespace TiecCuoi
         {
             InitializeComponent();
 
-            LoadMatrix();
+            //LoadMatrix();
 
         }
 

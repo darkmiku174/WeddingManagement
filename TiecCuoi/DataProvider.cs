@@ -197,7 +197,7 @@ namespace TiecCuoi
             }
             return dsTenSanh; 
         }
-        public int SanhSearchSoTienCoc(string maSanh)
+        public int SanhSelectSoTienCoc(string maSanh)
         {
             int soTienCoc = 0;
             string queryString =
@@ -367,7 +367,7 @@ namespace TiecCuoi
                 return true;
             }
         }
-        public List<CTDatCoc> CTDatCocSelectAll(string maCTDC)
+        public List<CTDatCoc> CTDatCocSelectFollowMaCTDC(string maCTDC)
         {
             List<CTDatCoc> dsCTDC = new List<CTDatCoc>();
             string queryString =
@@ -427,6 +427,76 @@ namespace TiecCuoi
                 }
                 return true;
             }
+        }
+
+        //Các phương thức truy xuất database của frmMenu
+        public List<ThucAn> MenuSelectAll()
+        {
+            List<ThucAn> menu = new List<ThucAn>();
+            string queryString =
+                    @"Select * From MENU";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        ThucAn ta = new ThucAn();
+                        ta.MaMonAn = reader[0].ToString();
+                        ta.TenMonAn = reader[1].ToString();
+                        ta.HinhAnh = (byte[])reader[2];
+                        ta.GiaTien = Int32.Parse(reader[3].ToString());
+                        ta.MoTa = reader[4].ToString();
+                        menu.Add(ta);
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+            return menu;
+        }
+
+        //Các phương thức truy xuất database của frmDichVu
+        public List<DichVu> DichVuSelectAll()
+        {
+            List<DichVu> dsDV = new List<DichVu>();
+            string queryString =
+                    @"Select * From DICHVU";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        DichVu dv = new DichVu();
+                        dv.MaDichVu = reader[0].ToString();
+                        dv.TenDichVu = reader[1].ToString();
+                        dv.HinhAnh = (byte[])reader[2];
+                        dv.GiaTien = Int32.Parse(reader[3].ToString());
+                        dv.MoTa = reader[4].ToString();
+                        dsDV.Add(dv);
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+            return dsDV;
         }
     }
 }

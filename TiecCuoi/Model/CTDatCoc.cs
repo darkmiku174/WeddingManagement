@@ -8,10 +8,10 @@ namespace TiecCuoi.Model
 {
     class CTDatCoc
     {
-        string maCTDC;
-        string maSanh;
-        int ca;
-        DateTime ngayToChuc;
+        private string maCTDC;
+        private string maSanh;
+        private int ca;
+        private DateTime ngayToChuc;
 
         public string MaCTDC { get => maCTDC; set => maCTDC = value; }
         public string MaSanh { get => maSanh; set => maSanh = value; }

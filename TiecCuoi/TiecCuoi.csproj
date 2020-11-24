@@ -63,6 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
+    <Compile Include="Model\CTDatCoc.cs" />
+    <Compile Include="Model\DichVu.cs" />
+    <Compile Include="Model\ThucAn.cs" />
     <Compile Include="View\Constant\Cons.cs" />
     <Compile Include="View\frmDichVu.cs">
       <SubType>Form</SubType>

@@ -42,8 +42,8 @@ namespace TiecCuoi
         {
             DataProvider dp = new DataProvider();
             string tenSanh = cmbSanh.SelectedItem.ToString();
-            string maSanh = dp.SanhSearchMaSanh(tenSanh);
-            int soTienCoc = dp.SanhSearchSoTienCoc(maSanh);
+            string maSanh = dp.SanhSelectMaSanh(tenSanh);
+            int soTienCoc = dp.SanhSelectSoTienCoc(maSanh);
             tbSoTienCoc.Text = soTienCoc.ToString();
             tbSoTienCoc.Enabled = false;
         }
@@ -52,8 +52,8 @@ namespace TiecCuoi
         {
             DataProvider dp = new DataProvider();
             string tenSanh = cmbSanh.SelectedItem.ToString();
-            string maSanh = dp.SanhSearchMaSanh(tenSanh);
-            int soTienCoc = dp.SanhSearchSoTienCoc(maSanh);
+            string maSanh = dp.SanhSelectMaSanh(tenSanh);
+            int soTienCoc = dp.SanhSelectSoTienCoc(maSanh);
             tbSoTienCoc.Text = soTienCoc.ToString();
         }
 
