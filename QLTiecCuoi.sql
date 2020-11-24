@@ -22,13 +22,13 @@ CREATE TABLE CTDATCOC
 	MASANH VARCHAR(10) NOT NULL,
 	CA INT,
 	NGAYTC DATETIME,
-	SOTIENC0C INT,
 	CONSTRAINT CTDC_PK PRIMARY KEY (MACTDC)
 )
 
 CREATE TABLE HOPDONG
 (
 	MAHD VARCHAR(10) NOT NULL,
+	MADC VARCHAR(10) NOT NULL,
 	MANV VARCHAR(10) NOT NULL,
 	MAKH VARCHAR(10) NOT NULL,
 	MACTHD VARCHAR(10) NOT NULL,
@@ -42,10 +42,7 @@ CREATE TABLE CTHOPDONG
 	MACTHD VARCHAR(10) NOT NULL,
 	TENCODAU NVARCHAR(50) NOT NULL,
 	TENCHURE NVARCHAR(50) NOT NULL,
-	MASANH VARCHAR(10) NOT NULL,
-	CA INT,
 	SOBAN DECIMAL(4),
-	NGAYTC DATETIME,
 	SOTIENCOC INT,
 	TONGTIEN INT,
 	CONSTRAINT CTHD_PK PRIMARY KEY (MACTHD)
@@ -57,7 +54,7 @@ CREATE TABLE MENU
 	TENMA NVARCHAR(50) NOT NULL,
 	HINHANH IMAGE,
 	GIATIEN INT NOT NULL,
-	MOTA NVARCHAR(100),
+	MOTA NVARCHAR(150),
 	CONSTRAINT MENU_PK PRIMARY KEY (MAMA)
 )
 
@@ -67,7 +64,7 @@ CREATE TABLE DICHVU
 	TENDV NVARCHAR(50) NOT NULL,
 	HINHANH IMAGE,
 	GIATIEN INT NOT NULL,
-	MOTA NVARCHAR(100),
+	MOTA NVARCHAR(150),
 	CONSTRAINT DV_PK PRIMARY KEY (MADV)
 )
 
@@ -79,7 +76,7 @@ CREATE TABLE KHUYENMAI
 	UUDAI INT NOT NULL,
 	NGAYBD DATETIME,
 	NGAYKT DATETIME,
-	MOTA NVARCHAR(100),
+	MOTA NVARCHAR(150),
 	CONSTRAINT KM_PK PRIMARY KEY (MAKM)
 )
 
@@ -88,8 +85,8 @@ CREATE TABLE SANH
 	MASANH VARCHAR(10) NOT NULL,
 	TENSANH NVARCHAR(50) NOT NULL,
 	HINHANH IMAGE,
-	DONGIATT INT,
-	MOTA NVARCHAR(100),
+	SOTIENCOC INT,
+	MOTA NVARCHAR(150),
 	CONSTRAINT SANH_PK PRIMARY KEY (MASANH)
 )
 
@@ -113,7 +110,7 @@ CREATE TABLE KHACHHANG
 	TENKH NVARCHAR(50) NOT NULL,
 	SDT VARCHAR(10) NOT NULL,
 	EMAIL VARCHAR(50),
-	DIACHI NVARCHAR(50),
+	DIACHI NVARCHAR(150),
 	CONSTRAINT KH_PK PRIMARY KEY (MAKH)
 )
 
@@ -154,12 +151,11 @@ CREATE TABLE PHIEUPHAT
 
  ALTER TABLE CTDATCOC ADD CONSTRAINT CTDATCOC_MASANH_FK FOREIGN KEY(MASANH) REFERENCES SANH(MASANH) 
  
+ ALTER TABLE HOPDONG ADD CONSTRAINT HOPDONG_MADC_FK FOREIGN KEY(MADC) REFERENCES DATCOC(MADC) 
  ALTER TABLE HOPDONG ADD CONSTRAINT HOPDONG_MANV_FK FOREIGN KEY(MANV) REFERENCES NHANVIEN(MANV) 
  ALTER TABLE HOPDONG ADD CONSTRAINT HOPDONG_MAKH_FK FOREIGN KEY(MAKH) REFERENCES KHACHHANG(MAKH)
  ALTER TABLE HOPDONG ADD CONSTRAINT HOPDONG_MACTHD_FK FOREIGN KEY(MACTHD) REFERENCES CTHOPDONG(MACTHD)
  ALTER TABLE HOPDONG ADD CONSTRAINT HOPDONG_MAKM_FK FOREIGN KEY(MAKM) REFERENCES KHUYENMAI(MAKM)
-
- ALTER TABLE CTHOPDONG ADD CONSTRAINT CTHOPDONG_MASANH_FK FOREIGN KEY(MASANH) REFERENCES SANH(MASANH)
 
  ALTER TABLE DSCTMENU ADD CONSTRAINT DSCTMENU_MACTHD_FK FOREIGN KEY(MACTHD) REFERENCES CTHOPDONG(MACTHD)
  ALTER TABLE DSCTMENU ADD CONSTRAINT DSCTMENU_MAMA_FK FOREIGN KEY(MAMA) REFERENCES MENU(MAMA)
@@ -173,21 +169,21 @@ CREATE TABLE PHIEUPHAT
 
 
  --CT DAT COC
- INSERT INTO CTDATCOC VALUES('CTC01','S1',0,'2020/2/2 02:02:02',10000000)
+ INSERT INTO CTDATCOC VALUES('CTC01','S1',0,'2020/2/2 02:02:02')
 
  --CT HOP DONG
  DELETE FROM CTHOPDONG
- INSERT INTO CTHOPDONG VALUES('CTHD01',N'Nguyễn Thị C',N'Nguyễn Văn B','S1',0,10,'2020/2/2 02:02:02',100000000,500000000)
+ INSERT INTO CTHOPDONG VALUES('CTHD01',N'Nguyễn Thị C',N'Nguyễn Văn B',10,100000000,500000000)
 
  --DAT COC
  INSERT INTO DATCOC VALUES('C01','NV001','KH001','2020/2/2 02:02:02','CTC01')
 
  --DICH VU
-INSERT INTO DICHVU VALUES('DV01',N'MÚA LÂN',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\LogoPussyCat.jpg', SINGLE_CLOB) as Image),10,N'Dịch vụ múa lân')
+INSERT INTO DICHVU VALUES('DV01',N'MÚA LÂN',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\LogoPussyCat.jpg', SINGLE_CLOB) as Image),10,N'Dịch vụ múa lân')
 
 --HOP DONG
 DELETE FROM HOPDONG
-INSERT INTO HOPDONG VALUES('HD01','NV001','KH001','CTHD01','2020/2/2 02:02:02','KM01')
+INSERT INTO HOPDONG VALUES('HD01','C01','NV001','KH001','CTHD01','2020/2/2 02:02:02','KM01')
 
 --KHACH HANG
  DELETE FROM KHACHHANG
@@ -195,50 +191,54 @@ INSERT INTO KHACHHANG VALUES('KH001',N'Nguyễn Văn Z',0123456789,'zzZ@gmail.co
 
 --KHUYEN MAI
 DELETE FROM KHUYENMAI
-INSERT INTO KHUYENMAI VALUES('KM01',N'2 NĂM LƯU DẤU VÀNG SON',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\KhuyenMai\2years.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'Khuyếm mãi giảm giá 5%')
-INSERT INTO KHUYENMAI VALUES('KM02',N'TIỆC CƯỚI VÀNG CHO HÔN NHÂN MỸ MÃN',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\KhuyenMai\GoldenWedding.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'TẶNG PHÍ PHỤC VỤ. Trang  trí hoa tươi cao cấp.')
-INSERT INTO KHUYENMAI VALUES('KM03',N'20 THÁNG 10 – TƯƠI CƯỜI ĐẶT CƯỚI',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\KhuyenMai\20Thang10.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'Đặc biệt giảm thêm 8% thực đơn. Tặng gói trang trí cao cấp. ')
-INSERT INTO KHUYENMAI VALUES('KM04',N'TẤT NIÊN RỘN RÀNG',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\KhuyenMai\TatNienRonRang.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'Đặc biệt giảm 20%. Menu đa dạng, hấp dẫn.')
+INSERT INTO KHUYENMAI VALUES('KM01',N'2 NĂM LƯU DẤU VÀNG SON',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\KhuyenMai\2years.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'Khuyếm mãi giảm giá 5%')
+INSERT INTO KHUYENMAI VALUES('KM02',N'TIỆC CƯỚI VÀNG CHO HÔN NHÂN MỸ MÃN',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\KhuyenMai\GoldenWedding.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'TẶNG PHÍ PHỤC VỤ. Trang  trí hoa tươi cao cấp.')
+INSERT INTO KHUYENMAI VALUES('KM03',N'20 THÁNG 10 – TƯƠI CƯỜI ĐẶT CƯỚI',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\KhuyenMai\20Thang10.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'Đặc biệt giảm thêm 8% thực đơn. Tặng gói trang trí cao cấp. ')
+INSERT INTO KHUYENMAI VALUES('KM04',N'TẤT NIÊN RỘN RÀNG',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\KhuyenMai\TatNienRonRang.png', SINGLE_CLOB) as Image),10,'2020/2/2 02:02:02','2020/12/12 12:12:12',N'Đặc biệt giảm 20%. Menu đa dạng, hấp dẫn.')
 
  --MENU
 DELETE FROM MENU 
 
-INSERT INTO MENU VALUES('M01',N'Salad thịt bò Úc',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\BeefSalad.png', SINGLE_CLOB) as Image),1600000,N'Món khai vị')
-INSERT INTO MENU VALUES('M02',N'Salad ức vịt xông khói',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\DuckSalad.png', SINGLE_CLOB) as Image),1500000,N'Món khai vị')
-INSERT INTO MENU VALUES('M03',N'Tôm tempura',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\Tempura.png', SINGLE_CLOB) as Image),1600000,N'Món khai vị')
-INSERT INTO MENU VALUES('M04',N'Gỏi sò điệp',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\ScallopsSalad.png', SINGLE_CLOB) as Image),1300000,N'Món khai vị')
-INSERT INTO MENU VALUES('M05',N'Gỏi nấm hải sản',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\SeafoodMushroomSalad.png', SINGLE_CLOB) as Image),1200000,N'Món khai vị')
+INSERT INTO MENU VALUES('M01',N'Salad thịt bò Úc',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\BeefSalad.png', SINGLE_CLOB) as Image),1600000,N'Món khai vị')
+INSERT INTO MENU VALUES('M02',N'Salad ức vịt xông khói',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\DuckSalad.png', SINGLE_CLOB) as Image),1500000,N'Món khai vị')
+INSERT INTO MENU VALUES('M03',N'Tôm tempura',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\Tempura.png', SINGLE_CLOB) as Image),1600000,N'Món khai vị')
+INSERT INTO MENU VALUES('M04',N'Gỏi sò điệp',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\ScallopsSalad.png', SINGLE_CLOB) as Image),1300000,N'Món khai vị')
+INSERT INTO MENU VALUES('M05',N'Gỏi nấm hải sản',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\SeafoodMushroomSalad.png', SINGLE_CLOB) as Image),1200000,N'Món khai vị')
 
-INSERT INTO MENU VALUES('M06',N'Súp gà xé nấm hương ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\MushroomChickenSoup.png', SINGLE_CLOB) as Image),1200000,N'Món súp')
-INSERT INTO MENU VALUES('M07',N'Súp bào ngư hải sâm  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\AbaloneSoup.png', SINGLE_CLOB) as Image),1500000,N'Món súp')
-INSERT INTO MENU VALUES('M08',N'Súp bắp kem thịt cua ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\CrabCreamCornSoup.png', SINGLE_CLOB) as Image),1500000,N'Món súp')
-INSERT INTO MENU VALUES('M09',N'Súp rong biển hải sản  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\SeafoodSeaweedSoup.png', SINGLE_CLOB) as Image),1200000,N'Món súp')
-INSERT INTO MENU VALUES('M10',N'Súp nấm kim châm ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\NeedleMushroomSoup.png', SINGLE_CLOB) as Image),1000000,N'Món súp')
+INSERT INTO MENU VALUES('M06',N'Súp gà xé nấm hương ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\MushroomChickenSoup.png', SINGLE_CLOB) as Image),1200000,N'Món súp')
+INSERT INTO MENU VALUES('M07',N'Súp bào ngư hải sâm  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\AbaloneSoup.png', SINGLE_CLOB) as Image),1500000,N'Món súp')
+INSERT INTO MENU VALUES('M08',N'Súp bắp kem thịt cua ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\CrabCreamCornSoup.png', SINGLE_CLOB) as Image),1500000,N'Món súp')
+INSERT INTO MENU VALUES('M09',N'Súp rong biển hải sản  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\SeafoodSeaweedSoup.png', SINGLE_CLOB) as Image),1200000,N'Món súp')
+INSERT INTO MENU VALUES('M10',N'Súp nấm kim châm ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\NeedleMushroomSoup.png', SINGLE_CLOB) as Image),1000000,N'Món súp')
 
-INSERT INTO MENU VALUES('M11',N'Lẩu hải sản Hàn Quốc + mì ramen  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\KoreanSeafood Hotpot.png', SINGLE_CLOB) as Image),5000000,N'Món chính')
-INSERT INTO MENU VALUES('M12',N'Lẩu cua đồng nội + bún tươi  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\CrabHotpot.png', SINGLE_CLOB) as Image),4000000,N'Món chính')
-INSERT INTO MENU VALUES('M13',N'Cơm chiên dương châu  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\FriedRice.png', SINGLE_CLOB) as Image),3500000,N'Món chính')
-INSERT INTO MENU VALUES('M14',N'Miến xào hải sản   ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\FriedNoodleSeafood.png', SINGLE_CLOB) as Image),3500000,N'Món chính')
-INSERT INTO MENU VALUES('M15',N'Cà Ri Bò + Bánh mì  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\BeefCurry.png', SINGLE_CLOB) as Image),4000000,N'Món chính')
+INSERT INTO MENU VALUES('M11',N'Lẩu hải sản Hàn Quốc + mì ramen  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\KoreanSeafood Hotpot.png', SINGLE_CLOB) as Image),5000000,N'Món chính')
+INSERT INTO MENU VALUES('M12',N'Lẩu cua đồng nội + bún tươi  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\CrabHotpot.png', SINGLE_CLOB) as Image),4000000,N'Món chính')
+INSERT INTO MENU VALUES('M13',N'Cơm chiên dương châu  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\FriedRice.png', SINGLE_CLOB) as Image),3500000,N'Món chính')
+INSERT INTO MENU VALUES('M14',N'Miến xào hải sản   ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\FriedNoodleSeafood.png', SINGLE_CLOB) as Image),3500000,N'Món chính')
+INSERT INTO MENU VALUES('M15',N'Cà Ri Bò + Bánh mì  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\BeefCurry.png', SINGLE_CLOB) as Image),4000000,N'Món chính')
 
-INSERT INTO MENU VALUES('M16',N'Trái cây thập cẩm  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\Fruits.png', SINGLE_CLOB) as Image),1000000,N'Món tráng miệng')
-INSERT INTO MENU VALUES('M17',N'Rau câu trái cây  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\FruitJelly.png', SINGLE_CLOB) as Image),1200000,N'Món tráng miệng')
-INSERT INTO MENU VALUES('M18',N'Bánh tiramisu  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\TiramisuCake.png', SINGLE_CLOB) as Image),1500000,N'Món tráng miệng')
-INSERT INTO MENU VALUES('M19',N'Bánh mouse mâm xôi  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\RaspberryMouseCake.png', SINGLE_CLOB) as Image),1500000,N'Món tráng miệng')
-INSERT INTO MENU VALUES('M20',N'Chè khúc bạch trái cây  ',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\menu\FruitWhiteTea.png', SINGLE_CLOB) as Image),1200000,N'Món tráng miệng')
+INSERT INTO MENU VALUES('M16',N'Trái cây thập cẩm  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\Fruits.png', SINGLE_CLOB) as Image),1000000,N'Món tráng miệng')
+INSERT INTO MENU VALUES('M17',N'Rau câu trái cây  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\FruitJelly.png', SINGLE_CLOB) as Image),1200000,N'Món tráng miệng')
+INSERT INTO MENU VALUES('M18',N'Bánh tiramisu  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\TiramisuCake.png', SINGLE_CLOB) as Image),1500000,N'Món tráng miệng')
+INSERT INTO MENU VALUES('M19',N'Bánh mouse mâm xôi  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\RaspberryMouseCake.png', SINGLE_CLOB) as Image),1500000,N'Món tráng miệng')
+INSERT INTO MENU VALUES('M20',N'Chè khúc bạch trái cây  ',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\menu\FruitWhiteTea.png', SINGLE_CLOB) as Image),1200000,N'Món tráng miệng')
 
 --NHAN VIEN
 INSERT INTO NHANVIEN VALUES('NV001',N'Nguyen Van A',0,'N',10,0)
+INSERT INTO NHANVIEN VALUES('NV002',N'Nguyen Văn Cẩu',0,'N',10,0)
 
 --PHIEU PHAT
 INSERT INTO PHIEUPHAT VALUES('PP01',10,10,10000000)
 
 --SANH
-INSERT INTO SANH VALUES('S1',N'Cancer',(SELECT * FROM OPENROWSET(BULK N'D:\CNTT\DA\WeddingManagement\image\LogoPussyCat.jpg', SINGLE_CLOB) as Image),10,N'Sảnh 1')
+INSERT INTO SANH VALUES('S1',N'Cancer',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\LogoPussyCat.jpg', SINGLE_CLOB) as Image),10,N'Sảnh 1')
+INSERT INTO SANH VALUES('S2',N'Mimic',(SELECT * FROM OPENROWSET(BULK N'D:\BaiTapTruong\WeddingManagement\image\LogoPussyCat.jpg', SINGLE_CLOB) as Image),200,N'Sảnh 2')
 
 --THANH TOAN HOP DONG
 INSERT INTO THANHTOANHD VALUES('HD01','NV001','2020/2/2 02:02:02',0,10,'PP01')
 
+DELETE FROM Sanh where MASANH='S2'
+delete from ctDATCOC
 
 select * from CTDATCOC
 select * from CTHOPDONG
