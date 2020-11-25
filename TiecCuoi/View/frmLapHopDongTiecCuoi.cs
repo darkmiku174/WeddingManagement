@@ -26,6 +26,7 @@ namespace TiecCuoi
             LoadMaNhanVien();
             LoadMaDatCoc();
             LoadMaKhachHang();
+            LoadSoTienCoc();
         }
 
         private void LoadTenSanh()
@@ -33,6 +34,7 @@ namespace TiecCuoi
             DataProvider dp = new DataProvider();
             List<string> dsTenSanh = dp.SanhSelectName();
             cmbSanh.DataSource = dsTenSanh;
+            
         }
 
         private void LoadMaNhanVien()
@@ -56,6 +58,13 @@ namespace TiecCuoi
             cmbMaKhachHang.DataSource = dsMaKH;
         }
 
+        private void LoadSoTienCoc()
+        {
+            DataProvider dp = new DataProvider();
+            string tenSanh = cmbSanh.SelectedItem.ToString();
+            string maSanh = dp.SanhSelectMaSanh(tenSanh);
+            tbSoTienCoc.Text = dp.SanhSelectSoTienCoc(maSanh).ToString();
+        }
         private void btnChonThucDon_Click(object sender, EventArgs e)
         {
             frmChonMenu frmCMenu = new frmChonMenu();
@@ -64,7 +73,9 @@ namespace TiecCuoi
 
         private void btnChonDichVu_Click(object sender, EventArgs e)
         {
-            frmChonDichVu frmCDV = new frmChonDichVu();
+            string maHopDong = tbMaHopDong.Text;
+            string maCTHD = "CT" + maHopDong;
+            frmChonDichVu frmCDV = new frmChonDichVu(maCTHD);
             frmCDV.Show();
         }
 
@@ -73,13 +84,15 @@ namespace TiecCuoi
             DataProvider dp = new DataProvider();
             string maHopDong = tbMaHopDong.Text;
             string maNhanVien = cmbMaNhanVien.SelectedItem.ToString();
-            //string maKhachHang = tbMaKhachHang.Text;
+            string maKhachHang = cmbMaKhachHang.SelectedItem.ToString();
             DateTime ngayHopDong = DateTime.Now;
             string maCTHD = "CT" + maHopDong;
             DateTime ngayToChuc = dtpNgayToChuc.Value;
             string tenSanh = cmbSanh.SelectedItem.ToString();
             string maSanh = dp.SanhSelectMaSanh(tenSanh);
             int ca = rdbSang.Checked ? 0 : 1;
+            int soLuongBan = Int32.Parse(tbSoLuongBan.Text);
+            int soTienCoc = Int32.Parse(tbSoTienCoc.Text);
             //if (dp.KhachHangAdd(maKhachHang, tenKhachHang, sdt, email, diaChi))
             //    if (dp.CTDatCocAdd(maCTDC, maSanh, ca, ngayToChuc))
             //        if (dp.DatCocAdd(maDatCoc, maNhanVien, maKhachHang, ngayDatCoc, maCTDC))
@@ -97,6 +110,12 @@ namespace TiecCuoi
             //    }
             //else
             //    MessageBox.Show("Lưu thất bại 3");
-        } 
+        }
+        
+        private void cmbSanh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadSoTienCoc();
+        }
+        
     }
 }

@@ -48,10 +48,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelComboBox = new System.Windows.Forms.Panel();
-            this.cbCa = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cbTenSanh = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cbMaHopDong = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cbMaKhachHang = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cmbCa = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cmbTenSanh = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cmbMaHopDong = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cmbMaKhachHang = new Bunifu.Framework.UI.BunifuDropdown();
             this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelRightBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuTiec)).BeginInit();
@@ -77,7 +77,7 @@
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
             this.panelRightBar.Location = new System.Drawing.Point(0, 62);
-            this.panelRightBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelRightBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
             this.panelRightBar.Size = new System.Drawing.Size(1220, 782);
@@ -105,7 +105,7 @@
             this.dgvTraCuTiec.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dgvTraCuTiec.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.dgvTraCuTiec.Location = new System.Drawing.Point(0, 176);
-            this.dgvTraCuTiec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTraCuTiec.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTraCuTiec.Name = "dgvTraCuTiec";
             this.dgvTraCuTiec.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvTraCuTiec.RowHeadersWidth = 51;
@@ -125,7 +125,7 @@
             this.panelThongTinMonAn.GradientTopLeft = System.Drawing.Color.White;
             this.panelThongTinMonAn.GradientTopRight = System.Drawing.Color.White;
             this.panelThongTinMonAn.Location = new System.Drawing.Point(0, 0);
-            this.panelThongTinMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelThongTinMonAn.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinMonAn.Name = "panelThongTinMonAn";
             this.panelThongTinMonAn.Quality = 10;
             this.panelThongTinMonAn.Size = new System.Drawing.Size(1220, 176);
@@ -138,7 +138,7 @@
             this.panel7.Controls.Add(this.dtpTraCuuTiec);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1220, 86);
             this.panel7.TabIndex = 3;
@@ -152,7 +152,7 @@
             this.tbTenCoDau.ForeColor = System.Drawing.Color.SeaGreen;
             this.tbTenCoDau.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.Icon")));
             this.tbTenCoDau.Location = new System.Drawing.Point(627, 36);
-            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(5);
             this.tbTenCoDau.Name = "tbTenCoDau";
             this.tbTenCoDau.Size = new System.Drawing.Size(593, 50);
             this.tbTenCoDau.TabIndex = 2;
@@ -167,7 +167,7 @@
             this.tbTenChuRe.ForeColor = System.Drawing.Color.SeaGreen;
             this.tbTenChuRe.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.Icon")));
             this.tbTenChuRe.Location = new System.Drawing.Point(0, 36);
-            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(5);
             this.tbTenChuRe.Name = "tbTenChuRe";
             this.tbTenChuRe.Size = new System.Drawing.Size(627, 50);
             this.tbTenChuRe.TabIndex = 2;
@@ -182,7 +182,7 @@
             this.dtpTraCuuTiec.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTraCuuTiec.FormatCustom = null;
             this.dtpTraCuuTiec.Location = new System.Drawing.Point(0, 0);
-            this.dtpTraCuuTiec.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtpTraCuuTiec.Margin = new System.Windows.Forms.Padding(5);
             this.dtpTraCuuTiec.Name = "dtpTraCuuTiec";
             this.dtpTraCuuTiec.Size = new System.Drawing.Size(1220, 36);
             this.dtpTraCuuTiec.TabIndex = 5;
@@ -196,7 +196,7 @@
             this.panelTitle2.Controls.Add(this.panel3);
             this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelTitle2.Location = new System.Drawing.Point(0, 86);
-            this.panelTitle2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitle2.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitle2.Name = "panelTitle2";
             this.panelTitle2.Size = new System.Drawing.Size(1220, 36);
             this.panelTitle2.TabIndex = 1;
@@ -206,7 +206,7 @@
             this.panel6.Controls.Add(this.label4);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(912, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(304, 36);
             this.panel6.TabIndex = 7;
@@ -227,7 +227,7 @@
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(608, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(304, 36);
             this.panel5.TabIndex = 6;
@@ -248,7 +248,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(304, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(304, 36);
             this.panel4.TabIndex = 5;
@@ -269,7 +269,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(304, 36);
             this.panel3.TabIndex = 4;
@@ -287,80 +287,80 @@
             // 
             // panelComboBox
             // 
-            this.panelComboBox.Controls.Add(this.cbCa);
-            this.panelComboBox.Controls.Add(this.cbTenSanh);
-            this.panelComboBox.Controls.Add(this.cbMaHopDong);
-            this.panelComboBox.Controls.Add(this.cbMaKhachHang);
+            this.panelComboBox.Controls.Add(this.cmbCa);
+            this.panelComboBox.Controls.Add(this.cmbTenSanh);
+            this.panelComboBox.Controls.Add(this.cmbMaHopDong);
+            this.panelComboBox.Controls.Add(this.cmbMaKhachHang);
             this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelComboBox.Location = new System.Drawing.Point(0, 122);
-            this.panelComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.panelComboBox.Name = "panelComboBox";
             this.panelComboBox.Size = new System.Drawing.Size(1220, 54);
             this.panelComboBox.TabIndex = 0;
             // 
-            // cbCa
+            // cmbCa
             // 
-            this.cbCa.BackColor = System.Drawing.Color.Transparent;
-            this.cbCa.BorderRadius = 3;
-            this.cbCa.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cbCa.ForeColor = System.Drawing.Color.White;
-            this.cbCa.Items = new string[0];
-            this.cbCa.Location = new System.Drawing.Point(912, 0);
-            this.cbCa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cbCa.Name = "cbCa";
-            this.cbCa.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cbCa.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cbCa.selectedIndex = -1;
-            this.cbCa.Size = new System.Drawing.Size(305, 54);
-            this.cbCa.TabIndex = 5;
+            this.cmbCa.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCa.BorderRadius = 3;
+            this.cmbCa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbCa.ForeColor = System.Drawing.Color.White;
+            this.cmbCa.Items = new string[0];
+            this.cmbCa.Location = new System.Drawing.Point(912, 0);
+            this.cmbCa.Margin = new System.Windows.Forms.Padding(5);
+            this.cmbCa.Name = "cmbCa";
+            this.cmbCa.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cmbCa.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cmbCa.selectedIndex = -1;
+            this.cmbCa.Size = new System.Drawing.Size(305, 54);
+            this.cmbCa.TabIndex = 5;
             // 
-            // cbTenSanh
+            // cmbTenSanh
             // 
-            this.cbTenSanh.BackColor = System.Drawing.Color.Transparent;
-            this.cbTenSanh.BorderRadius = 3;
-            this.cbTenSanh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cbTenSanh.ForeColor = System.Drawing.Color.White;
-            this.cbTenSanh.Items = new string[0];
-            this.cbTenSanh.Location = new System.Drawing.Point(608, 0);
-            this.cbTenSanh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cbTenSanh.Name = "cbTenSanh";
-            this.cbTenSanh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cbTenSanh.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cbTenSanh.selectedIndex = -1;
-            this.cbTenSanh.Size = new System.Drawing.Size(304, 54);
-            this.cbTenSanh.TabIndex = 5;
+            this.cmbTenSanh.BackColor = System.Drawing.Color.Transparent;
+            this.cmbTenSanh.BorderRadius = 3;
+            this.cmbTenSanh.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbTenSanh.ForeColor = System.Drawing.Color.White;
+            this.cmbTenSanh.Items = new string[0];
+            this.cmbTenSanh.Location = new System.Drawing.Point(608, 0);
+            this.cmbTenSanh.Margin = new System.Windows.Forms.Padding(5);
+            this.cmbTenSanh.Name = "cmbTenSanh";
+            this.cmbTenSanh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cmbTenSanh.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cmbTenSanh.selectedIndex = -1;
+            this.cmbTenSanh.Size = new System.Drawing.Size(304, 54);
+            this.cmbTenSanh.TabIndex = 5;
             // 
-            // cbMaHopDong
+            // cmbMaHopDong
             // 
-            this.cbMaHopDong.BackColor = System.Drawing.Color.Transparent;
-            this.cbMaHopDong.BorderRadius = 3;
-            this.cbMaHopDong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cbMaHopDong.ForeColor = System.Drawing.Color.White;
-            this.cbMaHopDong.Items = new string[0];
-            this.cbMaHopDong.Location = new System.Drawing.Point(304, 0);
-            this.cbMaHopDong.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cbMaHopDong.Name = "cbMaHopDong";
-            this.cbMaHopDong.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cbMaHopDong.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cbMaHopDong.selectedIndex = -1;
-            this.cbMaHopDong.Size = new System.Drawing.Size(304, 54);
-            this.cbMaHopDong.TabIndex = 5;
+            this.cmbMaHopDong.BackColor = System.Drawing.Color.Transparent;
+            this.cmbMaHopDong.BorderRadius = 3;
+            this.cmbMaHopDong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbMaHopDong.ForeColor = System.Drawing.Color.White;
+            this.cmbMaHopDong.Items = new string[0];
+            this.cmbMaHopDong.Location = new System.Drawing.Point(304, 0);
+            this.cmbMaHopDong.Margin = new System.Windows.Forms.Padding(5);
+            this.cmbMaHopDong.Name = "cmbMaHopDong";
+            this.cmbMaHopDong.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cmbMaHopDong.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cmbMaHopDong.selectedIndex = -1;
+            this.cmbMaHopDong.Size = new System.Drawing.Size(304, 54);
+            this.cmbMaHopDong.TabIndex = 5;
             // 
-            // cbMaKhachHang
+            // cmbMaKhachHang
             // 
-            this.cbMaKhachHang.BackColor = System.Drawing.Color.Transparent;
-            this.cbMaKhachHang.BorderRadius = 3;
-            this.cbMaKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cbMaKhachHang.ForeColor = System.Drawing.Color.White;
-            this.cbMaKhachHang.Items = new string[0];
-            this.cbMaKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.cbMaKhachHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbMaKhachHang.Name = "cbMaKhachHang";
-            this.cbMaKhachHang.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cbMaKhachHang.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cbMaKhachHang.selectedIndex = -1;
-            this.cbMaKhachHang.Size = new System.Drawing.Size(304, 54);
-            this.cbMaKhachHang.TabIndex = 5;
+            this.cmbMaKhachHang.BackColor = System.Drawing.Color.Transparent;
+            this.cmbMaKhachHang.BorderRadius = 3;
+            this.cmbMaKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbMaKhachHang.ForeColor = System.Drawing.Color.White;
+            this.cmbMaKhachHang.Items = new string[0];
+            this.cmbMaKhachHang.Location = new System.Drawing.Point(0, 0);
+            this.cmbMaKhachHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbMaKhachHang.Name = "cmbMaKhachHang";
+            this.cmbMaKhachHang.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cmbMaKhachHang.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cmbMaKhachHang.selectedIndex = -1;
+            this.cmbMaKhachHang.Size = new System.Drawing.Size(304, 54);
+            this.cmbMaKhachHang.TabIndex = 5;
             // 
             // panelTitle
             // 
@@ -372,7 +372,7 @@
             this.panelTitle.GradientTopLeft = System.Drawing.Color.White;
             this.panelTitle.GradientTopRight = System.Drawing.Color.White;
             this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitle.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Quality = 10;
             this.panelTitle.Size = new System.Drawing.Size(1220, 62);
@@ -385,7 +385,7 @@
             this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.panelRightBar);
             this.Controls.Add(this.panelTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTraCuuTiec";
             this.Text = "Tra cứu tiệc";
             this.panelRightBar.ResumeLayout(false);
@@ -426,9 +426,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelComboBox;
-        private Bunifu.Framework.UI.BunifuDropdown cbCa;
-        private Bunifu.Framework.UI.BunifuDropdown cbTenSanh;
-        private Bunifu.Framework.UI.BunifuDropdown cbMaHopDong;
-        private Bunifu.Framework.UI.BunifuDropdown cbMaKhachHang;
+        private Bunifu.Framework.UI.BunifuDropdown cmbCa;
+        private Bunifu.Framework.UI.BunifuDropdown cmbTenSanh;
+        private Bunifu.Framework.UI.BunifuDropdown cmbMaHopDong;
+        private Bunifu.Framework.UI.BunifuDropdown cmbMaKhachHang;
     }
 }

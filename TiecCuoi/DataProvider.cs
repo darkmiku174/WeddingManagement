@@ -428,6 +428,31 @@ namespace TiecCuoi
                 return true;
             }
         }
+        public bool DSCTDVAdd(string maCTHD, string maDV)
+        {
+            string queryString =
+                 @"Insert into DSCTDV
+                  Values(@MaCTHD, @MaDV)";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@MaCTHD", maCTHD);
+                command.Parameters.AddWithValue("@MaDV", maDV);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return false;
+                }
+                return true;
+            }
+        }
 
         //Các phương thức truy xuất database của frmMenu
         public List<ThucAn> MenuSelectAll()
