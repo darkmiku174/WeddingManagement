@@ -51,6 +51,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
+    <Compile Include="frmSepDanhSachTiecConNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSepDanhSachTiecConNo.Designer.cs">
+      <DependentUpon>frmSepDanhSachTiecConNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\CTDatCoc.cs" />
     <Compile Include="Model\DichVu.cs" />
     <Compile Include="Model\KhuyenMai.cs" />
@@ -86,6 +93,54 @@
     </Compile>
     <Compile Include="View\frmSanh.Designer.cs">
       <DependentUpon>frmSanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepDanhSachTiecConNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepDanhSachTiecConNo.Designer.cs">
+      <DependentUpon>frmSepDanhSachTiecConNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepDichVu.Designer.cs">
+      <DependentUpon>frmSepDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepKhuyenMai.Designer.cs">
+      <DependentUpon>frmSepKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepMenu.Designer.cs">
+      <DependentUpon>frmSepMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepNhanVien.Designer.cs">
+      <DependentUpon>frmSepNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepThemDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepThemDichVu.Designer.cs">
+      <DependentUpon>frmSepThemDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepThemKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepThemKhuyenMai.Designer.cs">
+      <DependentUpon>frmSepThemKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSepThemMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepThemMenu.Designer.cs">
+      <DependentUpon>frmSepThemMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmThanhToan.cs">
       <SubType>Form</SubType>
@@ -143,6 +198,18 @@
     <Compile Include="View\frmTrangChuNhanVien.Designer.cs">
       <DependentUpon>frmTrangChuNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmSepBaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSepBaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>frmSepBaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTrangChuSep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTrangChuSep.Designer.cs">
+      <DependentUpon>frmTrangChuSep.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\frmChonDichVu.resx">
       <DependentUpon>frmChonDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +233,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmSanh.resx">
       <DependentUpon>frmSanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepDanhSachTiecConNo.resx">
+      <DependentUpon>frmSepDanhSachTiecConNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepDichVu.resx">
+      <DependentUpon>frmSepDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepKhuyenMai.resx">
+      <DependentUpon>frmSepKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepMenu.resx">
+      <DependentUpon>frmSepMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepNhanVien.resx">
+      <DependentUpon>frmSepNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepThemDichVu.resx">
+      <DependentUpon>frmSepThemDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepThemKhuyenMai.resx">
+      <DependentUpon>frmSepThemKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSepThemMenu.resx">
+      <DependentUpon>frmSepThemMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmThanhToan.resx">
       <DependentUpon>frmThanhToan.cs</DependentUpon>
@@ -194,6 +285,12 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="View\frmSepBaoCaoDoanhThu.resx">
+      <DependentUpon>frmSepBaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTrangChuSep.resx">
+      <DependentUpon>frmTrangChuSep.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

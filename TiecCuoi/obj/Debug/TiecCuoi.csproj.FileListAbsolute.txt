@@ -71,3 +71,6 @@ C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmThanhToan.resour
 C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmTraCuuTiec.resources
 C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmTraCuuSanh.resources
 C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.frmTrangChuNhanVien.resources
+C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.View.frmSepDanhSachTiecConNo.resources
+C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.View.frmSepBaoCaoDoanhThu.resources
+C:\DoAnDucMinh\WeddingManagement\TiecCuoi\obj\Debug\TiecCuoi.View.frmTrangChuSep.resources

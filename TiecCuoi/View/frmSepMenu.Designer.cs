@@ -1,6 +1,6 @@
-﻿namespace TiecCuoi
+﻿namespace TiecCuoi.View
 {
-    partial class frmMenu
+    partial class frmSepMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSepMenu));
             this.flpanelHinhAnhMonAn = new System.Windows.Forms.FlowLayoutPanel();
             this.panelThongTinMonAn = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbGiaTien = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lbTenMonAn = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbMaMonAn = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelMoTa = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.tbMoTa = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelButton = new System.Windows.Forms.Panel();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThêm = new System.Windows.Forms.Button();
+            this.tbMoTa = new System.Windows.Forms.TextBox();
+            this.tbTenMonAn = new System.Windows.Forms.TextBox();
+            this.tbGiaTien = new System.Windows.Forms.TextBox();
+            this.tbMaMonAn = new System.Windows.Forms.TextBox();
             this.panelThongTinMonAn.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -52,6 +56,7 @@
             this.panelMoTa.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelRightBar.SuspendLayout();
+            this.panelButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpanelHinhAnhMonAn
@@ -62,7 +67,7 @@
             this.flpanelHinhAnhMonAn.Location = new System.Drawing.Point(0, 0);
             this.flpanelHinhAnhMonAn.Name = "flpanelHinhAnhMonAn";
             this.flpanelHinhAnhMonAn.Size = new System.Drawing.Size(613, 609);
-            this.flpanelHinhAnhMonAn.TabIndex = 5;
+            this.flpanelHinhAnhMonAn.TabIndex = 7;
             // 
             // panelThongTinMonAn
             // 
@@ -84,24 +89,13 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.lbGiaTien);
+            this.panel2.Controls.Add(this.tbGiaTien);
             this.panel2.Controls.Add(this.bunifuCustomLabel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 132);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(302, 64);
             this.panel2.TabIndex = 7;
-            // 
-            // lbGiaTien
-            // 
-            this.lbGiaTien.AutoSize = true;
-            this.lbGiaTien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGiaTien.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbGiaTien.Location = new System.Drawing.Point(107, 14);
-            this.lbGiaTien.Name = "lbGiaTien";
-            this.lbGiaTien.Size = new System.Drawing.Size(71, 21);
-            this.lbGiaTien.TabIndex = 6;
-            this.lbGiaTien.Text = "Giá tiền";
             // 
             // bunifuCustomLabel2
             // 
@@ -116,23 +110,13 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.lbTenMonAn);
             this.panel4.Controls.Add(this.bunifuCustomLabel4);
+            this.panel4.Controls.Add(this.tbTenMonAn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 66);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(302, 66);
             this.panel4.TabIndex = 8;
-            // 
-            // lbTenMonAn
-            // 
-            this.lbTenMonAn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenMonAn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbTenMonAn.Location = new System.Drawing.Point(107, 17);
-            this.lbTenMonAn.Name = "lbTenMonAn";
-            this.lbTenMonAn.Size = new System.Drawing.Size(191, 41);
-            this.lbTenMonAn.TabIndex = 6;
-            this.lbTenMonAn.Text = "Tên món ăn";
             // 
             // bunifuCustomLabel4
             // 
@@ -147,24 +131,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lbMaMonAn);
+            this.panel1.Controls.Add(this.tbMaMonAn);
             this.panel1.Controls.Add(this.bunifuCustomLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 66);
             this.panel1.TabIndex = 7;
-            // 
-            // lbMaMonAn
-            // 
-            this.lbMaMonAn.AutoSize = true;
-            this.lbMaMonAn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaMonAn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbMaMonAn.Location = new System.Drawing.Point(107, 23);
-            this.lbMaMonAn.Name = "lbMaMonAn";
-            this.lbMaMonAn.Size = new System.Drawing.Size(100, 21);
-            this.lbMaMonAn.TabIndex = 6;
-            this.lbMaMonAn.Text = "Mã món ăn";
             // 
             // bunifuCustomLabel1
             // 
@@ -182,6 +155,7 @@
             this.panelMoTa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMoTa.BackgroundImage")));
             this.panelMoTa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelMoTa.Controls.Add(this.tbMoTa);
+            this.panelMoTa.Controls.Add(this.panelButton);
             this.panelMoTa.Controls.Add(this.panel3);
             this.panelMoTa.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMoTa.GradientBottomLeft = System.Drawing.Color.White;
@@ -193,18 +167,6 @@
             this.panelMoTa.Quality = 10;
             this.panelMoTa.Size = new System.Drawing.Size(302, 459);
             this.panelMoTa.TabIndex = 3;
-            // 
-            // tbMoTa
-            // 
-            this.tbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbMoTa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMoTa.Location = new System.Drawing.Point(0, 49);
-            this.tbMoTa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tbMoTa.Multiline = true;
-            this.tbMoTa.Name = "tbMoTa";
-            this.tbMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbMoTa.Size = new System.Drawing.Size(302, 410);
-            this.tbMoTa.TabIndex = 4;
             // 
             // panel3
             // 
@@ -241,17 +203,100 @@
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
             this.panelRightBar.Size = new System.Drawing.Size(302, 609);
-            this.panelRightBar.TabIndex = 4;
+            this.panelRightBar.TabIndex = 6;
             // 
-            // frmMenu
+            // panelButton
+            // 
+            this.panelButton.Controls.Add(this.btnSua);
+            this.panelButton.Controls.Add(this.btnXoa);
+            this.panelButton.Controls.Add(this.btnThêm);
+            this.panelButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelButton.Location = new System.Drawing.Point(0, 322);
+            this.panelButton.Name = "panelButton";
+            this.panelButton.Size = new System.Drawing.Size(302, 137);
+            this.panelButton.TabIndex = 6;
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(228, 19);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 64);
+            this.btnSua.TabIndex = 0;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(120, 19);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 64);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnThêm
+            // 
+            this.btnThêm.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnThêm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThêm.ForeColor = System.Drawing.Color.White;
+            this.btnThêm.Location = new System.Drawing.Point(7, 19);
+            this.btnThêm.Name = "btnThêm";
+            this.btnThêm.Size = new System.Drawing.Size(75, 64);
+            this.btnThêm.TabIndex = 0;
+            this.btnThêm.Text = "Thêm";
+            this.btnThêm.UseVisualStyleBackColor = false;
+            // 
+            // tbMoTa
+            // 
+            this.tbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbMoTa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMoTa.Location = new System.Drawing.Point(0, 49);
+            this.tbMoTa.Margin = new System.Windows.Forms.Padding(2);
+            this.tbMoTa.Multiline = true;
+            this.tbMoTa.Name = "tbMoTa";
+            this.tbMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMoTa.Size = new System.Drawing.Size(302, 273);
+            this.tbMoTa.TabIndex = 7;
+            // 
+            // tbTenMonAn
+            // 
+            this.tbTenMonAn.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tbTenMonAn.Location = new System.Drawing.Point(111, 17);
+            this.tbTenMonAn.Name = "tbTenMonAn";
+            this.tbTenMonAn.Size = new System.Drawing.Size(179, 27);
+            this.tbTenMonAn.TabIndex = 8;
+            // 
+            // tbGiaTien
+            // 
+            this.tbGiaTien.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tbGiaTien.Location = new System.Drawing.Point(111, 11);
+            this.tbGiaTien.Name = "tbGiaTien";
+            this.tbGiaTien.Size = new System.Drawing.Size(179, 27);
+            this.tbGiaTien.TabIndex = 9;
+            // 
+            // tbMaMonAn
+            // 
+            this.tbMaMonAn.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tbMaMonAn.Location = new System.Drawing.Point(111, 23);
+            this.tbMaMonAn.Name = "tbMaMonAn";
+            this.tbMaMonAn.Size = new System.Drawing.Size(179, 27);
+            this.tbMaMonAn.TabIndex = 10;
+            // 
+            // frmSepMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 609);
             this.Controls.Add(this.flpanelHinhAnhMonAn);
             this.Controls.Add(this.panelRightBar);
-            this.Name = "frmMenu";
-            this.Text = "Menu";
+            this.Name = "frmSepMenu";
+            this.Text = "frmSepMenu";
             this.panelThongTinMonAn.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -264,26 +309,32 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panelRightBar.ResumeLayout(false);
+            this.panelButton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private System.Windows.Forms.FlowLayoutPanel flpanelHinhAnhMonAn;
         private Bunifu.Framework.UI.BunifuGradientPanel panelThongTinMonAn;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbGiaTien;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.Panel panel4;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbTenMonAn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbMaMonAn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelMoTa;
-        private System.Windows.Forms.TextBox tbMoTa;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelRightBar;
+        private System.Windows.Forms.TextBox tbMoTa;
+        private System.Windows.Forms.Panel panelButton;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThêm;
+        private System.Windows.Forms.TextBox tbGiaTien;
+        private System.Windows.Forms.TextBox tbTenMonAn;
+        private System.Windows.Forms.TextBox tbMaMonAn;
     }
 }
