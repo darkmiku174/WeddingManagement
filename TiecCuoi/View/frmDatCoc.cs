@@ -22,6 +22,7 @@ namespace TiecCuoi
             tbSoTienCoc.Enabled = false;
             LoadTenSanh();
             LoadMaNhanVien();
+            LoadSoTienCoc();
         }
 
         private void LoadTenSanh()
@@ -44,7 +45,7 @@ namespace TiecCuoi
             string tenSanh = cmbSanh.SelectedItem.ToString();
             string maSanh = dp.SanhSelectMaSanh(tenSanh);
             int soTienCoc = dp.SanhSelectSoTienCoc(maSanh);
-            tbSoTienCoc.Text = soTienCoc.ToString();
+            tbSoTienCoc.Text = MoneyNeedToBuy(soTienCoc);
             tbSoTienCoc.Enabled = false;
         }
 
@@ -90,6 +91,20 @@ namespace TiecCuoi
                 } 
             else
                 MessageBox.Show("Lưu thất bại");
+        }
+        private string MoneyNeedToBuy(int tien)
+        {
+            string result = "";
+            int money = tien;
+            int numDigit = money.ToString().Count();
+            for (int i = numDigit - 1; i >= 0; i--)
+            {
+                result += money.ToString()[numDigit - 1 - i];
+                if (i % 3 == 0 && i > 0)
+                    result += ".";
+            }
+            result += " VND";
+            return result;
         }
     }
 }

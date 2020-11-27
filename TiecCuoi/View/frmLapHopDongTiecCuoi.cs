@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TiecCuoi.Model;
 
 namespace TiecCuoi
 {
@@ -63,12 +64,15 @@ namespace TiecCuoi
             DataProvider dp = new DataProvider();
             string tenSanh = cmbSanh.SelectedItem.ToString();
             string maSanh = dp.SanhSelectMaSanh(tenSanh);
-            tbSoTienCoc.Text = dp.SanhSelectSoTienCoc(maSanh).ToString();
+            tbSoTienCoc.Text = MoneyNeedToBuy(dp.SanhSelectSoTienCoc(maSanh));
         }
         private void btnChonThucDon_Click(object sender, EventArgs e)
         {
-            frmChonMenu frmCMenu = new frmChonMenu();
+            string maHopDong = tbMaHopDong.Text;
+            string maCTHD = "CT" + maHopDong;
+            frmChonMenu frmCMenu = new frmChonMenu(maCTHD);
             frmCMenu.Show();
+            frmCMenu.FormClosed += new FormClosedEventHandler(LoadTongTien);
         }
 
         private void btnChonDichVu_Click(object sender, EventArgs e)
@@ -77,6 +81,7 @@ namespace TiecCuoi
             string maCTHD = "CT" + maHopDong;
             frmChonDichVu frmCDV = new frmChonDichVu(maCTHD);
             frmCDV.Show();
+            frmCDV.FormClosed += new FormClosedEventHandler(LoadTongTien);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -92,6 +97,7 @@ namespace TiecCuoi
             string maSanh = dp.SanhSelectMaSanh(tenSanh);
             int ca = rdbSang.Checked ? 0 : 1;
             int soLuongBan = Int32.Parse(tbSoLuongBan.Text);
+            string maKM = tbMaKhuyenMai.Text;
             int soTienCoc = Int32.Parse(tbSoTienCoc.Text);
             //if (dp.KhachHangAdd(maKhachHang, tenKhachHang, sdt, email, diaChi))
             //    if (dp.CTDatCocAdd(maCTDC, maSanh, ca, ngayToChuc))
@@ -116,6 +122,49 @@ namespace TiecCuoi
         {
             LoadSoTienCoc();
         }
-        
+
+        private void LoadTongTien(object sender, EventArgs e)
+        {
+            int tongTien = 0;
+            int soLuongBan = Int32.Parse(tbSoLuongBan.Text);
+            string maHopDong = tbMaHopDong.Text;
+            string maCTHD = "CT" + maHopDong;
+            DataProvider dp = new DataProvider();
+            List<string> dsMaDV = dp.DSCTDVSelectFollowMaCTHD(maCTHD);
+            if (dsMaDV != null && dsMaDV.Count > 0)
+            {
+                List<DichVu> dsDV = dp.DichVuSelectAll();
+                foreach (string ma in dsMaDV)
+                    foreach (DichVu dv in dsDV)
+                        if (dv.MaDichVu == ma)
+                            tongTien += dv.GiaTien;
+            }
+            List<string> dsMaMonAn = dp.DSCTMenuSelectFollowMaCTHD(maCTHD);
+            if (dsMaMonAn != null && dsMaMonAn.Count > 0)
+            {
+                List<ThucAn> menu = dp.MenuSelectAll();
+                foreach (string ma in dsMaMonAn)
+                    foreach (ThucAn ta in menu)
+                        if (ta.MaMonAn == ma)
+                            tongTien += ta.GiaTien *soLuongBan;
+            }
+            tbTongTienDuKien.Text= MoneyNeedToBuy(tongTien);
+        }
+
+        private string MoneyNeedToBuy(int tien)
+        {
+            string result = "";
+            int money = tien;
+            int numDigit = money.ToString().Count();
+            for (int i = numDigit - 1; i >= 0; i--)
+            {
+                result += money.ToString()[numDigit - 1 - i];
+                if (i % 3 == 0 && i > 0)
+                    result += ".";
+            }
+            result += " VND";
+            return result;
+        }
+
     }
 }

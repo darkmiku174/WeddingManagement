@@ -32,9 +32,8 @@
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.flpanelCheckBox = new System.Windows.Forms.FlowLayoutPanel();
             this.panelButton = new System.Windows.Forms.Panel();
+            this.btnXacNhan = new FontAwesome.Sharp.IconButton();
             this.btnThoat = new FontAwesome.Sharp.IconButton();
-            this.btnXacNhan = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel3.SuspendLayout();
             this.panelButton.SuspendLayout();
             this.SuspendLayout();
@@ -50,11 +49,11 @@
             this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(0, 62);
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(1220, 782);
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(1220, 844);
             this.bunifuGradientPanel3.TabIndex = 10;
             // 
             // flpanelCheckBox
@@ -65,85 +64,54 @@
             this.flpanelCheckBox.Location = new System.Drawing.Point(0, 0);
             this.flpanelCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.flpanelCheckBox.Name = "flpanelCheckBox";
-            this.flpanelCheckBox.Size = new System.Drawing.Size(1220, 641);
+            this.flpanelCheckBox.Size = new System.Drawing.Size(1220, 703);
             this.flpanelCheckBox.TabIndex = 49;
             // 
             // panelButton
             // 
-            this.panelButton.Controls.Add(this.btnThoat);
             this.panelButton.Controls.Add(this.btnXacNhan);
+            this.panelButton.Controls.Add(this.btnThoat);
             this.panelButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelButton.Location = new System.Drawing.Point(0, 641);
+            this.panelButton.Location = new System.Drawing.Point(0, 703);
             this.panelButton.Name = "panelButton";
             this.panelButton.Size = new System.Drawing.Size(1220, 141);
             this.panelButton.TabIndex = 48;
             // 
+            // btnXacNhan
+            // 
+            this.btnXacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(207)))), ((int)(((byte)(168)))));
+            this.btnXacNhan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXacNhan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXacNhan.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnXacNhan.IconColor = System.Drawing.Color.White;
+            this.btnXacNhan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnXacNhan.IconSize = 40;
+            this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnXacNhan.Location = new System.Drawing.Point(189, 55);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(177, 55);
+            this.btnXacNhan.TabIndex = 10;
+            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.UseVisualStyleBackColor = false;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+            // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(207)))), ((int)(((byte)(168)))));
             this.btnThoat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThoat.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnThoat.IconColor = System.Drawing.Color.Black;
+            this.btnThoat.IconColor = System.Drawing.Color.White;
             this.btnThoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(747, 55);
+            this.btnThoat.IconSize = 40;
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnThoat.Location = new System.Drawing.Point(809, 55);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(177, 55);
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // btnXacNhan
-            // 
-            this.btnXacNhan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnXacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnXacNhan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnXacNhan.BorderRadius = 0;
-            this.btnXacNhan.ButtonText = "Xác nhận";
-            this.btnXacNhan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXacNhan.DisabledColor = System.Drawing.Color.Gray;
-            this.btnXacNhan.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnXacNhan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnXacNhan.Iconimage")));
-            this.btnXacNhan.Iconimage_right = null;
-            this.btnXacNhan.Iconimage_right_Selected = null;
-            this.btnXacNhan.Iconimage_Selected = null;
-            this.btnXacNhan.IconMarginLeft = 0;
-            this.btnXacNhan.IconMarginRight = 0;
-            this.btnXacNhan.IconRightVisible = true;
-            this.btnXacNhan.IconRightZoom = 0D;
-            this.btnXacNhan.IconVisible = true;
-            this.btnXacNhan.IconZoom = 90D;
-            this.btnXacNhan.IsTab = false;
-            this.btnXacNhan.Location = new System.Drawing.Point(309, 55);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(5);
-            this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnXacNhan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnXacNhan.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnXacNhan.selected = false;
-            this.btnXacNhan.Size = new System.Drawing.Size(155, 55);
-            this.btnXacNhan.TabIndex = 6;
-            this.btnXacNhan.Text = "Xác nhận";
-            this.btnXacNhan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXacNhan.Textcolor = System.Drawing.Color.White;
-            this.btnXacNhan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1220, 62);
-            this.bunifuGradientPanel1.TabIndex = 9;
             // 
             // frmChonDichVu
             // 
@@ -151,7 +119,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.bunifuGradientPanel3);
-            this.Controls.Add(this.bunifuGradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmChonDichVu";
             this.Text = "Chọn dịch vụ";
@@ -163,10 +130,9 @@
 
         #endregion
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Panel panelButton;
-        private Bunifu.Framework.UI.BunifuFlatButton btnXacNhan;
         private System.Windows.Forms.FlowLayoutPanel flpanelCheckBox;
         private FontAwesome.Sharp.IconButton btnThoat;
+        private FontAwesome.Sharp.IconButton btnXacNhan;
     }
 }

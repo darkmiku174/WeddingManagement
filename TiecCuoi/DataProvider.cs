@@ -428,6 +428,8 @@ namespace TiecCuoi
                 return true;
             }
         }
+
+        //Các phương thức truy xuất database của frmChonDichVu
         public bool DSCTDVAdd(string maCTHD, string maDV)
         {
             string queryString =
@@ -452,6 +454,91 @@ namespace TiecCuoi
                 }
                 return true;
             }
+        }
+
+        public List<string> DSCTDVSelectFollowMaCTHD(string maCTHD)
+        {
+            List<string> menu = new List<string>();
+            string queryString =
+                    @"Select MADV From DSCTDV Where MACTHD=@MaCTHD";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@MaCTHD", maCTHD);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        menu.Add(reader[0].ToString());
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+            return menu;
+        }
+
+        //Các phương thức truy xuất database của frmChonMonAn
+        public bool DSCTMenuAdd(string maCTHD, string maMonAn)
+        {
+            string queryString =
+                 @"Insert into DSCTMENU
+                  Values(@MaCTHD, @MaMonAn)";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@MaCTHD", maCTHD);
+                command.Parameters.AddWithValue("@MaMonAn", maMonAn);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return false;
+                }
+                return true;
+            }
+        }
+
+        public List<string> DSCTMenuSelectFollowMaCTHD(string maCTHD)
+        {
+            List<string> menu = new List<string>();
+            string queryString =
+                    @"Select MAMA From DSCTMENU Where MACTHD=@MaCTHD";
+            using (SqlConnection connection =
+                new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@MaCTHD", maCTHD);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        menu.Add(reader[0].ToString());      
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+            return menu;
         }
 
         //Các phương thức truy xuất database của frmMenu

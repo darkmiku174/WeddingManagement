@@ -47,11 +47,9 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelMoTa = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.scbMoTa = new System.Windows.Forms.VScrollBar();
-            this.lbMoTa = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.tbMoTa = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.flpanelHinhAnhKhuyenMai = new System.Windows.Forms.FlowLayoutPanel();
             this.panelThongTinDichVu.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -82,7 +80,7 @@
             this.panelThongTinDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinDichVu.Name = "panelThongTinDichVu";
             this.panelThongTinDichVu.Quality = 10;
-            this.panelThongTinDichVu.Size = new System.Drawing.Size(340, 291);
+            this.panelThongTinDichVu.Size = new System.Drawing.Size(433, 291);
             this.panelThongTinDichVu.TabIndex = 2;
             // 
             // panel5
@@ -93,7 +91,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 232);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(340, 58);
+            this.panel5.Size = new System.Drawing.Size(433, 58);
             this.panel5.TabIndex = 8;
             // 
             // dtpNgayKetThuc
@@ -104,10 +102,10 @@
             this.dtpNgayKetThuc.ForeColor = System.Drawing.Color.White;
             this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayKetThuc.FormatCustom = null;
-            this.dtpNgayKetThuc.Location = new System.Drawing.Point(185, 7);
+            this.dtpNgayKetThuc.Location = new System.Drawing.Point(161, 7);
             this.dtpNgayKetThuc.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
-            this.dtpNgayKetThuc.Size = new System.Drawing.Size(138, 47);
+            this.dtpNgayKetThuc.Size = new System.Drawing.Size(264, 41);
             this.dtpNgayKetThuc.TabIndex = 7;
             this.dtpNgayKetThuc.Value = new System.DateTime(2020, 11, 22, 15, 34, 13, 183);
             // 
@@ -131,7 +129,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 174);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(340, 58);
+            this.panel6.Size = new System.Drawing.Size(433, 58);
             this.panel6.TabIndex = 9;
             // 
             // dtpNgayBatDau
@@ -142,10 +140,10 @@
             this.dtpNgayBatDau.ForeColor = System.Drawing.Color.White;
             this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayBatDau.FormatCustom = null;
-            this.dtpNgayBatDau.Location = new System.Drawing.Point(185, 7);
+            this.dtpNgayBatDau.Location = new System.Drawing.Point(166, 7);
             this.dtpNgayBatDau.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.dtpNgayBatDau.Name = "dtpNgayBatDau";
-            this.dtpNgayBatDau.Size = new System.Drawing.Size(138, 47);
+            this.dtpNgayBatDau.Size = new System.Drawing.Size(259, 40);
             this.dtpNgayBatDau.TabIndex = 7;
             this.dtpNgayBatDau.Value = new System.DateTime(2020, 11, 22, 15, 34, 13, 183);
             // 
@@ -169,7 +167,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 116);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(340, 58);
+            this.panel2.Size = new System.Drawing.Size(433, 58);
             this.panel2.TabIndex = 7;
             // 
             // lbUuDai
@@ -204,7 +202,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 58);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(340, 58);
+            this.panel4.Size = new System.Drawing.Size(433, 58);
             this.panel4.TabIndex = 8;
             // 
             // lbTenKhuyenMai
@@ -239,7 +237,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(340, 58);
+            this.panel1.Size = new System.Drawing.Size(433, 58);
             this.panel1.TabIndex = 7;
             // 
             // lbMaKhuyenMai
@@ -277,19 +275,18 @@
             this.panelRightBar.GradientBottomRight = System.Drawing.Color.White;
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
-            this.panelRightBar.Location = new System.Drawing.Point(880, 62);
+            this.panelRightBar.Location = new System.Drawing.Point(787, 0);
             this.panelRightBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
-            this.panelRightBar.Size = new System.Drawing.Size(340, 782);
+            this.panelRightBar.Size = new System.Drawing.Size(433, 844);
             this.panelRightBar.TabIndex = 7;
             // 
             // panelMoTa
             // 
             this.panelMoTa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMoTa.BackgroundImage")));
             this.panelMoTa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelMoTa.Controls.Add(this.scbMoTa);
-            this.panelMoTa.Controls.Add(this.lbMoTa);
+            this.panelMoTa.Controls.Add(this.tbMoTa);
             this.panelMoTa.Controls.Add(this.panel3);
             this.panelMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMoTa.GradientBottomLeft = System.Drawing.Color.White;
@@ -300,28 +297,19 @@
             this.panelMoTa.Margin = new System.Windows.Forms.Padding(4);
             this.panelMoTa.Name = "panelMoTa";
             this.panelMoTa.Quality = 10;
-            this.panelMoTa.Size = new System.Drawing.Size(340, 491);
+            this.panelMoTa.Size = new System.Drawing.Size(433, 553);
             this.panelMoTa.TabIndex = 3;
             // 
-            // scbMoTa
+            // tbMoTa
             // 
-            this.scbMoTa.Dock = System.Windows.Forms.DockStyle.Right;
-            this.scbMoTa.Location = new System.Drawing.Point(323, 47);
-            this.scbMoTa.Name = "scbMoTa";
-            this.scbMoTa.Size = new System.Drawing.Size(17, 444);
-            this.scbMoTa.TabIndex = 4;
-            // 
-            // lbMoTa
-            // 
-            this.lbMoTa.AutoSize = true;
-            this.lbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoTa.Location = new System.Drawing.Point(0, 47);
-            this.lbMoTa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbMoTa.Name = "lbMoTa";
-            this.lbMoTa.Size = new System.Drawing.Size(136, 20);
-            this.lbMoTa.TabIndex = 3;
-            this.lbMoTa.Text = "Insert mô tả here";
+            this.tbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbMoTa.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.tbMoTa.Location = new System.Drawing.Point(0, 47);
+            this.tbMoTa.Multiline = true;
+            this.tbMoTa.Name = "tbMoTa";
+            this.tbMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMoTa.Size = new System.Drawing.Size(433, 506);
+            this.tbMoTa.TabIndex = 3;
             // 
             // panel3
             // 
@@ -330,14 +318,14 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(340, 47);
+            this.panel3.Size = new System.Drawing.Size(433, 47);
             this.panel3.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 10);
+            this.label1.Location = new System.Drawing.Point(185, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 23);
@@ -345,31 +333,14 @@
             this.label1.Text = "Mô tả";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panelTitle
-            // 
-            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
-            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelTitle.GradientBottomRight = System.Drawing.Color.White;
-            this.panelTitle.GradientTopLeft = System.Drawing.Color.White;
-            this.panelTitle.GradientTopRight = System.Drawing.Color.White;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Margin = new System.Windows.Forms.Padding(4);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Quality = 10;
-            this.panelTitle.Size = new System.Drawing.Size(1220, 62);
-            this.panelTitle.TabIndex = 6;
-            // 
             // flpanelHinhAnhKhuyenMai
             // 
-            this.flpanelHinhAnhKhuyenMai.AutoScroll = true;
             this.flpanelHinhAnhKhuyenMai.BackColor = System.Drawing.Color.White;
             this.flpanelHinhAnhKhuyenMai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpanelHinhAnhKhuyenMai.Location = new System.Drawing.Point(0, 62);
+            this.flpanelHinhAnhKhuyenMai.Location = new System.Drawing.Point(0, 0);
             this.flpanelHinhAnhKhuyenMai.Margin = new System.Windows.Forms.Padding(4);
             this.flpanelHinhAnhKhuyenMai.Name = "flpanelHinhAnhKhuyenMai";
-            this.flpanelHinhAnhKhuyenMai.Size = new System.Drawing.Size(880, 782);
+            this.flpanelHinhAnhKhuyenMai.Size = new System.Drawing.Size(787, 844);
             this.flpanelHinhAnhKhuyenMai.TabIndex = 9;
             // 
             // frmKhuyenMai
@@ -379,10 +350,9 @@
             this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.flpanelHinhAnhKhuyenMai);
             this.Controls.Add(this.panelRightBar);
-            this.Controls.Add(this.panelTitle);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmKhuyenMai";
-            this.Text = "Dịch vụ";
+            this.Text = "Khuyến mãi";
             this.panelThongTinDichVu.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -412,14 +382,11 @@
         private Bunifu.Framework.UI.BunifuCustomLabel lbMaKhuyenMai;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelRightBar;
-        private Bunifu.Framework.UI.BunifuGradientPanel panelTitle;
         private System.Windows.Forms.FlowLayoutPanel flpanelHinhAnhKhuyenMai;
         private System.Windows.Forms.Panel panel4;
         private Bunifu.Framework.UI.BunifuCustomLabel lbTenKhuyenMai;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuGradientPanel panelMoTa;
-        private System.Windows.Forms.VScrollBar scbMoTa;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbMoTa;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
@@ -428,5 +395,6 @@
         private Bunifu.Framework.UI.BunifuDatepicker dtpNgayBatDau;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuDatepicker dtpNgayKetThuc;
+        private System.Windows.Forms.TextBox tbMoTa;
     }
 }

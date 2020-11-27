@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLapHopDongTiecCuoi));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelThongTinKhachHang = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -40,6 +39,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.tbTenChuRe = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.panelMaKhachHang = new System.Windows.Forms.Panel();
+            this.cmbMaKhachHang = new System.Windows.Forms.ComboBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -61,7 +61,7 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.tbKhuyenMai = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.tbMaKhuyenMai = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -75,6 +75,7 @@
             this.rdbSang = new System.Windows.Forms.RadioButton();
             this.rdbToi = new System.Windows.Forms.RadioButton();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.cmbSanh = new System.Windows.Forms.ComboBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -82,19 +83,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.cmbMaDatCoc = new System.Windows.Forms.ComboBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
+            this.cmbMaNhanVien = new System.Windows.Forms.ComboBox();
             this.panel32 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.tbMaHopDong = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.cmbMaKhachHang = new System.Windows.Forms.ComboBox();
-            this.cmbMaNhanVien = new System.Windows.Forms.ComboBox();
-            this.cmbMaDatCoc = new System.Windows.Forms.ComboBox();
-            this.cmbSanh = new System.Windows.Forms.ComboBox();
             this.panelThongTinKhachHang.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -130,31 +129,24 @@
             this.panel30.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1232, 49);
-            this.panel1.TabIndex = 0;
-            // 
             // panelThongTinKhachHang
             // 
+            this.panelThongTinKhachHang.BackColor = System.Drawing.Color.White;
             this.panelThongTinKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelThongTinKhachHang.Controls.Add(this.panel5);
             this.panelThongTinKhachHang.Controls.Add(this.panel7);
             this.panelThongTinKhachHang.Controls.Add(this.panelMaKhachHang);
             this.panelThongTinKhachHang.Controls.Add(this.bunifuGradientPanel2);
             this.panelThongTinKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelThongTinKhachHang.Location = new System.Drawing.Point(0, 109);
+            this.panelThongTinKhachHang.Location = new System.Drawing.Point(0, 60);
             this.panelThongTinKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinKhachHang.Name = "panelThongTinKhachHang";
-            this.panelThongTinKhachHang.Size = new System.Drawing.Size(596, 744);
+            this.panelThongTinKhachHang.Size = new System.Drawing.Size(596, 793);
             this.panelThongTinKhachHang.TabIndex = 5;
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.tbTenCoDau);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -187,15 +179,16 @@
             // 
             this.tbTenCoDau.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTenCoDau.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTenCoDau.Location = new System.Drawing.Point(230, 4);
+            this.tbTenCoDau.Location = new System.Drawing.Point(229, 26);
             this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(4);
             this.tbTenCoDau.Multiline = true;
             this.tbTenCoDau.Name = "tbTenCoDau";
-            this.tbTenCoDau.Size = new System.Drawing.Size(367, 82);
+            this.tbTenCoDau.Size = new System.Drawing.Size(352, 40);
             this.tbTenCoDau.TabIndex = 0;
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.panel9);
             this.panel7.Controls.Add(this.tbTenChuRe);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -228,15 +221,16 @@
             // 
             this.tbTenChuRe.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTenChuRe.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTenChuRe.Location = new System.Drawing.Point(230, 4);
+            this.tbTenChuRe.Location = new System.Drawing.Point(229, 26);
             this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(4);
             this.tbTenChuRe.Multiline = true;
             this.tbTenChuRe.Name = "tbTenChuRe";
-            this.tbTenChuRe.Size = new System.Drawing.Size(367, 82);
+            this.tbTenChuRe.Size = new System.Drawing.Size(352, 40);
             this.tbTenChuRe.TabIndex = 0;
             // 
             // panelMaKhachHang
             // 
+            this.panelMaKhachHang.BackColor = System.Drawing.Color.White;
             this.panelMaKhachHang.Controls.Add(this.cmbMaKhachHang);
             this.panelMaKhachHang.Controls.Add(this.panel8);
             this.panelMaKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
@@ -244,6 +238,17 @@
             this.panelMaKhachHang.Name = "panelMaKhachHang";
             this.panelMaKhachHang.Size = new System.Drawing.Size(594, 90);
             this.panelMaKhachHang.TabIndex = 50;
+            // 
+            // cmbMaKhachHang
+            // 
+            this.cmbMaKhachHang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMaKhachHang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMaKhachHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaKhachHang.FormattingEnabled = true;
+            this.cmbMaKhachHang.Location = new System.Drawing.Point(239, 29);
+            this.cmbMaKhachHang.Name = "cmbMaKhachHang";
+            this.cmbMaKhachHang.Size = new System.Drawing.Size(328, 31);
+            this.cmbMaKhachHang.TabIndex = 3;
             // 
             // panel8
             // 
@@ -349,10 +354,10 @@
             this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.bunifuGradientPanel3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(596, 109);
+            this.panel4.Location = new System.Drawing.Point(596, 60);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(636, 744);
+            this.panel4.Size = new System.Drawing.Size(636, 793);
             this.panel4.TabIndex = 32;
             // 
             // panel24
@@ -361,7 +366,7 @@
             this.panel24.Controls.Add(this.btnChonDichVu);
             this.panel24.Controls.Add(this.btnChonThucDon);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel24.Location = new System.Drawing.Point(0, 669);
+            this.panel24.Location = new System.Drawing.Point(0, 718);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(634, 73);
             this.panel24.TabIndex = 59;
@@ -479,6 +484,7 @@
             // 
             // panel22
             // 
+            this.panel22.BackColor = System.Drawing.Color.White;
             this.panel22.Controls.Add(this.tbSoTienCoc);
             this.panel22.Controls.Add(this.panel23);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
@@ -491,11 +497,11 @@
             // 
             this.tbSoTienCoc.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbSoTienCoc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSoTienCoc.Location = new System.Drawing.Point(230, 4);
+            this.tbSoTienCoc.Location = new System.Drawing.Point(229, 26);
             this.tbSoTienCoc.Margin = new System.Windows.Forms.Padding(4);
             this.tbSoTienCoc.Multiline = true;
             this.tbSoTienCoc.Name = "tbSoTienCoc";
-            this.tbSoTienCoc.Size = new System.Drawing.Size(380, 82);
+            this.tbSoTienCoc.Size = new System.Drawing.Size(381, 40);
             this.tbSoTienCoc.TabIndex = 3;
             // 
             // panel23
@@ -520,6 +526,7 @@
             // 
             // panel20
             // 
+            this.panel20.BackColor = System.Drawing.Color.White;
             this.panel20.Controls.Add(this.tbTongTienDuKien);
             this.panel20.Controls.Add(this.panel21);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
@@ -532,11 +539,11 @@
             // 
             this.tbTongTienDuKien.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbTongTienDuKien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTongTienDuKien.Location = new System.Drawing.Point(230, 4);
+            this.tbTongTienDuKien.Location = new System.Drawing.Point(229, 26);
             this.tbTongTienDuKien.Margin = new System.Windows.Forms.Padding(4);
             this.tbTongTienDuKien.Multiline = true;
             this.tbTongTienDuKien.Name = "tbTongTienDuKien";
-            this.tbTongTienDuKien.Size = new System.Drawing.Size(380, 82);
+            this.tbTongTienDuKien.Size = new System.Drawing.Size(381, 40);
             this.tbTongTienDuKien.TabIndex = 3;
             // 
             // panel21
@@ -561,7 +568,8 @@
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.tbKhuyenMai);
+            this.panel18.BackColor = System.Drawing.Color.White;
+            this.panel18.Controls.Add(this.tbMaKhuyenMai);
             this.panel18.Controls.Add(this.panel19);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 394);
@@ -569,16 +577,16 @@
             this.panel18.Size = new System.Drawing.Size(634, 84);
             this.panel18.TabIndex = 56;
             // 
-            // tbKhuyenMai
+            // tbMaKhuyenMai
             // 
-            this.tbKhuyenMai.BorderColor = System.Drawing.Color.SeaGreen;
-            this.tbKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbKhuyenMai.Location = new System.Drawing.Point(230, 4);
-            this.tbKhuyenMai.Margin = new System.Windows.Forms.Padding(4);
-            this.tbKhuyenMai.Multiline = true;
-            this.tbKhuyenMai.Name = "tbKhuyenMai";
-            this.tbKhuyenMai.Size = new System.Drawing.Size(380, 82);
-            this.tbKhuyenMai.TabIndex = 3;
+            this.tbMaKhuyenMai.BorderColor = System.Drawing.Color.SeaGreen;
+            this.tbMaKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaKhuyenMai.Location = new System.Drawing.Point(229, 26);
+            this.tbMaKhuyenMai.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMaKhuyenMai.Multiline = true;
+            this.tbMaKhuyenMai.Name = "tbMaKhuyenMai";
+            this.tbMaKhuyenMai.Size = new System.Drawing.Size(381, 40);
+            this.tbMaKhuyenMai.TabIndex = 3;
             // 
             // panel19
             // 
@@ -596,12 +604,13 @@
             this.label10.Location = new System.Drawing.Point(29, 32);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 23);
+            this.label10.Size = new System.Drawing.Size(166, 23);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Khuyến mãi :";
+            this.label10.Text = "Mã khuyến mãi :";
             // 
             // panel16
             // 
+            this.panel16.BackColor = System.Drawing.Color.White;
             this.panel16.Controls.Add(this.tbSoLuongBan);
             this.panel16.Controls.Add(this.panel17);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
@@ -614,11 +623,11 @@
             // 
             this.tbSoLuongBan.BorderColor = System.Drawing.Color.SeaGreen;
             this.tbSoLuongBan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSoLuongBan.Location = new System.Drawing.Point(230, 4);
+            this.tbSoLuongBan.Location = new System.Drawing.Point(229, 26);
             this.tbSoLuongBan.Margin = new System.Windows.Forms.Padding(4);
             this.tbSoLuongBan.Multiline = true;
             this.tbSoLuongBan.Name = "tbSoLuongBan";
-            this.tbSoLuongBan.Size = new System.Drawing.Size(380, 82);
+            this.tbSoLuongBan.Size = new System.Drawing.Size(381, 40);
             this.tbSoLuongBan.TabIndex = 3;
             // 
             // panel17
@@ -643,6 +652,7 @@
             // 
             // panel14
             // 
+            this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.panelRadioButton);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
@@ -706,6 +716,7 @@
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.Controls.Add(this.cmbSanh);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
@@ -713,6 +724,19 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(634, 84);
             this.panel12.TabIndex = 53;
+            // 
+            // cmbSanh
+            // 
+            this.cmbSanh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbSanh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbSanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSanh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSanh.FormattingEnabled = true;
+            this.cmbSanh.Location = new System.Drawing.Point(234, 24);
+            this.cmbSanh.Name = "cmbSanh";
+            this.cmbSanh.Size = new System.Drawing.Size(376, 31);
+            this.cmbSanh.TabIndex = 4;
+            this.cmbSanh.SelectedIndexChanged += new System.EventHandler(this.cmbSanh_SelectedIndexChanged);
             // 
             // panel13
             // 
@@ -736,6 +760,7 @@
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.dtpNgayToChuc);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -776,7 +801,7 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 49);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -785,6 +810,7 @@
             // 
             // panel25
             // 
+            this.panel25.BackColor = System.Drawing.Color.White;
             this.panel25.Controls.Add(this.cmbMaDatCoc);
             this.panel25.Controls.Add(this.panel26);
             this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
@@ -792,6 +818,17 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(420, 60);
             this.panel25.TabIndex = 57;
+            // 
+            // cmbMaDatCoc
+            // 
+            this.cmbMaDatCoc.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbMaDatCoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMaDatCoc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaDatCoc.FormattingEnabled = true;
+            this.cmbMaDatCoc.Location = new System.Drawing.Point(189, 15);
+            this.cmbMaDatCoc.Name = "cmbMaDatCoc";
+            this.cmbMaDatCoc.Size = new System.Drawing.Size(206, 31);
+            this.cmbMaDatCoc.TabIndex = 5;
             // 
             // panel26
             // 
@@ -815,6 +852,7 @@
             // 
             // panel31
             // 
+            this.panel31.BackColor = System.Drawing.Color.White;
             this.panel31.Controls.Add(this.cmbMaNhanVien);
             this.panel31.Controls.Add(this.panel32);
             this.panel31.Dock = System.Windows.Forms.DockStyle.Left;
@@ -822,6 +860,17 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(406, 60);
             this.panel31.TabIndex = 56;
+            // 
+            // cmbMaNhanVien
+            // 
+            this.cmbMaNhanVien.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMaNhanVien.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMaNhanVien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaNhanVien.FormattingEnabled = true;
+            this.cmbMaNhanVien.Location = new System.Drawing.Point(191, 15);
+            this.cmbMaNhanVien.Name = "cmbMaNhanVien";
+            this.cmbMaNhanVien.Size = new System.Drawing.Size(184, 31);
+            this.cmbMaNhanVien.TabIndex = 4;
             // 
             // panel32
             // 
@@ -845,6 +894,7 @@
             // 
             // panel29
             // 
+            this.panel29.BackColor = System.Drawing.Color.White;
             this.panel29.Controls.Add(this.panel30);
             this.panel29.Controls.Add(this.tbMaHopDong);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Left;
@@ -884,52 +934,6 @@
             this.tbMaHopDong.Size = new System.Drawing.Size(230, 40);
             this.tbMaHopDong.TabIndex = 0;
             // 
-            // cmbMaKhachHang
-            // 
-            this.cmbMaKhachHang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbMaKhachHang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbMaKhachHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMaKhachHang.FormattingEnabled = true;
-            this.cmbMaKhachHang.Location = new System.Drawing.Point(239, 29);
-            this.cmbMaKhachHang.Name = "cmbMaKhachHang";
-            this.cmbMaKhachHang.Size = new System.Drawing.Size(328, 31);
-            this.cmbMaKhachHang.TabIndex = 3;
-            // 
-            // cmbMaNhanVien
-            // 
-            this.cmbMaNhanVien.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbMaNhanVien.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbMaNhanVien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMaNhanVien.FormattingEnabled = true;
-            this.cmbMaNhanVien.Location = new System.Drawing.Point(191, 15);
-            this.cmbMaNhanVien.Name = "cmbMaNhanVien";
-            this.cmbMaNhanVien.Size = new System.Drawing.Size(184, 31);
-            this.cmbMaNhanVien.TabIndex = 4;
-            // 
-            // cmbMaDatCoc
-            // 
-            this.cmbMaDatCoc.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cmbMaDatCoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbMaDatCoc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMaDatCoc.FormattingEnabled = true;
-            this.cmbMaDatCoc.Location = new System.Drawing.Point(189, 15);
-            this.cmbMaDatCoc.Name = "cmbMaDatCoc";
-            this.cmbMaDatCoc.Size = new System.Drawing.Size(206, 31);
-            this.cmbMaDatCoc.TabIndex = 5;
-            // 
-            // cmbSanh
-            // 
-            this.cmbSanh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cmbSanh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbSanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSanh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSanh.FormattingEnabled = true;
-            this.cmbSanh.Location = new System.Drawing.Point(234, 24);
-            this.cmbSanh.Name = "cmbSanh";
-            this.cmbSanh.Size = new System.Drawing.Size(376, 31);
-            this.cmbSanh.TabIndex = 4;
-            this.cmbSanh.SelectedIndexChanged += new System.EventHandler(this.cmbSanh_SelectedIndexChanged);
-            // 
             // frmLapHopDongTiecCuoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -938,7 +942,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelThongTinKhachHang);
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLapHopDongTiecCuoi";
             this.Text = "Lập hợp đồng tiệc cưới";
@@ -1004,8 +1007,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelThongTinKhachHang;
         private Bunifu.Framework.UI.BunifuDatepicker dtpNgayToChuc;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
@@ -1054,7 +1055,7 @@
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel18;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox tbKhuyenMai;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox tbMaKhuyenMai;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel25;

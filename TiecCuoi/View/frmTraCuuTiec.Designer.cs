@@ -52,7 +52,6 @@
             this.cmbTenSanh = new Bunifu.Framework.UI.BunifuDropdown();
             this.cmbMaHopDong = new Bunifu.Framework.UI.BunifuDropdown();
             this.cmbMaKhachHang = new Bunifu.Framework.UI.BunifuDropdown();
-            this.panelTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelRightBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuTiec)).BeginInit();
             this.panelThongTinMonAn.SuspendLayout();
@@ -76,11 +75,11 @@
             this.panelRightBar.GradientBottomRight = System.Drawing.Color.White;
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
-            this.panelRightBar.Location = new System.Drawing.Point(0, 62);
+            this.panelRightBar.Location = new System.Drawing.Point(0, 0);
             this.panelRightBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
-            this.panelRightBar.Size = new System.Drawing.Size(1220, 782);
+            this.panelRightBar.Size = new System.Drawing.Size(1220, 844);
             this.panelRightBar.TabIndex = 11;
             // 
             // dgvTraCuTiec
@@ -109,7 +108,7 @@
             this.dgvTraCuTiec.Name = "dgvTraCuTiec";
             this.dgvTraCuTiec.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvTraCuTiec.RowHeadersWidth = 51;
-            this.dgvTraCuTiec.Size = new System.Drawing.Size(1220, 606);
+            this.dgvTraCuTiec.Size = new System.Drawing.Size(1220, 668);
             this.dgvTraCuTiec.TabIndex = 3;
             // 
             // panelThongTinMonAn
@@ -362,29 +361,12 @@
             this.cmbMaKhachHang.Size = new System.Drawing.Size(304, 54);
             this.cmbMaKhachHang.TabIndex = 5;
             // 
-            // panelTitle
-            // 
-            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
-            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelTitle.GradientBottomRight = System.Drawing.Color.White;
-            this.panelTitle.GradientTopLeft = System.Drawing.Color.White;
-            this.panelTitle.GradientTopRight = System.Drawing.Color.White;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Margin = new System.Windows.Forms.Padding(4);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Quality = 10;
-            this.panelTitle.Size = new System.Drawing.Size(1220, 62);
-            this.panelTitle.TabIndex = 10;
-            // 
             // frmTraCuuTiec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 844);
             this.Controls.Add(this.panelRightBar);
-            this.Controls.Add(this.panelTitle);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTraCuuTiec";
             this.Text = "Tra cứu tiệc";
@@ -410,7 +392,6 @@
 
         private Bunifu.Framework.UI.BunifuGradientPanel panelRightBar;
         private Bunifu.Framework.UI.BunifuGradientPanel panelThongTinMonAn;
-        private Bunifu.Framework.UI.BunifuGradientPanel panelTitle;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvTraCuTiec;
         private System.Windows.Forms.Panel panel7;
         private Bunifu.Framework.UI.BunifuTextbox tbTenCoDau;

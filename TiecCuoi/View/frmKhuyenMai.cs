@@ -27,7 +27,7 @@ namespace TiecCuoi
             List<KhuyenMai> dsKM = dp.KhuyenMaiSelectAll();
             foreach (KhuyenMai km in dsKM)
             {
-                PictureBox pb = new PictureBox { Width = 400, Height = 300 };
+                PictureBox pb = new PictureBox { Width = 375, Height = 250 };
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
                 if (km.HinhAnh != null)
                 {
@@ -42,10 +42,10 @@ namespace TiecCuoi
         {
             lbMaKhuyenMai.Text = maKhuyenMai;
             lbTenKhuyenMai.Text = tenKhuyenMai;
-            lbUuDai.Text = uuDai.ToString();
+            lbUuDai.Text = uuDai.ToString() +"%";
             dtpNgayBatDau.Value = ngayBatDau;
             dtpNgayKetThuc.Value = ngayKetThuc;
-            lbMoTa.Text = moTa;
+            tbMoTa.Text = moTa;
         }
     }
 }

@@ -25,7 +25,7 @@ namespace TiecCuoi
             this.Text = string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-
+ 
         }
 
         //[DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -186,7 +186,7 @@ namespace TiecCuoi
 
         private void btnThanhToanHopDong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmThanhToan(), sender);
+            //OpenChildForm(new frmThanhToan(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -194,6 +194,9 @@ namespace TiecCuoi
 
         }
 
-        
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

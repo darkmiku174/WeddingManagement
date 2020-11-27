@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChuNhanVien));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnDangXuat = new FontAwesome.Sharp.IconButton();
             this.btnThanhToanHopDong = new FontAwesome.Sharp.IconButton();
@@ -43,10 +44,15 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
             this.panelDesktopPane.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -317,6 +323,7 @@
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(173)))), ((int)(((byte)(150)))));
+            this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
@@ -338,6 +345,7 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(207)))), ((int)(((byte)(168)))));
+            this.panelTitleBar.Controls.Add(this.btnExit);
             this.panelTitleBar.Controls.Add(this.lbTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
@@ -346,16 +354,47 @@
             this.panelTitleBar.Size = new System.Drawing.Size(1238, 80);
             this.panelTitleBar.TabIndex = 0;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(207)))), ((int)(((byte)(168)))));
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 69;
+            this.btnExit.Location = new System.Drawing.Point(1169, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(69, 80);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnExit.TabIndex = 26;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // lbTitle
             // 
             this.lbTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTitle.AutoSize = true;
-            this.lbTitle.Location = new System.Drawing.Point(547, 31);
+            this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(505, 24);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(46, 17);
+            this.lbTitle.Size = new System.Drawing.Size(173, 40);
             this.lbTitle.TabIndex = 0;
-            this.lbTitle.Text = "label1";
+            this.lbTitle.Text = "Trang chủ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(207)))), ((int)(((byte)(168)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(97, 10, 97, 10);
+            this.pictureBox1.Size = new System.Drawing.Size(289, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // frmTrangChuNhanVien
             // 
@@ -369,9 +408,12 @@
             this.Name = "frmTrangChuNhanVien";
             this.Text = "Trang chủ";
             this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
             this.panelDesktopPane.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -394,5 +436,7 @@
         private FontAwesome.Sharp.IconButton btnTrangChu;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label lbTitle;
+        private FontAwesome.Sharp.IconPictureBox btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

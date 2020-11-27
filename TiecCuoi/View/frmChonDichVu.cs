@@ -14,13 +14,13 @@ namespace TiecCuoi
 {
     public partial class frmChonDichVu : Form
     {
-        private string maCTHD="CTHD04";
+        private string maCTHD="";
         bool[] statusCheckOfCB;
         List<DichVu> dsDV = new List<DichVu>();
         public frmChonDichVu(string maCTHD)
         {
             InitializeComponent();
-            //this.maCTHD = maCTHD;
+            this.maCTHD = maCTHD;
             LoadMatrix();
         }
 
@@ -30,11 +30,22 @@ namespace TiecCuoi
             DataProvider dp = new DataProvider();
             dsDV = dp.DichVuSelectAll();
             statusCheckOfCB = new bool[dsDV.Count];
+            List<string> dsMaDV = dp.DSCTDVSelectFollowMaCTHD(maCTHD);
+            bool checkExist = false;
+            if (dsMaDV != null && dsMaDV.Count > 0)
+                checkExist = true;
             foreach (DichVu dv in dsDV)
             {
                 CheckBox cb = new CheckBox { Width = 20, Height = 20, Location = new Point(0, 0) };
                 Label lb = new Label { Text = dv.TenDichVu, Location = new Point(20, 0), AutoSize = true };
                 Panel pn = new Panel();
+                if (checkExist)
+                    foreach (string ma in dsMaDV)
+                        if (ma == dv.MaDichVu)
+                        {
+                            cb.Checked = true;
+                            cb.Enabled = false;
+                        }
                 pn.Controls.Add(cb);
                 pn.Controls.Add(lb);
                 cb.CheckedChanged += (sender, e) => CheckChange(sender, e, dv.MaDichVu);
@@ -58,7 +69,7 @@ namespace TiecCuoi
                         return;
                     }
             MessageBox.Show("Lưu thành công");
-            
+            this.Close();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
