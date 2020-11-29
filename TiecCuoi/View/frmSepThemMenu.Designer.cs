@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSepThemMenu));
             this.btnGetPicture = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbPicture = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbGiaTien = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +39,7 @@
             this.tbMaMonAn = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,14 +78,14 @@
             this.btnGetPicture.Textcolor = System.Drawing.Color.White;
             this.btnGetPicture.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // pictureBox1
+            // pbPicture
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 193);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 250);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.pbPicture.BackColor = System.Drawing.Color.White;
+            this.pbPicture.Location = new System.Drawing.Point(15, 193);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(375, 250);
+            this.pbPicture.TabIndex = 6;
+            this.pbPicture.TabStop = false;
             // 
             // label3
             // 
@@ -228,12 +228,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(400, 500);
             this.Controls.Add(this.btnGetPicture);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbPicture);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLuu);
             this.Name = "frmSepThemMenu";
             this.Text = "frmSepThemMenu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -243,7 +243,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuFlatButton btnGetPicture;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbPicture;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMetroTextbox tbGiaTien;
         private System.Windows.Forms.Label label1;

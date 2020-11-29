@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSepDanhSachTiecConNo));
             this.dgvDanhSachTiecConNo = new System.Windows.Forms.DataGridView();
-            this.btnThem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnXoa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSua = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachTiecConNo)).BeginInit();
@@ -44,41 +43,6 @@
             this.dgvDanhSachTiecConNo.Name = "dgvDanhSachTiecConNo";
             this.dgvDanhSachTiecConNo.Size = new System.Drawing.Size(581, 609);
             this.dgvDanhSachTiecConNo.TabIndex = 0;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThem.BorderRadius = 0;
-            this.btnThem.ButtonText = "Thêm ";
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.DisabledColor = System.Drawing.Color.Gray;
-            this.btnThem.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnThem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnThem.Iconimage")));
-            this.btnThem.Iconimage_right = null;
-            this.btnThem.Iconimage_right_Selected = null;
-            this.btnThem.Iconimage_Selected = null;
-            this.btnThem.IconMarginLeft = 0;
-            this.btnThem.IconMarginRight = 0;
-            this.btnThem.IconRightVisible = true;
-            this.btnThem.IconRightZoom = 0D;
-            this.btnThem.IconVisible = true;
-            this.btnThem.IconZoom = 90D;
-            this.btnThem.IsTab = false;
-            this.btnThem.Location = new System.Drawing.Point(677, 79);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnThem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnThem.selected = false;
-            this.btnThem.Size = new System.Drawing.Size(176, 86);
-            this.btnThem.TabIndex = 1;
-            this.btnThem.Text = "Thêm ";
-            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Textcolor = System.Drawing.Color.White;
-            this.btnThem.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnXoa
             // 
@@ -102,7 +66,7 @@
             this.btnXoa.IconZoom = 90D;
             this.btnXoa.IsTab = false;
             this.btnXoa.Location = new System.Drawing.Point(677, 211);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnXoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -137,7 +101,7 @@
             this.btnSua.IconZoom = 90D;
             this.btnSua.IsTab = false;
             this.btnSua.Location = new System.Drawing.Point(677, 348);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnSua.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -158,7 +122,6 @@
             this.ClientSize = new System.Drawing.Size(915, 609);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvDanhSachTiecConNo);
             this.Name = "frmSepDanhSachTiecConNo";
             this.Text = "frmSepDanhSachTiecConNo";
@@ -170,7 +133,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvDanhSachTiecConNo;
-        private Bunifu.Framework.UI.BunifuFlatButton btnThem;
         private Bunifu.Framework.UI.BunifuFlatButton btnXoa;
         private Bunifu.Framework.UI.BunifuFlatButton btnSua;
     }

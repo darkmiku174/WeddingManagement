@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSepKhuyenMai));
             this.label1 = new System.Windows.Forms.Label();
             this.panelMoTa = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.tbMoTa = new System.Windows.Forms.TextBox();
+            this.panelButton = new System.Windows.Forms.Panel();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThêm = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelThongTinDichVu = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -41,21 +46,17 @@
             this.dtpNgayBatDau = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tbUuDai = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tbTenKhuyenMai = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbMaKhuyenMai = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.flpanelHinhAnhKhuyenMai = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelButton = new System.Windows.Forms.Panel();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThêm = new System.Windows.Forms.Button();
-            this.tbMoTa = new System.Windows.Forms.TextBox();
-            this.tbTenKhuyenMai = new System.Windows.Forms.TextBox();
-            this.tbUuDai = new System.Windows.Forms.TextBox();
-            this.tbMaKhuyenMai = new System.Windows.Forms.TextBox();
             this.panelMoTa.SuspendLayout();
+            this.panelButton.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelRightBar.SuspendLayout();
             this.panelThongTinDichVu.SuspendLayout();
@@ -64,7 +65,6 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panelButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -95,6 +95,65 @@
             this.panelMoTa.Quality = 10;
             this.panelMoTa.Size = new System.Drawing.Size(325, 373);
             this.panelMoTa.TabIndex = 3;
+            // 
+            // tbMoTa
+            // 
+            this.tbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbMoTa.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.tbMoTa.Location = new System.Drawing.Point(0, 38);
+            this.tbMoTa.Margin = new System.Windows.Forms.Padding(2);
+            this.tbMoTa.Multiline = true;
+            this.tbMoTa.Name = "tbMoTa";
+            this.tbMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMoTa.Size = new System.Drawing.Size(325, 245);
+            this.tbMoTa.TabIndex = 8;
+            // 
+            // panelButton
+            // 
+            this.panelButton.Controls.Add(this.btnSua);
+            this.panelButton.Controls.Add(this.btnXoa);
+            this.panelButton.Controls.Add(this.btnThêm);
+            this.panelButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelButton.Location = new System.Drawing.Point(0, 283);
+            this.panelButton.Name = "panelButton";
+            this.panelButton.Size = new System.Drawing.Size(325, 90);
+            this.panelButton.TabIndex = 7;
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(240, 19);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 64);
+            this.btnSua.TabIndex = 0;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(132, 19);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 64);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnThêm
+            // 
+            this.btnThêm.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnThêm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThêm.ForeColor = System.Drawing.Color.White;
+            this.btnThêm.Location = new System.Drawing.Point(19, 19);
+            this.btnThêm.Name = "btnThêm";
+            this.btnThêm.Size = new System.Drawing.Size(75, 64);
+            this.btnThêm.TabIndex = 0;
+            this.btnThêm.Text = "Thêm";
+            this.btnThêm.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -156,7 +215,7 @@
             // 
             this.dtpNgayKetThuc.BackColor = System.Drawing.Color.SeaGreen;
             this.dtpNgayKetThuc.BorderRadius = 0;
-            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayKetThuc.ForeColor = System.Drawing.Color.White;
             this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayKetThuc.FormatCustom = null;
@@ -192,7 +251,7 @@
             // 
             this.dtpNgayBatDau.BackColor = System.Drawing.Color.SeaGreen;
             this.dtpNgayBatDau.BorderRadius = 0;
-            this.dtpNgayBatDau.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayBatDau.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayBatDau.ForeColor = System.Drawing.Color.White;
             this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayBatDau.FormatCustom = null;
@@ -224,6 +283,14 @@
             this.panel2.Size = new System.Drawing.Size(325, 47);
             this.panel2.TabIndex = 7;
             // 
+            // tbUuDai
+            // 
+            this.tbUuDai.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tbUuDai.Location = new System.Drawing.Point(143, 11);
+            this.tbUuDai.Name = "tbUuDai";
+            this.tbUuDai.Size = new System.Drawing.Size(172, 27);
+            this.tbUuDai.TabIndex = 8;
+            // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
@@ -244,6 +311,14 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(325, 47);
             this.panel4.TabIndex = 8;
+            // 
+            // tbTenKhuyenMai
+            // 
+            this.tbTenKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tbTenKhuyenMai.Location = new System.Drawing.Point(143, 11);
+            this.tbTenKhuyenMai.Name = "tbTenKhuyenMai";
+            this.tbTenKhuyenMai.Size = new System.Drawing.Size(170, 27);
+            this.tbTenKhuyenMai.TabIndex = 7;
             // 
             // bunifuCustomLabel4
             // 
@@ -266,6 +341,14 @@
             this.panel1.Size = new System.Drawing.Size(325, 47);
             this.panel1.TabIndex = 7;
             // 
+            // tbMaKhuyenMai
+            // 
+            this.tbMaKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tbMaKhuyenMai.Location = new System.Drawing.Point(141, 13);
+            this.tbMaKhuyenMai.Name = "tbMaKhuyenMai";
+            this.tbMaKhuyenMai.Size = new System.Drawing.Size(170, 27);
+            this.tbMaKhuyenMai.TabIndex = 7;
+            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
@@ -286,89 +369,6 @@
             this.flpanelHinhAnhKhuyenMai.Size = new System.Drawing.Size(915, 609);
             this.flpanelHinhAnhKhuyenMai.TabIndex = 11;
             // 
-            // panelButton
-            // 
-            this.panelButton.Controls.Add(this.btnSua);
-            this.panelButton.Controls.Add(this.btnXoa);
-            this.panelButton.Controls.Add(this.btnThêm);
-            this.panelButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelButton.Location = new System.Drawing.Point(0, 283);
-            this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(325, 90);
-            this.panelButton.TabIndex = 7;
-            // 
-            // btnSua
-            // 
-            this.btnSua.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(240, 19);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 64);
-            this.btnSua.TabIndex = 0;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = false;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(132, 19);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 64);
-            this.btnXoa.TabIndex = 0;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            // 
-            // btnThêm
-            // 
-            this.btnThêm.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnThêm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThêm.ForeColor = System.Drawing.Color.White;
-            this.btnThêm.Location = new System.Drawing.Point(19, 19);
-            this.btnThêm.Name = "btnThêm";
-            this.btnThêm.Size = new System.Drawing.Size(75, 64);
-            this.btnThêm.TabIndex = 0;
-            this.btnThêm.Text = "Thêm";
-            this.btnThêm.UseVisualStyleBackColor = false;
-            // 
-            // tbMoTa
-            // 
-            this.tbMoTa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbMoTa.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.tbMoTa.Location = new System.Drawing.Point(0, 38);
-            this.tbMoTa.Margin = new System.Windows.Forms.Padding(2);
-            this.tbMoTa.Multiline = true;
-            this.tbMoTa.Name = "tbMoTa";
-            this.tbMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbMoTa.Size = new System.Drawing.Size(325, 245);
-            this.tbMoTa.TabIndex = 8;
-            // 
-            // tbTenKhuyenMai
-            // 
-            this.tbTenKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.tbTenKhuyenMai.Location = new System.Drawing.Point(143, 11);
-            this.tbTenKhuyenMai.Name = "tbTenKhuyenMai";
-            this.tbTenKhuyenMai.Size = new System.Drawing.Size(170, 27);
-            this.tbTenKhuyenMai.TabIndex = 7;
-            // 
-            // tbUuDai
-            // 
-            this.tbUuDai.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.tbUuDai.Location = new System.Drawing.Point(143, 11);
-            this.tbUuDai.Name = "tbUuDai";
-            this.tbUuDai.Size = new System.Drawing.Size(172, 27);
-            this.tbUuDai.TabIndex = 8;
-            // 
-            // tbMaKhuyenMai
-            // 
-            this.tbMaKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.tbMaKhuyenMai.Location = new System.Drawing.Point(141, 13);
-            this.tbMaKhuyenMai.Name = "tbMaKhuyenMai";
-            this.tbMaKhuyenMai.Size = new System.Drawing.Size(170, 27);
-            this.tbMaKhuyenMai.TabIndex = 7;
-            // 
             // frmSepKhuyenMai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +380,7 @@
             this.Text = "frmSepKhuyenMai";
             this.panelMoTa.ResumeLayout(false);
             this.panelMoTa.PerformLayout();
+            this.panelButton.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panelRightBar.ResumeLayout(false);
@@ -394,7 +395,6 @@
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelButton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

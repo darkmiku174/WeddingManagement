@@ -34,34 +34,38 @@
             this.panelRightBar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.dgvTraCuTiec = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panelThongTinMonAn = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.tbTenCoDau = new Bunifu.Framework.UI.BunifuTextbox();
-            this.tbTenChuRe = new Bunifu.Framework.UI.BunifuTextbox();
-            this.dtpTraCuuTiec = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.panelTitle2 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panelUpperBar = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelTitle2 = new System.Windows.Forms.Panel();
             this.panelComboBox = new System.Windows.Forms.Panel();
-            this.cmbCa = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cmbTenSanh = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cmbMaHopDong = new Bunifu.Framework.UI.BunifuDropdown();
-            this.cmbMaKhachHang = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cmbMaKhachHang = new System.Windows.Forms.ComboBox();
+            this.cmbMaHopDong = new System.Windows.Forms.ComboBox();
+            this.cmbTenSanh = new System.Windows.Forms.ComboBox();
+            this.cmbCa = new System.Windows.Forms.ComboBox();
+            this.tbTenChuRe = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.tbTenCoDau = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.dtpNgayToChuc = new Bunifu.Framework.UI.BunifuDatepicker();
             this.panelRightBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuTiec)).BeginInit();
             this.panelThongTinMonAn.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panelTitle2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panelUpperBar.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panelTitle2.SuspendLayout();
             this.panelComboBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelRightBar
@@ -76,10 +80,9 @@
             this.panelRightBar.GradientTopLeft = System.Drawing.Color.White;
             this.panelRightBar.GradientTopRight = System.Drawing.Color.White;
             this.panelRightBar.Location = new System.Drawing.Point(0, 0);
-            this.panelRightBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelRightBar.Name = "panelRightBar";
             this.panelRightBar.Quality = 10;
-            this.panelRightBar.Size = new System.Drawing.Size(1220, 844);
+            this.panelRightBar.Size = new System.Drawing.Size(915, 609);
             this.panelRightBar.TabIndex = 11;
             // 
             // dgvTraCuTiec
@@ -87,7 +90,6 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvTraCuTiec.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTraCuTiec.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvTraCuTiec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTraCuTiec.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
@@ -98,94 +100,128 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTraCuTiec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTraCuTiec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTraCuTiec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTraCuTiec.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvTraCuTiec.DoubleBuffered = true;
             this.dgvTraCuTiec.EnableHeadersVisualStyles = false;
             this.dgvTraCuTiec.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dgvTraCuTiec.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvTraCuTiec.Location = new System.Drawing.Point(0, 176);
-            this.dgvTraCuTiec.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTraCuTiec.Location = new System.Drawing.Point(0, 175);
             this.dgvTraCuTiec.Name = "dgvTraCuTiec";
             this.dgvTraCuTiec.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvTraCuTiec.RowHeadersWidth = 51;
-            this.dgvTraCuTiec.Size = new System.Drawing.Size(1220, 668);
+            this.dgvTraCuTiec.Size = new System.Drawing.Size(915, 434);
             this.dgvTraCuTiec.TabIndex = 3;
             // 
             // panelThongTinMonAn
             // 
             this.panelThongTinMonAn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThongTinMonAn.BackgroundImage")));
             this.panelThongTinMonAn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelThongTinMonAn.Controls.Add(this.panel7);
-            this.panelThongTinMonAn.Controls.Add(this.panelTitle2);
             this.panelThongTinMonAn.Controls.Add(this.panelComboBox);
+            this.panelThongTinMonAn.Controls.Add(this.panelTitle2);
+            this.panelThongTinMonAn.Controls.Add(this.panelUpperBar);
             this.panelThongTinMonAn.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelThongTinMonAn.GradientBottomLeft = System.Drawing.Color.White;
             this.panelThongTinMonAn.GradientBottomRight = System.Drawing.Color.White;
             this.panelThongTinMonAn.GradientTopLeft = System.Drawing.Color.White;
             this.panelThongTinMonAn.GradientTopRight = System.Drawing.Color.White;
             this.panelThongTinMonAn.Location = new System.Drawing.Point(0, 0);
-            this.panelThongTinMonAn.Margin = new System.Windows.Forms.Padding(4);
             this.panelThongTinMonAn.Name = "panelThongTinMonAn";
             this.panelThongTinMonAn.Quality = 10;
-            this.panelThongTinMonAn.Size = new System.Drawing.Size(1220, 176);
+            this.panelThongTinMonAn.Size = new System.Drawing.Size(915, 143);
             this.panelThongTinMonAn.TabIndex = 2;
             // 
-            // panel7
+            // panelUpperBar
             // 
-            this.panel7.Controls.Add(this.tbTenCoDau);
-            this.panel7.Controls.Add(this.tbTenChuRe);
-            this.panel7.Controls.Add(this.dtpTraCuuTiec);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1220, 86);
-            this.panel7.TabIndex = 3;
+            this.panelUpperBar.Controls.Add(this.dtpNgayToChuc);
+            this.panelUpperBar.Controls.Add(this.iconPictureBox2);
+            this.panelUpperBar.Controls.Add(this.iconPictureBox1);
+            this.panelUpperBar.Controls.Add(this.tbTenCoDau);
+            this.panelUpperBar.Controls.Add(this.tbTenChuRe);
+            this.panelUpperBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUpperBar.Location = new System.Drawing.Point(0, 0);
+            this.panelUpperBar.Name = "panelUpperBar";
+            this.panelUpperBar.Size = new System.Drawing.Size(915, 66);
+            this.panelUpperBar.TabIndex = 3;
             // 
-            // tbTenCoDau
+            // panel3
             // 
-            this.tbTenCoDau.BackColor = System.Drawing.Color.Silver;
-            this.tbTenCoDau.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.BackgroundImage")));
-            this.tbTenCoDau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tbTenCoDau.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbTenCoDau.ForeColor = System.Drawing.Color.SeaGreen;
-            this.tbTenCoDau.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenCoDau.Icon")));
-            this.tbTenCoDau.Location = new System.Drawing.Point(627, 36);
-            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(5);
-            this.tbTenCoDau.Name = "tbTenCoDau";
-            this.tbTenCoDau.Size = new System.Drawing.Size(593, 50);
-            this.tbTenCoDau.TabIndex = 2;
-            this.tbTenCoDau.text = "Tên cô dâu";
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(228, 29);
+            this.panel3.TabIndex = 4;
             // 
-            // tbTenChuRe
+            // label1
             // 
-            this.tbTenChuRe.BackColor = System.Drawing.Color.Silver;
-            this.tbTenChuRe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.BackgroundImage")));
-            this.tbTenChuRe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tbTenChuRe.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbTenChuRe.ForeColor = System.Drawing.Color.SeaGreen;
-            this.tbTenChuRe.Icon = ((System.Drawing.Image)(resources.GetObject("tbTenChuRe.Icon")));
-            this.tbTenChuRe.Location = new System.Drawing.Point(0, 36);
-            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(5);
-            this.tbTenChuRe.Name = "tbTenChuRe";
-            this.tbTenChuRe.Size = new System.Drawing.Size(627, 50);
-            this.tbTenChuRe.TabIndex = 2;
-            this.tbTenChuRe.text = "Tên chú rể";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(49, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã khách hàng";
             // 
-            // dtpTraCuuTiec
+            // panel4
             // 
-            this.dtpTraCuuTiec.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpTraCuuTiec.BorderRadius = 0;
-            this.dtpTraCuuTiec.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dtpTraCuuTiec.ForeColor = System.Drawing.Color.White;
-            this.dtpTraCuuTiec.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTraCuuTiec.FormatCustom = null;
-            this.dtpTraCuuTiec.Location = new System.Drawing.Point(0, 0);
-            this.dtpTraCuuTiec.Margin = new System.Windows.Forms.Padding(5);
-            this.dtpTraCuuTiec.Name = "dtpTraCuuTiec";
-            this.dtpTraCuuTiec.Size = new System.Drawing.Size(1220, 36);
-            this.dtpTraCuuTiec.TabIndex = 5;
-            this.dtpTraCuuTiec.Value = new System.DateTime(2020, 11, 24, 18, 54, 25, 555);
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(228, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(228, 29);
+            this.panel4.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(73, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã hợp đồng";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(456, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(228, 29);
+            this.panel5.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(88, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên sảnh";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(684, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(231, 29);
+            this.panel6.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(109, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Ca";
             // 
             // panelTitle2
             // 
@@ -193,197 +229,172 @@
             this.panelTitle2.Controls.Add(this.panel5);
             this.panelTitle2.Controls.Add(this.panel4);
             this.panelTitle2.Controls.Add(this.panel3);
-            this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelTitle2.Location = new System.Drawing.Point(0, 86);
-            this.panelTitle2.Margin = new System.Windows.Forms.Padding(4);
+            this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle2.Location = new System.Drawing.Point(0, 66);
             this.panelTitle2.Name = "panelTitle2";
-            this.panelTitle2.Size = new System.Drawing.Size(1220, 36);
-            this.panelTitle2.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(912, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(304, 36);
-            this.panel6.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(129, 6);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 21);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Ca";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(608, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(304, 36);
-            this.panel5.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(89, 6);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tên sảnh";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(304, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(304, 36);
-            this.panel4.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 6);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Mã hợp đồng";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(304, 36);
-            this.panel3.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã khách hàng";
+            this.panelTitle2.Size = new System.Drawing.Size(915, 29);
+            this.panelTitle2.TabIndex = 5;
             // 
             // panelComboBox
             // 
+            this.panelComboBox.BackColor = System.Drawing.Color.Green;
             this.panelComboBox.Controls.Add(this.cmbCa);
             this.panelComboBox.Controls.Add(this.cmbTenSanh);
             this.panelComboBox.Controls.Add(this.cmbMaHopDong);
             this.panelComboBox.Controls.Add(this.cmbMaKhachHang);
-            this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelComboBox.Location = new System.Drawing.Point(0, 122);
-            this.panelComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.panelComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelComboBox.Location = new System.Drawing.Point(0, 95);
             this.panelComboBox.Name = "panelComboBox";
-            this.panelComboBox.Size = new System.Drawing.Size(1220, 54);
-            this.panelComboBox.TabIndex = 0;
-            // 
-            // cmbCa
-            // 
-            this.cmbCa.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCa.BorderRadius = 3;
-            this.cmbCa.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cmbCa.ForeColor = System.Drawing.Color.White;
-            this.cmbCa.Items = new string[0];
-            this.cmbCa.Location = new System.Drawing.Point(912, 0);
-            this.cmbCa.Margin = new System.Windows.Forms.Padding(5);
-            this.cmbCa.Name = "cmbCa";
-            this.cmbCa.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cmbCa.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cmbCa.selectedIndex = -1;
-            this.cmbCa.Size = new System.Drawing.Size(305, 54);
-            this.cmbCa.TabIndex = 5;
-            // 
-            // cmbTenSanh
-            // 
-            this.cmbTenSanh.BackColor = System.Drawing.Color.Transparent;
-            this.cmbTenSanh.BorderRadius = 3;
-            this.cmbTenSanh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cmbTenSanh.ForeColor = System.Drawing.Color.White;
-            this.cmbTenSanh.Items = new string[0];
-            this.cmbTenSanh.Location = new System.Drawing.Point(608, 0);
-            this.cmbTenSanh.Margin = new System.Windows.Forms.Padding(5);
-            this.cmbTenSanh.Name = "cmbTenSanh";
-            this.cmbTenSanh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cmbTenSanh.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cmbTenSanh.selectedIndex = -1;
-            this.cmbTenSanh.Size = new System.Drawing.Size(304, 54);
-            this.cmbTenSanh.TabIndex = 5;
-            // 
-            // cmbMaHopDong
-            // 
-            this.cmbMaHopDong.BackColor = System.Drawing.Color.Transparent;
-            this.cmbMaHopDong.BorderRadius = 3;
-            this.cmbMaHopDong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cmbMaHopDong.ForeColor = System.Drawing.Color.White;
-            this.cmbMaHopDong.Items = new string[0];
-            this.cmbMaHopDong.Location = new System.Drawing.Point(304, 0);
-            this.cmbMaHopDong.Margin = new System.Windows.Forms.Padding(5);
-            this.cmbMaHopDong.Name = "cmbMaHopDong";
-            this.cmbMaHopDong.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cmbMaHopDong.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cmbMaHopDong.selectedIndex = -1;
-            this.cmbMaHopDong.Size = new System.Drawing.Size(304, 54);
-            this.cmbMaHopDong.TabIndex = 5;
+            this.panelComboBox.Size = new System.Drawing.Size(915, 44);
+            this.panelComboBox.TabIndex = 6;
             // 
             // cmbMaKhachHang
             // 
-            this.cmbMaKhachHang.BackColor = System.Drawing.Color.Transparent;
-            this.cmbMaKhachHang.BorderRadius = 3;
             this.cmbMaKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cmbMaKhachHang.ForeColor = System.Drawing.Color.White;
-            this.cmbMaKhachHang.Items = new string[0];
+            this.cmbMaKhachHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaKhachHang.FormattingEnabled = true;
             this.cmbMaKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.cmbMaKhachHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbMaKhachHang.Name = "cmbMaKhachHang";
-            this.cmbMaKhachHang.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.cmbMaKhachHang.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cmbMaKhachHang.selectedIndex = -1;
-            this.cmbMaKhachHang.Size = new System.Drawing.Size(304, 54);
-            this.cmbMaKhachHang.TabIndex = 5;
+            this.cmbMaKhachHang.Size = new System.Drawing.Size(228, 29);
+            this.cmbMaKhachHang.TabIndex = 0;
+            // 
+            // cmbMaHopDong
+            // 
+            this.cmbMaHopDong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbMaHopDong.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaHopDong.FormattingEnabled = true;
+            this.cmbMaHopDong.Location = new System.Drawing.Point(228, 0);
+            this.cmbMaHopDong.Name = "cmbMaHopDong";
+            this.cmbMaHopDong.Size = new System.Drawing.Size(228, 29);
+            this.cmbMaHopDong.TabIndex = 1;
+            // 
+            // cmbTenSanh
+            // 
+            this.cmbTenSanh.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbTenSanh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTenSanh.FormattingEnabled = true;
+            this.cmbTenSanh.Location = new System.Drawing.Point(456, 0);
+            this.cmbTenSanh.Name = "cmbTenSanh";
+            this.cmbTenSanh.Size = new System.Drawing.Size(228, 29);
+            this.cmbTenSanh.TabIndex = 2;
+            // 
+            // cmbCa
+            // 
+            this.cmbCa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cmbCa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCa.FormattingEnabled = true;
+            this.cmbCa.Location = new System.Drawing.Point(684, 0);
+            this.cmbCa.Name = "cmbCa";
+            this.cmbCa.Size = new System.Drawing.Size(231, 29);
+            this.cmbCa.TabIndex = 3;
+            // 
+            // tbTenChuRe
+            // 
+            this.tbTenChuRe.BackColor = System.Drawing.Color.White;
+            this.tbTenChuRe.BorderColorFocused = System.Drawing.Color.Blue;
+            this.tbTenChuRe.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbTenChuRe.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.tbTenChuRe.BorderThickness = 3;
+            this.tbTenChuRe.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTenChuRe.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbTenChuRe.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbTenChuRe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbTenChuRe.isPassword = false;
+            this.tbTenChuRe.Location = new System.Drawing.Point(0, 0);
+            this.tbTenChuRe.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTenChuRe.Name = "tbTenChuRe";
+            this.tbTenChuRe.Size = new System.Drawing.Size(312, 66);
+            this.tbTenChuRe.TabIndex = 0;
+            this.tbTenChuRe.Text = "Tên chú rể";
+            this.tbTenChuRe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbTenCoDau
+            // 
+            this.tbTenCoDau.BackColor = System.Drawing.Color.White;
+            this.tbTenCoDau.BorderColorFocused = System.Drawing.Color.Blue;
+            this.tbTenCoDau.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbTenCoDau.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.tbTenCoDau.BorderThickness = 3;
+            this.tbTenCoDau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTenCoDau.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbTenCoDau.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbTenCoDau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbTenCoDau.isPassword = false;
+            this.tbTenCoDau.Location = new System.Drawing.Point(312, 0);
+            this.tbTenCoDau.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTenCoDau.Name = "tbTenCoDau";
+            this.tbTenCoDau.Size = new System.Drawing.Size(312, 66);
+            this.tbTenCoDau.TabIndex = 1;
+            this.tbTenCoDau.Text = "Tên cô dâu";
+            this.tbTenCoDau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 40;
+            this.iconPictureBox1.Location = new System.Drawing.Point(15, 14);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(41, 40);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 40;
+            this.iconPictureBox2.Location = new System.Drawing.Point(325, 14);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox2.TabIndex = 2;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // dtpNgayToChuc
+            // 
+            this.dtpNgayToChuc.BackColor = System.Drawing.Color.SeaGreen;
+            this.dtpNgayToChuc.BorderRadius = 0;
+            this.dtpNgayToChuc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayToChuc.ForeColor = System.Drawing.Color.White;
+            this.dtpNgayToChuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayToChuc.FormatCustom = null;
+            this.dtpNgayToChuc.Location = new System.Drawing.Point(624, 4);
+            this.dtpNgayToChuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayToChuc.Name = "dtpNgayToChuc";
+            this.dtpNgayToChuc.Size = new System.Drawing.Size(291, 60);
+            this.dtpNgayToChuc.TabIndex = 3;
+            this.dtpNgayToChuc.Value = new System.DateTime(2020, 11, 29, 15, 57, 24, 553);
             // 
             // frmTraCuuTiec
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1220, 844);
+            this.ClientSize = new System.Drawing.Size(915, 609);
             this.Controls.Add(this.panelRightBar);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTraCuuTiec";
             this.Text = "Tra cứu tiệc";
             this.panelRightBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuTiec)).EndInit();
             this.panelThongTinMonAn.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panelTitle2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panelUpperBar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panelTitle2.ResumeLayout(false);
             this.panelComboBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,10 +404,12 @@
         private Bunifu.Framework.UI.BunifuGradientPanel panelRightBar;
         private Bunifu.Framework.UI.BunifuGradientPanel panelThongTinMonAn;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvTraCuTiec;
-        private System.Windows.Forms.Panel panel7;
-        private Bunifu.Framework.UI.BunifuTextbox tbTenCoDau;
-        private Bunifu.Framework.UI.BunifuTextbox tbTenChuRe;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpTraCuuTiec;
+        private System.Windows.Forms.Panel panelUpperBar;
+        private System.Windows.Forms.Panel panelComboBox;
+        private System.Windows.Forms.ComboBox cmbCa;
+        private System.Windows.Forms.ComboBox cmbTenSanh;
+        private System.Windows.Forms.ComboBox cmbMaHopDong;
+        private System.Windows.Forms.ComboBox cmbMaKhachHang;
         private System.Windows.Forms.Panel panelTitle2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;
@@ -406,10 +419,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panelComboBox;
-        private Bunifu.Framework.UI.BunifuDropdown cmbCa;
-        private Bunifu.Framework.UI.BunifuDropdown cmbTenSanh;
-        private Bunifu.Framework.UI.BunifuDropdown cmbMaHopDong;
-        private Bunifu.Framework.UI.BunifuDropdown cmbMaKhachHang;
+        private Bunifu.Framework.UI.BunifuDatepicker dtpNgayToChuc;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tbTenCoDau;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tbTenChuRe;
     }
 }

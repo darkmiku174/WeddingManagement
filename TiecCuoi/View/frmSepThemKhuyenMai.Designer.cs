@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSepThemKhuyenMai));
             this.btnGetPicture = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbPicture = new System.Windows.Forms.PictureBox();
             this.lable3 = new System.Windows.Forms.Label();
             this.tbUuDai = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,12 +38,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbMaKhuyenMai = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.dtpNgayBatDau = new Bunifu.Framework.UI.BunifuDatepicker();
             this.dtpNgayKetThuc = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dtpNgayBatDau = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,13 +82,13 @@
             this.btnGetPicture.Textcolor = System.Drawing.Color.White;
             this.btnGetPicture.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // pictureBox1
+            // pbPicture
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(127, 197);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 250);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.pbPicture.Location = new System.Drawing.Point(127, 197);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(375, 250);
+            this.pbPicture.TabIndex = 6;
+            this.pbPicture.TabStop = false;
             // 
             // lable3
             // 
@@ -194,6 +194,56 @@
             this.panel1.Size = new System.Drawing.Size(662, 136);
             this.panel1.TabIndex = 9;
             // 
+            // dtpNgayKetThuc
+            // 
+            this.dtpNgayKetThuc.BackColor = System.Drawing.Color.SeaGreen;
+            this.dtpNgayKetThuc.BorderRadius = 0;
+            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKetThuc.ForeColor = System.Drawing.Color.White;
+            this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayKetThuc.FormatCustom = null;
+            this.dtpNgayKetThuc.Location = new System.Drawing.Point(402, 91);
+            this.dtpNgayKetThuc.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
+            this.dtpNgayKetThuc.Size = new System.Drawing.Size(247, 31);
+            this.dtpNgayKetThuc.TabIndex = 10;
+            this.dtpNgayKetThuc.Value = new System.DateTime(2020, 11, 27, 19, 22, 59, 431);
+            // 
+            // dtpNgayBatDau
+            // 
+            this.dtpNgayBatDau.BackColor = System.Drawing.Color.SeaGreen;
+            this.dtpNgayBatDau.BorderRadius = 0;
+            this.dtpNgayBatDau.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayBatDau.ForeColor = System.Drawing.Color.White;
+            this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayBatDau.FormatCustom = null;
+            this.dtpNgayBatDau.Location = new System.Drawing.Point(402, 20);
+            this.dtpNgayBatDau.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayBatDau.Name = "dtpNgayBatDau";
+            this.dtpNgayBatDau.Size = new System.Drawing.Size(247, 31);
+            this.dtpNgayBatDau.TabIndex = 10;
+            this.dtpNgayBatDau.Value = new System.DateTime(2020, 11, 27, 19, 22, 59, 431);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(294, 98);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Ngày kết thúc :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(296, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Ngày bắt đầu :";
+            // 
             // btnLuu
             // 
             this.btnLuu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -229,56 +279,6 @@
             this.btnLuu.Textcolor = System.Drawing.Color.White;
             this.btnLuu.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // dtpNgayBatDau
-            // 
-            this.dtpNgayBatDau.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpNgayBatDau.BorderRadius = 0;
-            this.dtpNgayBatDau.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayBatDau.ForeColor = System.Drawing.Color.White;
-            this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayBatDau.FormatCustom = null;
-            this.dtpNgayBatDau.Location = new System.Drawing.Point(402, 20);
-            this.dtpNgayBatDau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dtpNgayBatDau.Name = "dtpNgayBatDau";
-            this.dtpNgayBatDau.Size = new System.Drawing.Size(247, 31);
-            this.dtpNgayBatDau.TabIndex = 10;
-            this.dtpNgayBatDau.Value = new System.DateTime(2020, 11, 27, 19, 22, 59, 431);
-            // 
-            // dtpNgayKetThuc
-            // 
-            this.dtpNgayKetThuc.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpNgayKetThuc.BorderRadius = 0;
-            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayKetThuc.ForeColor = System.Drawing.Color.White;
-            this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayKetThuc.FormatCustom = null;
-            this.dtpNgayKetThuc.Location = new System.Drawing.Point(402, 91);
-            this.dtpNgayKetThuc.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
-            this.dtpNgayKetThuc.Size = new System.Drawing.Size(247, 31);
-            this.dtpNgayKetThuc.TabIndex = 10;
-            this.dtpNgayKetThuc.Value = new System.DateTime(2020, 11, 27, 19, 22, 59, 431);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(296, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Ngày bắt đầu :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(294, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Ngày kết thúc :";
-            // 
             // frmSepThemKhuyenMai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,12 +286,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(662, 500);
             this.Controls.Add(this.btnGetPicture);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbPicture);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLuu);
             this.Name = "frmSepThemKhuyenMai";
             this.Text = "frmSepThemKhuyenMai";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -301,7 +301,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuFlatButton btnGetPicture;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbPicture;
         private System.Windows.Forms.Label lable3;
         private Bunifu.Framework.UI.BunifuMetroTextbox tbUuDai;
         private System.Windows.Forms.Label label1;

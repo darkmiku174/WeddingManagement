@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TiecCuoi.View
 {
-    public partial class frmSepNhanVien : Form
+    public partial class frmSepThongTinNhanVien : Form
     {
-        public frmSepNhanVien()
+        public frmSepThongTinNhanVien()
         {
             InitializeComponent();
         }

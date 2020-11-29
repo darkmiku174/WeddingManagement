@@ -69,7 +69,7 @@
             this.tbDoanhThuThang12 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.tbTongDoanhThu = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnXoa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label15 = new System.Windows.Forms.Label();
@@ -604,7 +604,7 @@
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.bunifuMetroTextbox1);
+            this.panel14.Controls.Add(this.tbTongDoanhThu);
             this.panel14.Controls.Add(this.label14);
             this.panel14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel14.Location = new System.Drawing.Point(297, 399);
@@ -612,23 +612,23 @@
             this.panel14.Size = new System.Drawing.Size(615, 90);
             this.panel14.TabIndex = 25;
             // 
-            // bunifuMetroTextbox1
+            // tbTongDoanhThu
             // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(21, 35);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(573, 44);
-            this.bunifuMetroTextbox1.TabIndex = 6;
-            this.bunifuMetroTextbox1.Text = "Tổng doanh Thu";
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTongDoanhThu.BorderColorFocused = System.Drawing.Color.Blue;
+            this.tbTongDoanhThu.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbTongDoanhThu.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.tbTongDoanhThu.BorderThickness = 3;
+            this.tbTongDoanhThu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTongDoanhThu.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbTongDoanhThu.ForeColor = System.Drawing.Color.Black;
+            this.tbTongDoanhThu.isPassword = false;
+            this.tbTongDoanhThu.Location = new System.Drawing.Point(21, 35);
+            this.tbTongDoanhThu.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTongDoanhThu.Name = "tbTongDoanhThu";
+            this.tbTongDoanhThu.Size = new System.Drawing.Size(573, 44);
+            this.tbTongDoanhThu.TabIndex = 6;
+            this.tbTongDoanhThu.Text = "Tổng doanh Thu";
+            this.tbTongDoanhThu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -846,7 +846,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox tbDoanhThuThang12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel14;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tbTongDoanhThu;
         private System.Windows.Forms.Label label14;
         private Bunifu.Framework.UI.BunifuFlatButton btnXoa;
         private System.Windows.Forms.Label label15;
